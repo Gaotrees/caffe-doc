@@ -1,6 +1,7 @@
 RBG's install log
 ---
 
+<pre>
 0) Get code
 $ git clone git@github.com:Yangqing/caffe.git
 $ cd caffe
@@ -86,3 +87,5 @@ $ make
 
 # Library path required
 export LD_LIBRARY_PATH=./local/lib:/opt/intel/mkl/lib/intel64:/usr/local/cuda/lib64
+
+</pre>
