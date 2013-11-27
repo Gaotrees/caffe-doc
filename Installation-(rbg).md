@@ -63,8 +63,15 @@ compilation terminated.
 make: *** [src/caffe/util/io.o] Error 1
 ...
 
-7) Install OpenCV
-$ ... install opencv 2.4.7 from source ...
+7) Install OpenCV 2.4.7 from source:
+$ mkdir release
+$ cd release
+$ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/home/rbg/working/caffe/local -D BUILD_opencv_gpu=OFF ..
+$ make
+$ make install
+...
+<back to caffe>
+...
 $ make
 ... failed ...
 /usr/bin/ld: cannot find -lsnappy
