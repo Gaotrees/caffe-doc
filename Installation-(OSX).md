@@ -1,3 +1,5 @@
+not fully working OS 10.9 / working in OS 10.7.5 Lion
+
 Here are a few notes of installation tries on Mac. Just for the record.
 
 (Sergey and Yangqing) Maverick with the most recent clang does not work with caffe yet, due to libc++ problems.
