@@ -1,4 +1,4 @@
-See the [OS X installation section of the online documentation](http://caffe.berkeleyvision.org/installation.html#os_x_installation).
+See the "OS X Installation" section of the [online installation guide](http://caffe.berkeleyvision.org/installation.html).
 
 - 10.7: works
 - 10.8: works
