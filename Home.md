@@ -1,5 +1,11 @@
-# What is Caffe?
+# Wiki or Official docs?
 
-Caffe is an open-source implementation of the recent convolutional algorithms that perform particularly well in large-scale image recognition tasks, such as [the ImageNet Challenges](http://www.image-net.org/). The purpose of Caffe is to provide a reference implementation for such algorithms, contribute a framework for developing and deploying deep learning architectures for vision, and enable wider adoption and analysis in the research community.
+The *official* documentation for Caffe is maintained and hosted by BVLC [here](http://caffe.berkeleyvision.org).
+This documentation is part of the Caffe source code repository and is meant to be an accurate reflection of the code.
 
-Caffe was created by Yangqing Jia at UC Berkeley as a replacement of [decaf](http://decaf.berkeleyvision.org/). It has been adopted by several Berkeley vision group members and is under active development by the [Berkeley Vision and Learning Center](http://bvlc.eecs.berkeley.edu).
+This wiki hosts the *unofficial* part of the Caffe documentation, such as user-contributed examples and tips, links to blog posts and tutorials, a list of referencing publications, etc.
+
+It is publicly-editable! Anyone logged into Github can change the content, so use this power only for good.
+BVLC maintainers will periodically review the contents of the wiki. If you spot something that's wrong, feel free to make a note or adjust it yourself. Thanks!
+
+
