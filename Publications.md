@@ -21,6 +21,8 @@ ACM MM Open Source Competition 2014
 
 ## Publications using Caffe
 
+http://scholar.google.com/scholar?oi=bibs&hl=en&cites=17333247995453974016
+
 [CNN: Single-label to Multi-label](http://arxiv.org/abs/1406.5726)  
 Yunchao Wei, Wei Xia, Junshi Huang, Bingbing Ni, Jian Dong, Yao Zhao, Shuicheng Yan  
 arXiv 2014
