@@ -23,9 +23,10 @@ ACM MM Open Source Competition 2014
 
 [Google Scholar index for Caffe](http://scholar.google.com/scholar?oi=bibs&hl=en&cites=17333247995453974016).
 
-[Rich feature hierarchies for accurate object detection and semantic segmentation](http://www.cs.berkeley.edu/~rbg/papers/r-cnn-cvpr.pdf)
-R. Girshick, J. Donahue, T. Darrell, J. Malik
-CVPR 2014 / [arXiv:1311.2524](http://arxiv.org/abs/1310.1531), November 2013.
+[Rich feature hierarchies for accurate object detection and semantic segmentation](http://www.cs.berkeley.edu/~rbg/papers/r-cnn-cvpr.pdf)  
+R. Girshick, J. Donahue, T. Darrell, J. Malik  
+CVPR 2014  
+[arXiv:1311.2524](http://arxiv.org/abs/1310.1531), November 2013.
 
 [CNN: Single-label to Multi-label](http://arxiv.org/abs/1406.5726)  
 Yunchao Wei, Wei Xia, Junshi Huang, Bingbing Ni, Jian Dong, Yao Zhao, Shuicheng Yan  
