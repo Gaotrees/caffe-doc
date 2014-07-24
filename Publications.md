@@ -23,7 +23,7 @@ ACM MM Open Source Competition 2014
 
 [Google Scholar index for Caffe](http://scholar.google.com/scholar?oi=bibs&hl=en&cites=17333247995453974016).
 
-[Tell Me What You See and I will Show You Where It Is](hhttp://pages.cs.wisc.edu/~jiaxu/projects/weak-label-seg/)  
+[Tell Me What You See and I will Show You Where It Is](http://pages.cs.wisc.edu/~jiaxu/projects/weak-label-seg/)  
 Jia Xu, Alexander G. Schwing, Raquel Urtasun.   
 CVPR 2014  
 
