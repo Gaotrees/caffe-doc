@@ -9,7 +9,9 @@ An Amazon EC2 AMI is available for the Northern California zone as `ami-2faaa96a
 Below are the steps I followed to create that image.
 
 Start with `ami-a7fdfee2` in Northern California, Ubuntu Server 14.04
+
 Choose an m3.medium instance
+
 SSH into the instance
 
 ```shell
