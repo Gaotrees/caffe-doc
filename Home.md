@@ -8,4 +8,4 @@ This wiki hosts the *unofficial* part of the Caffe documentation, such as user-c
 It is publicly-editable! Anyone logged into Github can change the content, so use this power only for good.
 BVLC maintainers will periodically review the contents of the wiki. If you spot something that's wrong, feel free to make a note or adjust it yourself. Thanks!
 
-
+Boris Ginzburg created a very comprehensive course for Caffe. You will learn everything from the theories of convolutional neural netowrk to the in depth internal mechanisms of Caffe. It is by far the most useful instructional resource complementary to the official documentation. The lectures are [publicly available](http://courses.cs.tau.ac.il/Caffe_workshop/Bootcamp/).
