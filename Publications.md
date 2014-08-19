@@ -36,4 +36,8 @@ CVPR 2014
 Yunchao Wei, Wei Xia, Junshi Huang, Bingbing Ni, Jian Dong, Yao Zhao, Shuicheng Yan  
 arXiv 2014
 
+[Speeding up Convolutional Neural Networks with Low Rank Expansions](http://arxiv.org/abs/1405.3866)  
+Max Jaderberg, Andrea Vedaldi, Andrew Zisserman  
+arXiv 2014
+
 **Add your own!**
