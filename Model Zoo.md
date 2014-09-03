@@ -1,1 +1,0 @@
-Trained models are posted here.
