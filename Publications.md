@@ -40,4 +40,12 @@ arXiv 2014
 Max Jaderberg, Andrea Vedaldi, Andrew Zisserman  
 BMVC 2014
 
+[Simultaneous Detection and Segmentation] (http://www.cs.berkeley.edu/~bharath2/pubs/pdfs/BharathECCV2014.pdf)  
+B. Hariharan, P. Arbelaez, R. Girshick, J. Malik  
+ECCV 2014
+
+[Learning Rich Features from RGB-D Images for Object Detection and Segmentation] (http://www.cs.berkeley.edu/~sgupta/pdf/rcnn-depth.pdf)  
+S. Gupta, R. Girshick, P. Arbelaez, J. Malik  
+ECCV 2014
+
 **Add your own!**
