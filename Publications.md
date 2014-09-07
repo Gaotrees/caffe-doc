@@ -48,4 +48,9 @@ ECCV 2014
 S. Gupta, R. Girshick, P. Arbelaez, J. Malik  
 ECCV 2014
 
+[Part-based R-CNNs for Fine-grained Category Detection]
+(http://www.cs.berkeley.edu/~rbg/papers/part-rcnn.pdf)
+N. Zhang, J. Donahue, R. Girshick, T. Darrell
+ECCV 2014
+
 **Add your own!**
