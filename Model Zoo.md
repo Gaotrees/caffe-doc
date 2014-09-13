@@ -6,3 +6,6 @@ Downloading models is not yet supported as a script (there is no good commandlin
 ## Berkeley-trained models
 
  - [Finetuning on Flickr Style](https://gist.github.com/sergeyk/034c6ac3865563b69e60): same as provided in `models/`, but listed here as a Gist for an example.
+
+## Network in Network Imagenet Model
+ - [NIN-Imagenet](https://gist.github.com/mavenlin/d802a5849de39225bcc6): a small(29MB) model for imagenet, yet performs slightly better than AlexNet, and fast to train.
