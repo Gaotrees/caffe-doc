@@ -40,6 +40,10 @@ arXiv 2014
 Max Jaderberg, Andrea Vedaldi, Andrew Zisserman  
 BMVC 2014
 
+[Synthetic Data and Artificial Neural Networks for Natural Scene Text Recognition](http://arxiv.org/abs/1405.3866)  
+Max Jaderberg, Karen Simonyan, Andrea Vedaldi, Andrew Zisserman  
+arXiv 2014
+
 [Simultaneous Detection and Segmentation] (http://www.cs.berkeley.edu/~bharath2/pubs/pdfs/BharathECCV2014.pdf)  
 B. Hariharan, P. Arbelaez, R. Girshick, J. Malik  
 ECCV 2014
