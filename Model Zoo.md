@@ -29,4 +29,5 @@ Models:
  * [VGG_CNN_F](https://gist.github.com/ksimonyan/a32c9063ec8e1118221a#file-readme-md): 16.7%  top-5 error on ILSVRC-2012-val
 
 #### Note
-The models are not currently supported by the `dev` branch, as they rely on the following pull request: https://github.com/BVLC/caffe/pull/1138
+The models are not currently supported by the `dev` branch, as they rely on the following pull request: https://github.com/BVLC/caffe/pull/1138.
+An example of how to use the models can be found in matlab/caffe/matcaffe_demo_vgg.m 
