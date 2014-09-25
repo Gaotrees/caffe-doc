@@ -3,14 +3,14 @@ Check out the [model zoo help page](https://github.com/BVLC/caffe/blob/dev/docs/
 
 Downloading models is not yet supported as a script (there is no good commandline tool for this right now), so simply go to the Gist URL and click "Download Gist" for now.
 
-## Berkeley-trained models
+### Berkeley-trained models
 
  - [Finetuning on Flickr Style](https://gist.github.com/sergeyk/034c6ac3865563b69e60): same as provided in `models/`, but listed here as a Gist for an example.
 
-## Network in Network ImageNet model
+### Network in Network ImageNet model
  - [NIN-Imagenet](https://gist.github.com/mavenlin/d802a5849de39225bcc6): a small(29MB) model for imagenet, yet performs slightly better than AlexNet, and fast to train.
 
-## Models from the BMVC-2014 paper "Return of the Devil in the Details: Delving Deep into Convolutional Nets"
+### Models from the BMVC-2014 paper "Return of the Devil in the Details: Delving Deep into Convolutional Nets"
 
 The models are trained on the ILSVRC-2012 dataset. The details can be found in the following [BMVC-2014 paper](http://www.robots.ox.ac.uk/~vgg/publications/2014/Chatfield14/):
 
