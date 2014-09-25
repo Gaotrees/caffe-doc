@@ -7,7 +7,7 @@ Downloading models is not yet supported as a script (there is no good commandlin
 
  - [Finetuning on Flickr Style](https://gist.github.com/sergeyk/034c6ac3865563b69e60): same as provided in `models/`, but listed here as a Gist for an example.
 
-## Network in Network imagenet model
+## Network in Network ImageNet model
  - [NIN-Imagenet](https://gist.github.com/mavenlin/d802a5849de39225bcc6): a small(29MB) model for imagenet, yet performs slightly better than AlexNet, and fast to train.
 
 ## Models from the BMVC-2014 paper "Return of the Devil in the Details: Delving Deep into Convolutional Nets"
@@ -29,5 +29,5 @@ Models:
  * [VGG_CNN_F](https://gist.github.com/ksimonyan/a32c9063ec8e1118221a#file-readme-md): 16.7%  top-5 error on ILSVRC-2012-val
 
 #### Note
-The models are not currently supported by the `dev` branch, as they rely on the following pull request: https://github.com/BVLC/caffe/pull/1138.
+The models are currently supported by the `dev` branch, but are not yet compatible with `master`.
 An example of how to use the models can be found in matlab/caffe/matcaffe_demo_vgg.m 
