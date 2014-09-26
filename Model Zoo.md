@@ -47,6 +47,7 @@ In the paper, the models are denoted as configurations `D` and `E`, trained with
 Models:
  * [16-layer](https://gist.github.com/ksimonyan/211839e770f7b538e2d8#file-readme-md): 7.5% top-5 error on ILSVRC-2012-val, 7.4% top-5 error on ILSVRC-2012-test
  * [19-layer](https://gist.github.com/ksimonyan/3785162f95cd2d5fee77#file-readme-md): 7.5% top-5 error on ILSVRC-2012-val, 7.3% top-5 error on ILSVRC-2012-test
+The combination of the two models achieves 7.1% top-5 error on ILSVRC-2012-val, and 7.0% top-5 error on ILSVRC-2012-test.
 
 #### Note
 The models are not currently supported by the `dev` branch, as they require input image centering by mean pixel subtraction (currently implemented in [PR 1070](https://github.com/BVLC/caffe/pull/1070)).
