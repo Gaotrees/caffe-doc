@@ -42,11 +42,11 @@ The models are the improved versions of the models used by the VGG team in the I
 
 Please cite the paper if you use the models.
 
-In the paper, the models are denoted as configurations `D` and `E`, trained with scale jittering.
-
 Models:
  * [16-layer](https://gist.github.com/ksimonyan/211839e770f7b538e2d8#file-readme-md): 7.5% top-5 error on ILSVRC-2012-val, 7.4% top-5 error on ILSVRC-2012-test
  * [19-layer](https://gist.github.com/ksimonyan/3785162f95cd2d5fee77#file-readme-md): 7.5% top-5 error on ILSVRC-2012-val, 7.3% top-5 error on ILSVRC-2012-test
+
+In the paper, the models are denoted as configurations `D` and `E`, trained with scale jittering.
 The combination of the two models achieves 7.1% top-5 error on ILSVRC-2012-val, and 7.0% top-5 error on ILSVRC-2012-test.
 
 #### Note
