@@ -1,7 +1,10 @@
 Trained models are posted here as links to Github Gists.
 Check out the [model zoo documentation](http://caffe.berkeleyvision.org/model_zoo.html) for details.
 
-Downloading models is not yet supported as a script (there is no good commandline tool for this right now), so simply go to the Gist URL and click "Download Gist" for now.
+To acquire a model:
+
+1. download the model gist by `./scripts/download_model_from_gist.sh <gist_id> <dirname>` to load the model metadata, architecture, solver configuration, and so on. (`<dirname>` is optional and defaults to caffe/models).
+2. download the model weights by `./scripts/download_model_binary.py <model_dir>` where `<model_dir>` is the gist directory from the first step.
 
 ### Berkeley-trained models
 
