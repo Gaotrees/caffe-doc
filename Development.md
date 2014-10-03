@@ -12,7 +12,7 @@
 ````
 REGISTER_LAYER_CLASS(AWESOME, MyAwesomeLayer);
 ````
-You can also register a Creator if your layer has multiple engines. For an example on how to define a creator function and register it, see `GetConvolutionLayer` in `caffe/layer_factory.cpp`.
+- Optionally, you can also register a Creator if your layer has multiple engines. For an example on how to define a creator function and register it, see `GetConvolutionLayer` in `caffe/layer_factory.cpp`.
 - Write tests in `test/test_your_layer.cpp`. Use `test/test_gradient_check_util.hpp` to check that your Forward and Backward implementations are in numerical agreement.
 
 ## Differences when writing Forward-only layers 
