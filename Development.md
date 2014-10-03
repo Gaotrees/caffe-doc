@@ -19,3 +19,4 @@ virtual void Backward_cpu(const vector<Blob<Dtype>*>& top, const vector<bool>& p
   NOT_IMPLEMENTED;
 }
 ````
+For examples, look at the accuracy layer (loss_layers.hpp) and threshold layer (neuron_layers.hpp) definitions.
