@@ -53,5 +53,5 @@ In the paper, the models are denoted as configurations `D` and `E`, trained with
 The combination of the two models achieves 7.1% top-5 error on ILSVRC-2012-val, and 7.0% top-5 error on ILSVRC-2012-test.
 
 #### Note
-The models are not currently supported by the `dev` branch, as they require input image centering by mean pixel subtraction (currently implemented in [PR 1070](https://github.com/BVLC/caffe/pull/1070)).
+The models are currently supported by the `dev` branch, but are not yet compatible with `master`.
 An example of how to use the models can be found in matlab/caffe/matcaffe_demo_vgg_mean_pix.m 
