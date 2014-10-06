@@ -17,7 +17,7 @@ REGISTER_LAYER_CLASS(AWESOME, MyAwesomeLayer);
 
 ## Forward-Only Layers
 If you want to write a layer that you will only ever include in a test net, you do not have to code the backward pass. For example, you might want a layer that measures performance metrics at test time that haven't already been implemented.
-Doing this is very simple. You can write an inline implementation of Backward_cpu (/Backward_gpu) together with the definition of your layer in `include/your_layertype_layers.hpp` that looks like:
+Doing this is very simple. You can write an inline implementation of `Backward_cpu` (or `Backward_gpu`) together with the definition of your layer in `include/your_layertype_layers.hpp` that looks like:
 ````
 virtual void Backward_cpu(const vector<Blob<Dtype>*>& top, const vector<bool>& propagate_down, vector<Blob<Dtype>*>* bottom) {
   NOT_IMPLEMENTED;
