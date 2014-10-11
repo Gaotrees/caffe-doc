@@ -16,7 +16,7 @@ SSH into the instance
 
 ```shell
 sudo apt-get install linux-headers-`uname -r`
-curl -O "http://developer.download.nvidia.com/compute/cuda/6_0/rel/installers/cuda_6.0.37_linux_64.run"
+curl -O "http://developer.download.nvidia.com/compute/cuda/6_5/rel/installers/cuda_6.5.14_linux_64.run"
 
 sudo apt-get update
 sudo apt-get install -y libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libboost-all-dev libhdf5-serial-dev protobuf-compiler gcc-4.6 g++-4.6 gcc-4.6-multilib g++-4.6-multilib gfortran libjpeg62 libfreeimage-dev libatlas-base-dev git python-dev python-pip
@@ -26,8 +26,8 @@ sudo update-alternatives --install /usr/bin/c++ c++ /usr/bin/g++-4.6 30
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.6 30
 sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.6 30
 
-chmod +x cuda_6.0.37_linux_64.run
-sudo ./cuda_6.0.37_linux_64.run --kernel-source-path=/usr/src/linux-headers-`uname -r`/
+chmod +x cuda_6.5.14_linux_64.run
+sudo ./cuda_6.5.14_linux_64.run --kernel-source-path=/usr/src/linux-headers-`uname -r`/
 ```
 Press 'q' on the EULA, 'accept', 'y', 'n' on driver, 'y' on toolkit, return on location, 'y' on symlink, 'n' on samples.
 
