@@ -5,7 +5,7 @@ These unofficial instructions collect tips and guides but without any guarantees
 ## Linux
 
 - [[Ubuntu 14.04 VirtualBox VM|Ubuntu-14.04-VirtualBox-VM]]: virtual machine installation with CUDA 6.5 and system Python.
-- [[Ubuntu 14.04 ec2 instance|Ubuntu-14.04-ec2-instance]]: ec2 installation with CUDA 6.0 and video walkthrough plus a vagrant VM. (Needs update for latest Caffe and CUDA 6.0).
+- [[Ubuntu 14.04 ec2 instance|Ubuntu-14.04-ec2-instance]]: ec2 installation with CUDA 6.5 and video walkthrough plus a vagrant VM. (Needs update for latest Caffe).
 - [Dockerfile](https://registry.hub.docker.com/u/tleyden5iwx/caffe/dockerfile/): a Dockerfile for CPU mode only and Python programming.
 
 ## OS X
