@@ -38,25 +38,7 @@ This is a guide to setting up Caffe in a 14.04 virtual machine with CUDA 6.5 and
 * Download Caffe:
   * `git clone https://github.com/BVLC/caffe.git`
 * The standard installation of dependencies for Caffe **FAILS** (so don't do this):
-  * `sudo pip install -r python/requirements.txt` (**FAILS**)
-    * `Command python setup.py egg_info failed with error code 1 in /tmp/pip_build_root/scikit-image`
-* Instead run `sudo pip install` on each of the entries of `python/requirements.txt`. This works for all except one, which can be installed with `easy_install` instead:
-  * `sudo pip install Cython`
-  * `sudo pip install h5py`
-  * `sudo pip install ipython`
-  * `sudo pip install leveldb`
-  * `sudo pip install matplotlib`
-  * `sudo pip install networkx`
-  * `sudo pip install nose` (already installed by something else)
-  * `sudo pip install numpy` (already installed by something else)
-  * `sudo pip install pandas`
-  * `sudo pip install protobuf` (**FAILS**)
-    * `pkg_resources.VersionConflict: (python-dateutil 2.2 (/usr/local/lib/python2.7/dist-packages), Requirement.parse('python-dateutil>=1.4,<2'))
-  * `sudo easy_install protobuf` (This works)
-  * `sudo pip install python-gflags`
-  * `sudo pip install scikit-image`
-  * `sudo pip install scikit-learn`
-  * `sudo pip install scipy`
+  * `cat python/requirements.txt | xargs sudo pip install`
 * Add a couple of symbolic links for some reason:
   * `sudo ln -s /usr/include/python2.7/ /usr/local/include/python2.7`
   * `sudo ln -s /usr/local/lib/python2.7/dist-packages/numpy/core/include/numpy/ /usr/local/include/python2.7/numpy`
