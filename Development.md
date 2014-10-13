@@ -13,7 +13,7 @@
 INSTANTIATE_CLASS(MyAwesomeLayer);
 REGISTER_LAYER_CLASS(AWESOME, MyAwesomeLayer);
 ````
-You should put the registration code in your own cpp file, so your implementation of a layer is self-contained.
+- Note that you should put the registration code in your own cpp file, so your implementation of a layer is self-contained.
 - Optionally, you can also register a Creator if your layer has multiple engines. For an example on how to define a creator function and register it, see `GetConvolutionLayer` in `caffe/layer_factory.cpp`.
 - Write tests in `test/test_your_layer.cpp`. Use `test/test_gradient_check_util.hpp` to check that your Forward and Backward implementations are in numerical agreement.
 
