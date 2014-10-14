@@ -25,7 +25,7 @@ Models:
 
 ### Models from the BMVC-2014 paper "Return of the Devil in the Details: Delving Deep into Convolutional Nets"
 
-The models are trained on the ILSVRC-2012 dataset. The details can be found in the following [BMVC-2014 paper](http://www.robots.ox.ac.uk/~vgg/publications/2014/Chatfield14/):
+The models are trained on the ILSVRC-2012 dataset. The details can be found on the [project page](http://www.robots.ox.ac.uk/~vgg/research/deep_eval/) or in the following [BMVC-2014 paper](http://www.robots.ox.ac.uk/~vgg/publications/2014/Chatfield14/):
 
     Return of the Devil in the Details: Delving Deep into Convolutional Nets
     K. Chatfield, K. Simonyan, A. Vedaldi, A. Zisserman
@@ -47,7 +47,7 @@ An example of how to use the models can be found in matlab/caffe/matcaffe_demo_v
 
 ### Models used by the VGG team in ILSVRC-2014
 
-The models are the improved versions of the models used by the VGG team in the ILSVRC-2014 competition. The details can be found in the following [arXiv paper](http://arxiv.org/pdf/1409.1556):
+The models are the improved versions of the models used by the VGG team in the ILSVRC-2014 competition. The details can be found on the [project page](http://www.robots.ox.ac.uk/~vgg/research/very_deep/) or in the following [arXiv paper](http://arxiv.org/pdf/1409.1556):
 
     Very Deep Convolutional Networks for Large-Scale Image Recognition
     K. Simonyan, A. Zisserman
