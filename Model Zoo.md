@@ -66,7 +66,7 @@ The combination of the two models achieves 7.1% top-5 error on ILSVRC-2012-val, 
 The models are currently supported by the `dev` branch, but are not yet compatible with `master`.
 An example of how to use the models can be found in matlab/caffe/matcaffe_demo_vgg_mean_pix.m 
 
-### PlacesCNN model
+### Places-CNN model from MIT Vision Group.
 Places CNN is described in the following [NIPS 2014 paper](http://places.csail.mit.edu/places_NIPS14.pdf):
 
     B. Zhou, A. Lapedriza, J. Xiao, A. Torralba, and A. Oliva
@@ -76,7 +76,7 @@ Places CNN is described in the following [NIPS 2014 paper](http://places.csail.m
 The project page is at [here](http://places.csail.mit.edu)
 
 Models:
- * [Places205-CNN](http://places.csail.mit.edu/model/placesCNN.tar.gz): CNN trained on 205 scene categories of Places Database (used in NIPS'14) with ~2.5 million images.
- * [Hybrid-CNN](http://places.csail.mit.edu/model/hybridCNN.tar.gz): CNN trained on 1183 categories (205 scene categories from Places Database and 978 object categories from the train data of ILSVRC2012 (ImageNet) with ~3.6 million images.
+ * [Places205-CNN](http://places.csail.mit.edu/model/placesCNN.tar.gz): CNN trained on 205 scene categories of Places Database (used in NIPS'14) with ~2.5 million images. The architecture is the same as Caffe reference network.
+ * [Hybrid-CNN](http://places.csail.mit.edu/model/hybridCNN.tar.gz): CNN trained on 1183 categories (205 scene categories from Places Database and 978 object categories from the train data of ILSVRC2012 (ImageNet) with ~3.6 million images. The architecture is the same as Caffe reference network.
 
 please cite the paper if you use the models.
