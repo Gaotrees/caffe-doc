@@ -36,12 +36,19 @@ This is a guide to setting up Caffe in a 14.04 virtual machine with CUDA 6.5 and
   * `sudo apt-get install -y libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libboost-all-dev libhdf5-serial-dev protobuf-compiler gfortran libjpeg62 libfreeimage-dev libatlas-base-dev git python-dev python-pip libgoogle-glog-dev libbz2-dev libxml2-dev libxslt-dev libffi-dev libssl-dev libgflags-dev liblmdb-dev python-yaml`
   * `sudo easy_install pillow`
 * Download Caffe:
+  * `cd ~`
   * `git clone https://github.com/BVLC/caffe.git`
 * Install python dependencies for Caffe:
+  * `cd caffe`
   * `cat python/requirements.txt | xargs -L 1 sudo pip install`
 * Add a couple of symbolic links for some reason:
   * `sudo ln -s /usr/include/python2.7/ /usr/local/include/python2.7`
   * `sudo ln -s /usr/local/lib/python2.7/dist-packages/numpy/core/include/numpy/ /usr/local/include/python2.7/numpy`
+* Create a `Makefile.config` from the example:
+  * `cp Makefile.config.example Makefile.config`
+  * `nano Makefile.config`
+    * Uncomment the line `# CPU_ONLY := 1`  (In a virtual machine we do not have access to the the GPU)
+    * Under `PYTHON_INCLUDE`, replace `/usr/lib/python2.7/dist-packages/numpy/core/include` with `/usr/local/lib/python2.7/dist-packages/numpy/core/include` (i.e. add `/local`)
 * Compile Caffe:
   * `make pycaffe`
   * `make all`
