@@ -37,8 +37,8 @@ This is a guide to setting up Caffe in a 14.04 virtual machine with CUDA 6.5 and
   * `sudo easy_install pillow`
 * Download Caffe:
   * `git clone https://github.com/BVLC/caffe.git`
-* The standard installation of dependencies for Caffe **FAILS** (so don't do this):
-  * `cat python/requirements.txt | xargs sudo pip install`
+* Install python dependencies for Caffe:
+  * `cat python/requirements.txt | xargs -L 1 sudo pip install`
 * Add a couple of symbolic links for some reason:
   * `sudo ln -s /usr/include/python2.7/ /usr/local/include/python2.7`
   * `sudo ln -s /usr/local/lib/python2.7/dist-packages/numpy/core/include/numpy/ /usr/local/include/python2.7/numpy`
