@@ -3,6 +3,10 @@ This is a guide to setting up Caffe in a 14.04 virtual machine with CUDA 6.5 and
 * Download newest Ubuntu release. I used KUbuntu from http://cdimage.ubuntu.com/kubuntu/releases/trusty/release/kubuntu-14.04.1-desktop-amd64.iso
 * Start VirtualBox, create a new virtual machine (Linux/Ubuntu/64bit/DynamicHD/8GbRAM/…). Then start the VM from the downloaded .iso (do this from inside VirtualBox). Installation of Kubuntu will begin.
 * Install system updates (3.13.0-32 -> 3.13.0-36)
+* Install build essentials:
+  * `sudo apt-get install build-essential`
+* Install latest version of kernel headers:
+  * ``sudo apt-get install linux-headers-`uname -r` ``
 * Install VBox Additions:
   * Click the USB icon in the task-bar (lower right of screen)
   * Left click the VBOXADDITIONS_4.3.16_95972
@@ -11,10 +15,6 @@ This is a guide to setting up Caffe in a 14.04 virtual machine with CUDA 6.5 and
   * `sudo ./VBoxLinuxAdditions.run`
 * Activate bidirectional clip-board:
   * In Virtual Box Manager, click Settings, then General | Advanced | Shared Clipboard
-* Install build essentials:
-  * `sudo apt-get install build-essential`
-* Install latest version of kernel headers:
-  * ``sudo apt-get install linux-headers-`uname -r` ``
 * Install curl (for the CUDA download):
   * `sudo apt-get install curl`
 * Download CUDA.
