@@ -40,7 +40,7 @@ arXiv 2014
 Max Jaderberg, Andrea Vedaldi, Andrew Zisserman  
 BMVC 2014
 
-[Synthetic Data and Artificial Neural Networks for Natural Scene Text Recognition](http://arxiv.org/abs/1405.3866)  
+[Synthetic Data and Artificial Neural Networks for Natural Scene Text Recognition](http://arxiv.org/abs/1406.2227)  
 Max Jaderberg, Karen Simonyan, Andrea Vedaldi, Andrew Zisserman  
 arXiv 2014
 
