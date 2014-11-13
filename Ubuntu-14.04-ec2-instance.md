@@ -69,6 +69,30 @@ Error One:
 ./include/caffe/common.hpp:5:27: fatal error: gflags/gflags.h: No such file or directory
 compilation terminated.
 ```
+Solutions: 
+```shell
+wget https://github.com/schuhschuh/gflags/archive/master.zip
+unzip master.zip
+cd gflags-master
+mkdir build && cd build
+export CXXFLAGS="-fPIC" && cmake .. && make VERBOSE=1
+make 
+sudo make install
+```
+
+Error Two: 
+```shell
+./include/caffe/data_layers.hpp:11:18: fatal error: lmdb.h: No such file or directory
+```
+
+Solution: 
+```shell
+git clone git://gitorious.org/mdb/mdb.git
+cd mdb/libraries/liblmdb
+make
+sudo make install
+```
+
 
 ```shell
 sudo ln -s /usr/include/python2.7/ /usr/local/include/python2.7
@@ -79,6 +103,15 @@ source ~/.bashrc
 sudo easy_install pillow
 ```
 
+If when you run 'make pycaffe', you see this error
+```shell
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 54: ordinal not in range(128)
+```
+
+you could fix it by running: 
+```shell
+sudo apt-get install libevent-dev python-dev
+```
 That should be the end of the installation. You can test that it runs with:
 ```shell
 python python/classify.py --print_results examples/images/cat.jpg foo
