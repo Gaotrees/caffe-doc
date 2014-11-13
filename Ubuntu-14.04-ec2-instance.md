@@ -62,6 +62,14 @@ sudo pip install -r python/requirements.txt
 
 I had to run the requirements twice because there seems to be a scikit-image dependency on numpy, so the first run failed.
 
+After 'make all', you may face two errors. Here are the solutions: 
+
+Error One: 
+```shell
+./include/caffe/common.hpp:5:27: fatal error: gflags/gflags.h: No such file or directory
+compilation terminated.
+```
+
 ```shell
 sudo ln -s /usr/include/python2.7/ /usr/local/include/python2.7
 sudo ln -s /usr/local/lib/python2.7/dist-packages/numpy-1.8.1-py2.7-linux-x86_64.egg/numpy/core/include/numpy /usr/local/include/python2.7/numpy
