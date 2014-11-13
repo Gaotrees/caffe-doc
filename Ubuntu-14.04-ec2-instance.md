@@ -92,7 +92,7 @@ cd mdb/libraries/liblmdb
 make
 sudo make install
 ```
-
+After the installation of caffe, you could build the python interfance for it:
 
 ```shell
 sudo ln -s /usr/include/python2.7/ /usr/local/include/python2.7
