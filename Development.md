@@ -1,4 +1,4 @@
-## Developing new layerss
+## Developing new layers
 
 - Add a class declaration for your layer to the appropriate one of `common_layers.hpp`, `data_layers.hpp`, `loss_layers.hpp`, `neuron_layers.hpp`, or `vision_layers.hpp`. Include an inline implementation of `type` and the `*Blobs()` methods to specify blob number requirements. Omit the `*_gpu` declarations if you'll only be implementing CPU code.
 - Implement your layer in `layers/your_layer.cpp`.
