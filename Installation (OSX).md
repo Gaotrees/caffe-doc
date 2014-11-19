@@ -9,6 +9,8 @@ The installation instructors provided on the official page should work in most c
 
 2. Homebrew dependencies
 
+* Before you install anything with homebrew, if you decide to not install Anaconda, make sure you actually are using homebrewed Python, not the default OS Python.
+* Make sure you change the `PYTHON_LIB` setting in the Caffe Makefile to the Homebrew version of Python (on my system, `/usr/local/Cellar/python/2.7.8_1/Frameworks/Python.framework/Versions/2.7/lib`. You can figure this out by running `locate libpython*` and including the appropriate Homebrew directory with the `.so` or `.dylib`
 Follow all the instructions on the [official installation](http://caffe.berkeleyvision.org/installation.html) page (editing all the install files) with one modification: when you get to installing Boost, version 1.56 sometimes has the numerical instability issue. Try installing Boost 1.55 instead: 
 
 ```
