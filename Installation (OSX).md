@@ -16,3 +16,13 @@ cd /usr/local
 git checkout a252214 /usr/local/Library/Formula/boost.rb
 brew install --build-from-source --with-python --fresh -vd boost
 ```
+
+# Miscellaneous hints
+
+* If you get compile errors with openBLAS and ATLAS (which are more likely) and end up using MKL, make sure to add all the MKL libraries to your path. The default install directory for MKL is `/opt/intel/mkl`, and on my system I had to add to a number of environment variables to get MKL to load with Caffe: 
+
+```
+export MKLROOT=/opt/intel/composer_xe_2015.0.077/mkl export DYLD_LIBRARY_PATH=/opt/intel/composer_xe_2015.0.077/compiler/lib:/opt/intel/composer_xe_2015.0.077/mkl/lib export LIBRARY_PATH=/opt/intel/composer_xe_2015.0.077/compiler/lib:/opt/intel/composer_xe_2015.0.077/mkl/lib export NLSPATH=/opt/intel/composer_xe_2015.0.077/mkl/lib/locale/%l_%t/%N export MANPATH=/opt/intel/composer_xe_2015.0.077/man/en_US:/usr/local/share/man:/usr/share/man:/opt/intel/man:/usr/texbin/man:$ export INCLUDE=/opt/intel/composer_xe_2015.0.077/mkl/include export CPATH=/opt/intel/composer_xe_2015.0.077/mkl/include:/opt/intel/composer_xe_2015.0.077/mkl/bin/intel64/mklvars_intel64.sh
+```
+
+* Make absolutely sure that you are using the same Python for building all the necessary homebrew Python dependencies as you will be using Python. If you installed Python with homebrew rather than Anaconda, make sure you linked it. Reference this great how-to guide: http://docs.python-guide.org/en/latest/starting/install/osx/
