@@ -57,4 +57,12 @@ ECCV 2014
 N. Zhang, J. Donahue, R. Girshick, T. Darrell  
 ECCV 2014
 
+[Long-term Recurrent Convolutional Networks for Visual Recognition and Description](http://arxiv.org/abs/1411.4389v2)  
+Jeff Donahue, Lisa Anne Hendricks, Sergio Guadarrama, Marcus Rohrbach, Subhashini Venugopalan, Kate Saenko, Trevor Darrell  
+arXiv 2014
+
+[Fully Convolutional Networks for Semantic Segmentation](http://arxiv.org/abs/1411.4038)  
+Jonathan Long, Evan Shelhamer, Trevor Darrell  
+arXiv 2014
+
 **Add your own!**
