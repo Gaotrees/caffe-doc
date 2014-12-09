@@ -78,3 +78,9 @@ The project page is at [here](http://places.csail.mit.edu)
 Models:
  * [Places205-CNN](http://places.csail.mit.edu/model/placesCNN.tar.gz): CNN trained on 205 scene categories of Places Database (used in NIPS'14) with ~2.5 million images. The architecture is the same as Caffe reference network.
  * [Hybrid-CNN](http://places.csail.mit.edu/model/hybridCNN.tar.gz): CNN trained on 1183 categories (205 scene categories from Places Database and 978 object categories from the train data of ILSVRC2012 (ImageNet) with ~3.6 million images. The architecture is the same as Caffe reference network.
+
+### GoogLeNet-Places model from [Princeton](http://vision.princeton.edu/)
+GoogLeNet-Places is a GoogLeNet model trained on Places dataset for scene classification. We trained the model with only the training set (no evaluation set) and tested it on the testing set. The top 1 accuracy is 56.3% and the top 5 accuracy is 86.0%, which are both 5% higher than the Places-CNN model. 
+
+Models:
+* [GoogLeNet-Places](http://vision.princeton.edu/projects/2014/places/GoogLeNet/): GoogLeNet trained on 205 scene categories of Places Database with ~2.5 million images. See readme.txt for more details.
