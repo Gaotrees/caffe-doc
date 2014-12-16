@@ -65,9 +65,8 @@ arXiv 2014
 Jonathan Long, Evan Shelhamer, Trevor Darrell  
 arXiv 2014
 
-[How transferable are features in deep neural networks?](http://papers.nips.cc/paper/5427-how-transferable-are-features-in-deep-neural-networks)  
+[How transferable are features in deep neural networks?](http://papers.nips.cc/paper/5347-how-transferable-are-features-in-deep-neural-networks)  
 Jason Yosinski, Jeff Clune, Yoshua Bengio, Hod Lipson  
 NIPS 2014 (see also [arXiv](http://arxiv.org/abs/1411.1792) preprint)
-
 
 **Add your own!**
