@@ -9,6 +9,7 @@ To acquire a model:
 ### Berkeley-trained models
 
  - [Finetuning on Flickr Style](https://gist.github.com/sergeyk/034c6ac3865563b69e60): same as provided in `models/`, but listed here as a Gist for an example.
+ - [BVLC GoogleNet](https://gist.github.com/sguada/866e2aa1fd707b89b913)
 
 ### Network in Network model
 The Network in Network model is described in the following [ICLR-2014 paper](http://arxiv.org/abs/1312.4400):
