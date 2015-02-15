@@ -99,3 +99,6 @@ Models (trained on PASCAL using extra data from [Hariharan et al.](http://www.cs
 * [FCN-32s PASCAL](https://gist.github.com/longjon/ac410cad48a088710872#file-readme-md): single stream, 32 pixel prediction stride version
 * [FCN-16s PASCAL](https://gist.github.com/longjon/d24098e083bec05e456e#file-readme-md): two stream, 16 pixel prediction stride version
 * [FCN-8s PASCAL](https://gist.github.com/longjon/1bf3aa1e0b8e788d7e1d#file-readme-md): three stream, 8 pixel prediction stride version
+
+### CaffeNet fine-tuned for Oxford flowers dataset
+[The BVLC reference CaffeNet fine-tuned for the Oxford 102 category flower dataset.](https://gist.github.com/jgoode21/0179e52305ca768a601f)
