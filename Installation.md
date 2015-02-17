@@ -1,4 +1,4 @@
-The official [installation instructions](http://caffe.berkeleyvision.org/installation.html) explain the recommended steps for installing on the official platforms of Ubuntu 14.04 and 12.04 and OS X 10.9 and 10.8.
+The official [installation instructions](http://caffe.berkeleyvision.org/installation.html) explain the recommended steps for installing on the official platforms of Ubuntu 14.04 and 12.04 and OS X 10.10, 10.9, and 10.8.
 
 These unofficial instructions collect tips and guides but without any guarantees. Please add any missing details and correct any mistakes.
 
