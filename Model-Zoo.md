@@ -103,5 +103,9 @@ Models trained on PASCAL (using extra data from [Hariharan et al.](http://www.cs
 Models trained on SIFT Flow (also finetuned from VGG-16):
 * [FCN-16s SIFT Flow](https://gist.github.com/longjon/f35e3a101e1478f721f5#file-readme-md): two stream, 16 pixel prediction stride version
 
+Models trained on NYUDv2 (also finetuned from VGG-16, and using HHA features from Gupta et al. https://github.com/s-gupta/rcnn-depth):
+* [FCN-32s NYUDv2](https://gist.github.com/longjon/16db1e4ad3afc2614067#file-readme-md): single stream, 32 pixel prediction stride version
+* [FCN-16s NYUDv2](https://gist.github.com/longjon/dd1f5097af6b531bddcc#file-readme-md): two stream, 16 pixel prediction stride version
+
 ### CaffeNet fine-tuned for Oxford flowers dataset
 [The BVLC reference CaffeNet fine-tuned for the Oxford 102 category flower dataset.](https://gist.github.com/jgoode21/0179e52305ca768a601f)
