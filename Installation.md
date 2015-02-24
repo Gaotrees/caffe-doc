@@ -16,6 +16,7 @@ See the official instructions.
 ## Windows
 
 There is an unofficial Windows port of Caffe at [niuzhiheng/caffe:windows](https://github.com/niuzhiheng/caffe). Thanks @niuzhiheng!
+
 Another unofficial Windows port of Caffe at [redknightlois/caffe] (https://github.com/redknightlois/caffe). This port is based on work done by @initialneal. Binary packages to compile available at: https://initialneil.wordpress.com/2015/01/11/build-caffe-in-windows-with-visual-studio-2013-cuda-6-5-opencv-2-4-9/
 
 
