@@ -7,11 +7,11 @@
   * `Forward_cpu` for the function your layer computes
   * `Backward_cpu` for its gradient (Optional -- a layer can be forward-only)
 - (Optional) Implement the GPU versions `Forward_gpu` and `Backward_gpu` in `layers/your_layer.cu`.
-- Add your layer to `proto/caffe.proto`, updating the next available ID. Also declare parameters, if needed, in this file.
-- Instantiate and register your layer in your cpp file with the macro provided in `layer_factory.hpp`. Assuming that you have a new layer `MyAwesomeLayer` and the layer type in the proto is `AWESOME`, you can achieve it with the following command:
+- If needed, declare parameters in `proto/caffe.proto`, using (and then incrementing) the "next available layer-specific ID" declared in a comment above `message LayerParameter`
+- Instantiate and register your layer in your cpp file with the macro provided in `layer_factory.hpp`. Assuming that you have a new layer `MyAwesomeLayer`, you can achieve it with the following command:
 ````
 INSTANTIATE_CLASS(MyAwesomeLayer);
-REGISTER_LAYER_CLASS(AWESOME, MyAwesomeLayer);
+REGISTER_LAYER_CLASS(MyAwesome);
 ````
 - Note that you should put the registration code in your own cpp file, so your implementation of a layer is self-contained.
 - Optionally, you can also register a Creator if your layer has multiple engines. For an example on how to define a creator function and register it, see `GetConvolutionLayer` in `caffe/layer_factory.cpp`.
