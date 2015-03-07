@@ -1,10 +1,15 @@
+
 Welcome to Pete Warden's guide to setting up Caffe in an ec2 instance with Ubuntu 14.04.
 
 [https://vimeo.com/101582001](https://vimeo.com/101582001)
 
 There's a Vagrant VM created with these steps at `https://d2rlgkokhpr1uq.cloudfront.net/dl_webcast.box`
 
-An Amazon EC2 AMI is available for the Northern California zone as `ami-2faaa96a`;[AMI-info](http://thecloudmarket.com/image/ami-2faaa96a--caffesetup) ； [startAMI](https://console.aws.amazon.com/ec2/v2/home?source=thecloudmarket.com&region=us-west-1#LaunchInstanceWizard:ami=ami-2faaa96a)
+An Amazon EC2 AMI is available for the Northern California zone as `ami-2faaa96a`;[AMI-info](http://thecloudmarket.com/image/ami-2faaa96a--caffesetup)[startAMI](https://console.aws.amazon.com/ec2/v2/home?source=thecloudmarket.com&region=us-west-1#LaunchInstanceWizard:ami=ami-2faaa96a)
+        
+
+**AMI NO LONGER WORKS, make runtest fails with following error**     
+**F0307 23:51:20.353307  1572 syncedmem.cpp:53] Check failed: error == cudaSuccess (35 vs. 0)  CUDA driver version is insufficient for CUDA runtime version** ； 
 
 Below are the steps I followed to create that image.
 
