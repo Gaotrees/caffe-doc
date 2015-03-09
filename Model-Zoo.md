@@ -42,10 +42,6 @@ Models:
  * [VGG_CNN_M_128](https://gist.github.com/ksimonyan/976847408258292576a1#file-readme-md): 15.6%  top-5 error on ILSVRC-2012-val
  * [VGG_CNN_F](https://gist.github.com/ksimonyan/a32c9063ec8e1118221a#file-readme-md): 16.7%  top-5 error on ILSVRC-2012-val
 
-#### Note
-The models are currently supported by the `dev` branch, but are not yet compatible with `master`.
-An example of how to use the models can be found in matlab/caffe/matcaffe_demo_vgg.m 
-
 ### Models used by the VGG team in ILSVRC-2014
 
 The models are the improved versions of the models used by the VGG team in the ILSVRC-2014 competition. The details can be found on the [project page](http://www.robots.ox.ac.uk/~vgg/research/very_deep/) or in the following [arXiv paper](http://arxiv.org/pdf/1409.1556):
@@ -62,10 +58,6 @@ Models:
 
 In the paper, the models are denoted as configurations `D` and `E`, trained with scale jittering.
 The combination of the two models achieves 7.1% top-5 error on ILSVRC-2012-val, and 7.0% top-5 error on ILSVRC-2012-test.
-
-#### Note
-The models are currently supported by the `dev` branch, but are not yet compatible with `master`.
-An example of how to use the models can be found in matlab/caffe/matcaffe_demo_vgg_mean_pix.m 
 
 ### Places-CNN model from MIT.
 Places CNN is described in the following [NIPS 2014 paper](http://places.csail.mit.edu/places_NIPS14.pdf):
