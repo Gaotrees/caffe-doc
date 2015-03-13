@@ -28,3 +28,15 @@ export MKLROOT=/opt/intel/composer_xe_2015.0.077/mkl export DYLD_LIBRARY_PATH=/o
 ```
 
 * Make absolutely sure that you are using the same Python for building all the necessary homebrew Python dependencies as you will be using Python. If you installed Python with homebrew rather than Anaconda, make sure you linked it. Reference this great how-to guide: http://docs.python-guide.org/en/latest/starting/install/osx/
+
+#OSX 10.10 and Macports (CUDA 7.0 RC)
+```
+sudo port install boost @1.57.0_1 opencv py27-protobuf @2.6.1_ glog gflags google-glog py27-gflags @2.0 leveldb snappy  lmdb hdf5 cmake doxygen
+
+```
+
+change the Makefile.Config file to reflect the location of the prereqs installed by Macports:
+```
+INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /opt/local/include
+LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /opt/local/lib
+```
