@@ -100,4 +100,16 @@ Models trained on NYUDv2 (also finetuned from VGG-16, and using HHA features fro
 * [FCN-16s NYUDv2](https://gist.github.com/longjon/dd1f5097af6b531bddcc#file-readme-md): two stream, 16 pixel prediction stride version
 
 ### CaffeNet fine-tuned for Oxford flowers dataset
-[The BVLC reference CaffeNet fine-tuned for the Oxford 102 category flower dataset.](https://gist.github.com/jgoode21/0179e52305ca768a601f)
+https://gist.github.com/jgoode21/0179e52305ca768a601f
+
+The is the reference CaffeNet (modified [AlexNet](http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks)) fine-tuned for the [Oxford 102 category flower dataset](http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html). The number of outputs in the inner product layer has been set to 102 to reflect the number of flower categories. Hyperparameter choices reflect those in [Fine-tuning CaffeNet for Style Recognition on “Flickr Style” Data](http://caffe.berkeleyvision.org/gathered/examples/finetune_flickr_style.html). The global learning rate is reduced while the learning rate for the final fully connected is increased relative to the other layers.
+
+After 50,000 iterations, the top-1 error is 7% on the test set of 1,020 images.
+
+```
+I0215 15:28:06.417726  6585 solver.cpp:246] Iteration 50000, loss = 0.000120038
+I0215 15:28:06.417789  6585 solver.cpp:264] Iteration 50000, Testing net (#0)
+I0215 15:28:30.834987  6585 solver.cpp:315]     Test net output #0: accuracy = 0.9326
+I0215 15:28:30.835072  6585 solver.cpp:251] Optimization Done.
+I0215 15:28:30.835083  6585 caffe.cpp:121] Optimization Done.
+```
