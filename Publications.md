@@ -69,8 +69,8 @@ arXiv 2014
 Jason Yosinski, Jeff Clune, Yoshua Bengio, Hod Lipson  
 NIPS 2014 (see also [arXiv](http://arxiv.org/abs/1411.1792) preprint)
 
-[C3D: Generic Features for Video Analysis](http://arxiv.org/abs/1412.0767)
-D. Tran, L. Bourdev, R. Fergus, L. Torresani, M. Paluri
-arXiv 2014
+[C3D: Generic Features for Video Analysis](http://arxiv.org/abs/1412.0767)  
+D. Tran, L. Bourdev, R. Fergus, L. Torresani, M. Paluri  
+arXiv 2014  
 
 **Add your own!**
