@@ -30,6 +30,7 @@ This is a guide to setting up Caffe in a 14.04 virtual machine with CUDA 6.5 and
     * Install symbolic link
     * Install samples (leave path at default)
 * Update the library path
+  * `echo 'export PATH=/usr/local/cuda/bin:$PATH' >> ~/.bashrc`
   * `echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/lib' >> ~/.bashrc`
   * `source ~/.bashrc`
 * Install dependencies:
