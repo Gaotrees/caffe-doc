@@ -68,3 +68,9 @@ You can likely use this script for other ubuntu 14.04 installs, but you probably
 
 	make -j 8 test
 	make runtest
+
+	# Do some cleanup
+	mkdir installation_files
+	mv cudnn* installation_files/
+	mv install.sh installation_files/
+	mv cuda-repo* installation_files/
