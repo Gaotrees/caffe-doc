@@ -2,7 +2,7 @@ Here's a script which will install all caffe dependencies, download caffe, and t
 
 If you want to use cudnn, you'll need a copy of cudnn-6.5-linux-x64-v2.tgz, in the same directory where the script is.
 
-You can likely use this script for other ubuntu 14.04 installs, but you probably won't want to get rid of the lines that set TMPDIR to /mnt.
+You can likely use this script for other ubuntu 14.04 installs, but you will probably want to get rid of the lines that set TMPDIR to /mnt.
 
 
 	# Add Nvidia's cuda repository
