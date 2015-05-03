@@ -74,7 +74,7 @@ D. Tran, L. Bourdev, R. Fergus, L. Torresani, M. Paluri
 arXiv 2014  
 
 [Age and Gender Classification using Convolutional Neural Networks](http://www.openu.ac.il/home/hassner/projects/cnn_agegender/CNN_AgeGenderEstimation.pdf)
-[Gil Levi, Tal Hassner]
+Gil Levi, Tal Hassner
 AMFG workshop at CVPR15
 
 **Add your own!**
