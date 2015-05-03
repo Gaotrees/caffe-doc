@@ -118,3 +118,14 @@ I0215 15:28:30.834987  6585 solver.cpp:315]     Test net output #0: accuracy = 0
 I0215 15:28:30.835072  6585 solver.cpp:251] Optimization Done.
 I0215 15:28:30.835083  6585 caffe.cpp:121] Optimization Done.
 ```
+
+### CNN Models for Salient Object Subitizing.
+CNN models described in the following CVPR'15 papger "[Salient Object Subitizing](http://www.cs.bu.edu/groups/ivc/Subitizing/)":
+
+    Salient Object Subitizing
+    J. Zhang, S. Ma, M. Sameki, S. Sclaroff, M. Betke, Z. Lin, X. Shen, B. Price and R. Mech. 
+    CVPR, 2015.
+
+Models:
+ * [AlexNet](https://gist.github.com/jimmie33/0585ed9428dc5222981f): CNN model finetuned on the Salient Object Subitizing dataset (~5500 images). The architecture is the same as Caffe reference network.
+ * [VGG16](https://gist.github.com/jimmie33/27c1c0a7736ba66c2395): CNN model finetuned on the Salient Object Subitizing dataset (~5500 images). The architecture is the same as VGG16 network. This model gives better performance than the AlexNet model, but is slower for training and testing.
