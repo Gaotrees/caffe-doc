@@ -77,6 +77,8 @@ arXiv 2014
 Gil Levi, Tal Hassner    
 AMFG workshop at CVPR15 
 
-
+[Deep Learning of Binary Hash Codes for Fast Image Retrieval](http://www.iis.sinica.edu.tw/~kevinlin311.tw/cvprw15.pdf)  
+K. Lin, H.-F. Yan, J.-H. Hsiao, C.-S. Chen    
+CVPR 2015, DeepVision workshop 
 
 **Add your own!**
