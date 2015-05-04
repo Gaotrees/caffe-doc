@@ -75,7 +75,7 @@ arXiv 2014
 
 [Age and Gender Classification using Convolutional Neural Networks](http://www.openu.ac.il/home/hassner/projects/cnn_agegender/)  
 Gil Levi, Tal Hassner    
-AMFG workshop at CVPR15 
+CVPR 2015, AMFG workshop 
 
 [Deep Learning of Binary Hash Codes for Fast Image Retrieval](http://www.iis.sinica.edu.tw/~kevinlin311.tw/cvprw15.pdf)  
 K. Lin, H.-F. Yang, J.-H. Hsiao, C.-S. Chen    
