@@ -134,7 +134,7 @@ Models:
 This model generates compact binary codes for fast image retrieval. The details can be found in the following "[CVPRW'15 paper](http://www.iis.sinica.edu.tw/~kevinlin311.tw/cvprw15.pdf)":
 
     Deep Learning of Binary Hash Codes for Fast Image Retrieval
-    K. Lin, H.-F. Yan, J.-H. Hsiao, C.-S. Chen
+    K. Lin, H.-F. Yang, J.-H. Hsiao, C.-S. Chen
     CVPR 2015, DeepVision workshop
 
 please cite the paper if you use the model:
