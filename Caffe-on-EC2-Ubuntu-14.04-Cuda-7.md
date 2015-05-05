@@ -1,15 +1,25 @@
-Here's a script which will install all caffe dependencies, download caffe, and test it.  This works with this [Ubuntu 14.04 AMI](http://thecloudmarket.com/image/ami-d05e75b8--ubuntu-images-hvm-ssd-ubuntu-trusty-14-04-amd64-server-20150325) (which, as of this writing, is the default ubuntu HVM image), and should be somewhat robust to updates.  It will install caffe wherever it is run; for the AMI, I ran it in the home directory for the ubuntu user.
+We have built an AMI containing Caffe, Python, Cuda 7, CuDNN, and all dependencies.  Its id is [ami-763a311e](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-763a311e).
 
-If you want to use cudnn, you'll need a copy of cudnn-6.5-linux-x64-v2.tgz, in the same directory where the script is.
+Below is a script which was used to create it, based on this [Ubuntu 14.04 AMI](http://thecloudmarket.com/image/ami-d05e75b8--ubuntu-images-hvm-ssd-ubuntu-trusty-14-04-amd64-server-20150325) (which, as of this writing, is the default ubuntu HVM image).  The script should be somewhat robust to updates to Ubuntu.  The script will install Caffe wherever it is run; for the AMI, I ran it in the home directory for the `ubuntu` user.
 
-You can likely use this script for other ubuntu 14.04 installs, but you will probably want to get rid of the lines that set TMPDIR to /mnt.
+If you want to use CuDNN, you'll also need a copy of cudnn-6.5-linux-x64-v2.tgz.  Place it in the same directory where the script is.
 
+If you want to use this script for installing Caffe on other ubuntu 14.04 machines, ou will probably want to get rid of the lines that set TMPDIR to /mnt.
+
+Note also that AMI creation will involve an additional cleanup step to get rid of keys, etc; this script alone is NOT sufficient for creating a secure release.
 
 	# Add Nvidia's cuda repository
+	if [ ! -f "cudnn-6.5-linux-x64-v2.tgz" ] ; then
+	  exit 1;
+	fi
 	wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1404/x86_64/cuda-repo-ubuntu1404_7.0-28_amd64.deb
 	sudo dpkg -i cuda-repo-ubuntu1404_7.0-28_amd64.deb
 
 	sudo apt-get update
+	# Note that we do upgrade and not dist-upgrade so that we don't install
+	# new kernels; this script will install the nvidia driver in the *currently
+	# running* kernel.
+	sudo apt-get upgrade -y
 	sudo apt-get install -y opencl-headers build-essential protobuf-compiler \
 	    libprotoc-dev libboost-all-dev libleveldb-dev hdf5-tools libhdf5-serial-dev \
 	    libopencv-core-dev  libopencv-highgui-dev libsnappy-dev libsnappy1 \
@@ -58,10 +68,19 @@ You can likely use this script for other ubuntu 14.04 installs, but you will pro
 
 	# Caffe takes quite a bit of disk space to build, and we don't have very much on /.
 	# Hence, we set the TMPDIR for to /mnt/build_tmp, under the assumption that our AMI has
-	# already mounted an ephemeral disk on /mnt.
+	# already mounted an ephemeral disk on /mnt.  Note that /mnt gets deleted on reboot, so we
+	# need an init script.
 	echo 'export TMPDIR=/mnt/build_tmp' >> Makefile.config
-	sudo mkdir /mnt/build_tmp
-	sudo chown ubuntu /mnt/build_tmp
+	sudo bash -c 'cat <<EOF > /etc/init.d/create_build_dir
+	#!/bin/bash
+	if [ -d /mnt ] && [ ! -e /mnt/build_tmp ] ; then
+	  mkdir /mnt/build_tmp
+	  chown ubuntu /mnt/build_tmp
+	fi
+	EOF'
+	sudo chmod 744 /etc/init.d/create_build_dir
+	sudo /etc/init.d/create_build_dir
+	sudo update-rc.d create_build_dir defaults
 
 	# And finally build!
 	make -j 8 all py
@@ -70,7 +89,7 @@ You can likely use this script for other ubuntu 14.04 installs, but you will pro
 	make runtest
 
 	# Do some cleanup
+	cd ../
 	mkdir installation_files
 	mv cudnn* installation_files/
-	mv install.sh installation_files/
 	mv cuda-repo* installation_files/
