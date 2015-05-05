@@ -3,7 +3,7 @@ The official [installation instructions](http://caffe.berkeleyvision.org/install
 These unofficial instructions collect tips and guides but without any guarantees. Please add any missing details and correct any mistakes.
 
 ## Linux
-
+- [[Ubuntu 14.04/Cuda 7|Caffe-on-EC2-Ubuntu-14.04-Cuda-7]]: AMI and installation script that works on EC2 g2.2xlarge and g2.8xlarge instances.
 - [[Ubuntu 14.04 VirtualBox VM|Ubuntu-14.04-VirtualBox-VM]]: virtual machine installation with CUDA 6.5 and system Python.
 - [[Ubuntu 14.04 ec2 instance|Ubuntu-14.04-ec2-instance]]: ec2 installation with CUDA 6.5 and video walkthrough plus a vagrant VM. (Needs update for latest Caffe).
 - [Docker image (GPU+CPU)](https://registry.hub.docker.com/u/tleyden5iwx/caffe-gpu): a Docker image for GPU + CPU mode, including Python dependencies.  For detailed instructions, see [Running Caffe on AWS GPU Instance via Docker](http://tleyden.github.io/blog/2014/10/25/running-caffe-on-aws-gpu-instance-via-docker/)
