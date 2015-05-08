@@ -140,3 +140,19 @@ This model generates compact binary codes for fast image retrieval. The details 
 please cite the paper if you use the model:
 
  * [CIFAR10-48bit](https://gist.github.com/kevinlin311tw/266d4150a1db5810398e): Proposed CNN model with 48 nodes latent layer on CIFAR10.  The error rate of this model is 10.6% on CIFAR10. 
+
+### Places-DSN model (trained with Deep Supervision)
+
+The details of this model is described in the following report:
+
+    Training Deeper Convolutional Networks with Deep Supervision
+    Liwei Wang, Chen-Yu Lee, Zhuowen Tu, Svetlana Lazebnik
+    Report,2015
+
+
+
+
+
+
+
+
