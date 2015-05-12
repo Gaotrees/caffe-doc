@@ -142,8 +142,14 @@ please cite the paper if you use the model:
  * [CIFAR10-48bit](https://gist.github.com/kevinlin311tw/266d4150a1db5810398e): Proposed CNN model with 48 nodes latent layer on CIFAR10.  The error rate of this model is 10.6% on CIFAR10. 
 
 
+### Places_CNDS_models on Scene Recognition
 
+Places-CNDS-8 is a "8conv3fc layer" deep Convolutional neural Networks model trained on MIT Places Dataset with Deep Supervision.
 
+Top-1 and Top-5 accuracies (%) on MIT Places Val/Test dataset:
+
+   top-1 val/test        top-5 val/test
+   54.7/55.7              84.1/85.8
 
 
 
