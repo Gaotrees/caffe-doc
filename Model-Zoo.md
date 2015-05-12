@@ -146,8 +146,7 @@ please cite the paper if you use the model:
 
 * [Places-CNDS-8](https://github.com/lwwang/Places_CNDS_model) is a "8conv3fc layer" deep Convolutional neural Networks model trained on MIT Places Dataset with Deep Supervision.
 
-The details of training this model is described in the following report. Please cite this work if the model is useful for you.
+The details of training this model is described in the following [report](http://arxiv.org/pdf/1505.02496.pdf). Please cite this work if the model is useful for you.
 
     Training Deeper Convolutional Networks with Deep Supervision
     L.Wang, C.Lee, Z.Tu, S. Lazebnik, arXiv:1505.02496, 2015 
-
