@@ -144,7 +144,7 @@ please cite the paper if you use the model:
 
 ### Places_CNDS_models on Scene Recognition
 
-Places-CNDS-8 is a "8conv3fc layer" deep Convolutional neural Networks model trained on MIT Places Dataset with Deep Supervision.
+ is a "8conv3fc layer" deep Convolutional neural Networks model trained on MIT Places Dataset with Deep Supervision.
 
 Top-1 and Top-5 accuracies (%) on MIT Places Val/Test dataset:
 
