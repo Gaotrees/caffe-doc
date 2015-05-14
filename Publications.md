@@ -82,8 +82,8 @@ K. Lin, H.-F. Yang, J.-H. Hsiao, C.-S. Chen
 CVPR 2015, DeepVision workshop 
 
 [Object Level Deep Feature Pooling for Compact Image Representation]
-
 (http://arxiv.org/abs/1504.06591)
+
 K. R. Mopuri, R. Venkatesh Babu
 CVPR 2015, DeepVision workshop 
 
