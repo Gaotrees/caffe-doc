@@ -1,4 +1,4 @@
-We have built an AMI containing Caffe, Python, Cuda 7, CuDNN, and all dependencies.  Its id is [ami-763a311e](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-763a311e) disk min 8G; it is designed to work with g2.2xlarge and g2.8xlarge instances.
+We have built an AMI containing Caffe, Python, Cuda 7, CuDNN, and all dependencies.  Its id is [ami-763a311e](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-763a311e) (disk min 8G,system is 4.6G); it is designed to work with g2.2xlarge and g2.8xlarge instances.
 
 Below is the script which was used to create it, based on this [Ubuntu 14.04 AMI](http://thecloudmarket.com/image/ami-d05e75b8--ubuntu-images-hvm-ssd-ubuntu-trusty-14-04-amd64-server-20150325) (which, as of this writing, is the default ubuntu HVM image).  The script should be somewhat robust to updates to Ubuntu.  The script will install Caffe wherever it is run; for the AMI, I ran it in the home directory for the `ubuntu` user.
 
