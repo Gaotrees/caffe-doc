@@ -1,5 +1,5 @@
 **AMI NO LONGER WORKS, make runtest fails with CUDA driver version error**     
-[Use these instructions and AMI instead](http://blog.titocosta.com/post/110345699197/public-ec2-ami-with-torch-and-caffe-deep-learning)  disk min 60G
+[Use these instructions and AMI instead](http://blog.titocosta.com/post/110345699197/public-ec2-ami-with-torch-and-caffe-deep-learning)  (disk min 60G,template has use 11G,free 48G)
 
 Welcome to Pete Warden's guide to setting up Caffe in an ec2 instance with Ubuntu 14.04.
 
