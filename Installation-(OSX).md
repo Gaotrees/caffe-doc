@@ -29,7 +29,7 @@ export MKLROOT=/opt/intel/composer_xe_2015.0.077/mkl export DYLD_LIBRARY_PATH=/o
 
 * Make absolutely sure that you are using the same Python for building all the necessary homebrew Python dependencies as you will be using Python. If you installed Python with homebrew rather than Anaconda, make sure you linked it. Reference this great how-to guide: http://docs.python-guide.org/en/latest/starting/install/osx/
 
-* [16/05/2015] Currently boost 1.58 produces compile errors, if you run into this just revert to boost 1.55 or 1.57 (watch out to not upgrade your brew dependencies too haphazardly. ```brew pin boost``` will pin your boost version if you used brew to install it
+* [16/05/2015] Currently boost 1.58 produces compile errors, if you run into this just revert to boost 1.55 or 1.57 - watch out to not upgrade your brew dependencies too haphazardly. ```brew pin boost``` will pin your boost version if you used brew to install it
 
 #OSX 10.10 and Macports (CUDA 7.0 RC)
 ```
