@@ -1,6 +1,12 @@
 # Install Caffe on an EC2 GPU cluster from scratch
 
+### Overview
+
+By the end of this tutorial, you will have successfully installed CUDA 7 and cuDNNv2 working with Caffe.
+
 Keywords: AWS, GPU, amazon, caffe, install, how, to
+
+### Begin Tutorial
 
 This guide also applies to standard desktop Ubuntu installations.
 
