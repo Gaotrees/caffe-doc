@@ -1,4 +1,4 @@
-# How to install Caffe on AWS from scratch
+# Install Caffe on AWS from scratch
 
 ### Overview
 
