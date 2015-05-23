@@ -1,8 +1,10 @@
-# Install Caffe on an EC2 GPU cluster from scratch
+# How to install Caffe on AWS from scratch
 
 ### Overview
 
 By the end of this tutorial, you will have successfully installed CUDA 7 and cuDNNv2 working with Caffe on AWS using a g2.2xlarge or g2.8xlarge instance.
+
+This guide was tested in May 2015.
 
 Keywords: AWS, GPU, amazon, caffe, install, how, to
 
