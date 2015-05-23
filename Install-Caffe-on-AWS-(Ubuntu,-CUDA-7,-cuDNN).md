@@ -2,7 +2,7 @@
 
 ### Overview
 
-By the end of this tutorial, you will have successfully installed CUDA 7 and cuDNNv2 working with Caffe on AWS using a g2.2xlarge or g2.8xlarge instance.
+By the end of this tutorial, you will have successfully installed CUDA 7 and cuDNNv2 working with Caffe on AWS using a g2.2xlarge or g2.8xlarge instance using Ubuntu 14.04.
 
 This guide was tested in May 2015.
 
