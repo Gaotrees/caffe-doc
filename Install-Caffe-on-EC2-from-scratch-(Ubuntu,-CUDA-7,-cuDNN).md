@@ -105,7 +105,6 @@ Remember to run `source ~/.bashrc` after saving `.bashrc`
 #### Installing cuDNN
 After registering with NVIDA, download cuDNN. Extract the tar and copy the headers and libraries to the CUDA directory.
 ```Shell
-wget http://albert.cm/dl/cudnn-6.5-linux-x64-v2.tgz
 tar -zxf cudnn-6.5-linux-x64-v2.tgz
 cd cudnn-6.5-linux-x64-v2
 sudo cp lib* /usr/local/cuda/lib64/
