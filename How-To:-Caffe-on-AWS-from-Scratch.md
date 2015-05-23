@@ -2,7 +2,7 @@
 
 ### Overview
 
-By the end of this tutorial, you will have successfully installed CUDA 7 and cuDNNv2 working with Caffe.
+By the end of this tutorial, you will have successfully installed CUDA 7 and cuDNNv2 working with Caffe on AWS using a g2.2xlarge or g2.8xlarge instance.
 
 Keywords: AWS, GPU, amazon, caffe, install, how, to
 
