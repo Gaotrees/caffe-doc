@@ -10,7 +10,7 @@ Please take a look at @rbgirshick work at https://github.com/rbgirshick/fast-rcn
 
 ***
 ![Expresso screenshot](http://val.serc.iisc.ernet.in/expresso/main-screen.png)
-**Expresso** is a Python-based GUI for designing, training and using CNNs. Expresso uses Caffe as its backend CNN framework. Some of its salient features : 
+**[Expresso](https://github.com/val-iisc/expresso)** is a Python-based GUI for designing, training and using CNNs. Expresso uses Caffe as its backend CNN framework. Some of its salient features : 
  - A convenient wizard-like interface to contextually guide the user during common scenarios
 such as data import, design and training of CNNs
  - A smart-edit interface makes net creation easy and quick. 
