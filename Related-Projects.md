@@ -8,6 +8,18 @@
 
 Please take a look at @rbgirshick work at https://github.com/rbgirshick/fast-rcnn
 
+***
+![Expresso screenshot](http://val.serc.iisc.ernet.in/expresso/main-screen.png)
+**Expresso** is a Python-based GUI for designing, training and using CNNs. Expresso uses Caffe as its backend CNN framework. Some of its salient features : 
+ - A convenient wizard-like interface to contextually guide the user during common scenarios
+such as data import, design and training of CNNs
+ - A smart-edit interface makes net creation easy and quick. 
+ - Deep networks are color-coded and informatively presented
+ - Support for training external classifier (SVM) using deep features (i.e. features extracted by passing image data through pre-trained CNN and tapping output at layer(s) of CNN).
+ - Data Visualization
+
+Visit the [project page](http://val.serc.iisc.ernet.in/expresso) for installation details and links to text/video tutorials.
+
 ## Other Useful Components
 
 * Fast object proposal LPO by @philkr https://github.com/philkr/lpo
