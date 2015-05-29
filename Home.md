@@ -19,6 +19,10 @@ BVLC and community guides to deep learning and the Caffe framework help with lea
 - [DIY Deep Learning for Vision: a Hands-On Tutorial with Caffe](https://docs.google.com/presentation/d/1UeKXVgRvvxg9OUdh_UiC5G71UMscNPlvArsWER41PsU/edit#slide=id.p) is the official tutorial by Evan Shelhamer, Jeff Donahue, Yangqing Jia, and Ross Girshick.
 - [Intel / TAU Summer Workshop on Deep Learning and Caffe](http://courses.cs.tau.ac.il/Caffe_workshop/Bootcamp/) is a short course on deep learning and Caffe by Boris Ginzburg. It is detailed and complementary to the official tutorial, but not up-to-date with the current Caffe version. Refer to this for a close look at the forward and backward passes of common layer types.
 
+## Related Projects
+
+As a framework Caffe can be extended to many ends. Check out [[related projects|Related-Projects]] that make use of Caffe including research pipelines, interfaces, and visualization.
+
 ## Translations
 
 Help translate the Caffe documentation into your language!
