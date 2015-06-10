@@ -83,6 +83,7 @@ These models are described in the [paper](http://cs.berkeley.edu/~jonlong/long_s
 
     Fully Convolutional Models for Semantic Segmentation
     Jonathan Long, Evan Shelhamer, Trevor Darrell
+    CVPR 2015
     arXiv:1411.4038
 
 These are pre-release models. They do not run in any current version of BVLC/caffe, as they require unmerged PRs. They should run in the preview branch provided at https://github.com/longjon/caffe/tree/future.
