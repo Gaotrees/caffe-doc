@@ -151,3 +151,17 @@ The details of training this model are described in the following [report](http:
 
     Training Deeper Convolutional Networks with Deep Supervision
     L.Wang, C.Lee, Z.Tu, S. Lazebnik, arXiv:1505.02496, 2015 
+
+
+### Models for Age and Gender Classification.
+
+* [Age/Gender.net](https://gist.github.com/GilLevi/c9e99062283c719c03de) are models for age and gender classification trained on the [Adience-OUI](http://www.openu.ac.il/home/hassner/Adience/data.html#agegender) dataset. See the [Project page](http://www.openu.ac.il/home/hassner/projects/cnn_agegender/). 
+
+The models are described in the following paper:
+
+    Gil Levi and Tal Hassner, Age and Gender Classification using Convolutional Neural Networks,
+    IEEE Workshop on Analysis and Modeling of Faces and Gestures (AMFG),
+    at the IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), Boston, June 2015
+
+If you find our models useful, please add suitable reference to our paper in your work.
+
