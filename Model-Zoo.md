@@ -166,3 +166,8 @@ The models are described in the following paper:
 
 If you find our models useful, please add suitable reference to our paper in your work.
 
+### GoogLeNet_cars on car model classification
+* [GoogLeNet_cars](https://gist.github.com/bogger/b90eb88e31cd745525ae) is the GoogLeNet model pre-trained on ImageNet classification task and fine-tuned on 431 car models in [CompCars dataset](http://mmlab.ie.cuhk.edu.hk/datasets/comp_cars/index.html). It is described in the [technical report](http://arxiv.org/abs/1506.08959). Please cite the following work if the model is useful for you.
+
+    A Large-Scale Car Dataset for Fine-Grained Categorization and Verification
+    L. Yang, P. Luo, C. C. Loy, X. Tang, arXiv:1506.08959, 2015
