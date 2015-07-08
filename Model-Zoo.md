@@ -66,7 +66,7 @@ Places CNN is described in the following [NIPS 2014 paper](http://places.csail.m
     Learning Deep Features for Scene Recognition using Places Database.
     Advances in Neural Information Processing Systems 27 (NIPS) spotlight, 2014.
 
-The project page is at [here](http://places.csail.mit.edu)
+The project page is [here](http://places.csail.mit.edu)
 
 Models:
  * [Places205-CNN](http://places.csail.mit.edu/model/placesCNN.tar.gz): CNN trained on 205 scene categories of Places Database (used in NIPS'14) with ~2.5 million images. The architecture is the same as Caffe reference network.
