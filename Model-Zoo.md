@@ -1,4 +1,3 @@
-Trained models are posted here as links to Github Gists.
 Check out the [model zoo documentation](http://caffe.berkeleyvision.org/model_zoo.html) for details.
 
 To acquire a model:
@@ -6,10 +5,12 @@ To acquire a model:
 1. download the model gist by `./scripts/download_model_from_gist.sh <gist_id> <dirname>` to load the model metadata, architecture, solver configuration, and so on. (`<dirname>` is optional and defaults to caffe/models).
 2. download the model weights by `./scripts/download_model_binary.py <model_dir>` where `<model_dir>` is the gist directory from the first step.
 
+or visit the [model zoo documentation](http://caffe.berkeleyvision.org/model_zoo.html) for complete instructions.
+
 ### Berkeley-trained models
 
  - [Finetuning on Flickr Style](https://gist.github.com/sergeyk/034c6ac3865563b69e60): same as provided in `models/`, but listed here as a Gist for an example.
- - [BVLC GoogleNet](https://gist.github.com/sguada/866e2aa1fd707b89b913)
+ - BVLC GoogleNet: `models/bvlc_googlenet`
 
 ### Network in Network model
 The Network in Network model is described in the following [ICLR-2014 paper](http://arxiv.org/abs/1312.4400):
