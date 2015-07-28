@@ -20,5 +20,7 @@ There is an unofficial Windows port of Caffe at [niuzhiheng/caffe:windows](https
 
 Another unofficial Windows port of Caffe at [redknightlois/caffe] (https://github.com/redknightlois/caffe). This port is based on work done by @initialneal. Binary packages to compile available at: https://initialneil.wordpress.com/2015/01/11/build-caffe-in-windows-with-visual-studio-2013-cuda-6-5-opencv-2-4-9/
 
+Yet another unofficial Windows port can be found at [willyd/caffe](https://github.com/willyd/caffe). Unlike the previous ports this one builds on top of the CMake build. A super-build project that downloads and builds all Caffe dependencies is also available at [willyd/caffe-builder](https://github.com/willyd/caffe-builder.git). 
+
 
 
