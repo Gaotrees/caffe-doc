@@ -141,7 +141,7 @@ This model generates compact binary codes for fast image retrieval. The details 
     CVPR 2015, DeepVision workshop
 
 please cite the paper if you use the model:
-
+ * [Demo code](https://github.com/kevinlin311tw/caffe-cvprw15): Download our demo code and pre-trained model.
  * [CIFAR10-48bit](https://gist.github.com/kevinlin311tw/266d4150a1db5810398e): Proposed CNN model with 48 nodes latent layer on CIFAR10.  The error rate of this model is 10.6% on CIFAR10. 
 
 
