@@ -20,6 +20,18 @@ such as data import, design and training of CNNs
 
 Visit the [project page](http://val.serc.iisc.ernet.in/expresso) for installation details and links to text/video tutorials.
 
+***
+
+**Deep Visualization Toolbox** is an open source software tool that lets you probe deep networks by feeding them an image (or a live webcam feed) and watching the reaction of every unit. You can also select individual units to view pre-rendered visualizations of what that neuron “wants to see most”.
+
+Visit the [deep-vis project page](http://yosinski.com/deepvis) and the @yosinski project at https://github.com/yosinski/deep-visualization-toolbox
+
+***
+
+**Caffe with Spearmint** integrates the deep learning framework with spearmint bayesian hyperparamter optimization to automate parameter search.
+
+Visit the @kuz project at https://github.com/kuz/caffe-with-spearmint
+
 ## Other Useful Components
 
 * Fast object proposal LPO by @philkr https://github.com/philkr/lpo
