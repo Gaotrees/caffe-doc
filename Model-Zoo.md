@@ -70,8 +70,9 @@ Places CNN is described in the following [NIPS 2014 paper](http://places.csail.m
 The project page is [here](http://places.csail.mit.edu)
 
 Models:
- * [Places205-CNN](http://places.csail.mit.edu/model/placesCNN.tar.gz): CNN trained on 205 scene categories of Places Database (used in NIPS'14) with ~2.5 million images. The architecture is the same as Caffe reference network.
+ * [Places205-AlexNet](http://places.csail.mit.edu/model/placesCNN.tar.gz): CNN trained on 205 scene categories of Places Database (used in NIPS'14) with ~2.5 million images. The architecture is the same as Caffe reference network.
  * [Hybrid-CNN](http://places.csail.mit.edu/model/hybridCNN.tar.gz): CNN trained on 1183 categories (205 scene categories from Places Database and 978 object categories from the train data of ILSVRC2012 (ImageNet) with ~3.6 million images. The architecture is the same as Caffe reference network.
+ * [Places205-GoogLeNet](http://places.csail.mit.edu/model/googlenet_places205.tar.gz): GoogLeNet CNN trained on 205 scene categories of Places Database. It is used by Google in the [deep dream visualization](http://googleresearch.blogspot.com/2015/06/inceptionism-going-deeper-into-neural.html) 
 
 ### GoogLeNet GPU implementation from Princeton.
 We implemented GoogLeNet using a single GPU. Our main contribution is an effective way to initialize the network and a trick to overcome the GPU memory constraint by accumulating gradients over two training iterations. 
