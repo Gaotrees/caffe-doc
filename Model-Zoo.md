@@ -175,3 +175,23 @@ If you find our models useful, please add suitable reference to our paper in you
 
     A Large-Scale Car Dataset for Fine-Grained Categorization and Verification
     L. Yang, P. Luo, C. C. Loy, X. Tang, arXiv:1506.08959, 2015
+
+### <a name="parsenet"></a>ParseNet: Looking wider to see better
+
+These models are described in the [paper](http://arxiv.org/abs/1506.04579):
+
+    ParseNet: Looking Wider to See Better
+    Wei Liu, Andrew Rabinovich, Alexander C. Berg
+    arXiv:1506.04579
+
+To be able to train/eval ParseNet, you can refer to http://github.com/weiliu89/caffe/tree/fcn.
+
+Modified VGGNet used to fine-tune ParseNet:
+
+    [fully convolutional reduced VGGNet](https://gist.github.com/weiliu89/2ed6e13bfd5b57cf81d6)
+
+Models trained on PASCAL (using extra data from [Hariharan et al.](http://www.cs.berkeley.edu/~bharath2/codes/SBD/download.html) and finetuned from the [fully convolutional reduced VGGNet](https://gist.github.com/weiliu89/2ed6e13bfd5b57cf81d6)):
+
+    [ParseNet PASCAL](https://gist.github.com/weiliu89/45e9e8de2c13af6476ca#file-readme-md)
+
+
