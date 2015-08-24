@@ -188,10 +188,10 @@ To be able to train/eval ParseNet, you can refer to http://github.com/weiliu89/c
 
 Modified VGGNet used to fine-tune ParseNet:
 
-    [fully convolutional reduced VGGNet](https://gist.github.com/weiliu89/2ed6e13bfd5b57cf81d6)
+[fully convolutional reduced VGGNet](https://gist.github.com/weiliu89/2ed6e13bfd5b57cf81d6)
 
 Models trained on PASCAL (using extra data from [Hariharan et al.](http://www.cs.berkeley.edu/~bharath2/codes/SBD/download.html) and finetuned from the [fully convolutional reduced VGGNet](https://gist.github.com/weiliu89/2ed6e13bfd5b57cf81d6)):
 
-    [ParseNet PASCAL](https://gist.github.com/weiliu89/45e9e8de2c13af6476ca#file-readme-md)
+[ParseNet PASCAL](https://gist.github.com/weiliu89/45e9e8de2c13af6476ca#file-readme-md)
 
 
