@@ -136,16 +136,16 @@ Models:
  * [AlexNet](https://gist.github.com/jimmie33/0585ed9428dc5222981f): CNN model finetuned on the Salient Object Subitizing dataset (~5500 images). The architecture is the same as the Caffe reference network.
  * [VGG16](https://gist.github.com/jimmie33/27c1c0a7736ba66c2395): CNN model finetuned on the Salient Object Subitizing dataset (~5500 images). The architecture is the same as the VGG16 network. This model gives better performance than the AlexNet model, but is slower for training and testing.
 
-### Model from the CVPR2015 DeepVision workshop paper "Deep Learning of Binary Hash Codes for Fast Image Retrieval"
-This model generates compact binary codes for fast image retrieval. The details can be found in the following "[CVPRW'15 paper](http://www.iis.sinica.edu.tw/~kevinlin311.tw/cvprw15.pdf)":
+### Deep Learning of Binary Hash Codes for Fast Image Retrieval
+We present an effective deep learning framework to create the hash-like binary codes for fast image retrieval. The details can be found in the following "[CVPRW'15 paper](http://www.iis.sinica.edu.tw/~kevinlin311.tw/cvprw15.pdf)":
 
     Deep Learning of Binary Hash Codes for Fast Image Retrieval
     K. Lin, H.-F. Yang, J.-H. Hsiao, C.-S. Chen
     CVPR 2015, DeepVision workshop
 
 please cite the paper if you use the model:
- * [Demo code](https://github.com/kevinlin311tw/caffe-cvprw15): Download our demo code and pre-trained model.
- * [CIFAR10-48bit](https://gist.github.com/kevinlin311tw/266d4150a1db5810398e): Proposed CNN model with 48 nodes latent layer on CIFAR10.  The error rate of this model is 10.6% on CIFAR10. 
+ * [caffe-cvprw15](https://github.com/kevinlin311tw/caffe-cvprw15): See our code release on Github, which allows you to train your own deep hashing model and create binary hash codes.
+ * [CIFAR10-48bit](https://gist.github.com/kevinlin311tw/266d4150a1db5810398e): Proposed 48-bits CNN model trained on CIFAR10.
 
 
 ### Places_CNDS_models on Scene Recognition
@@ -193,4 +193,3 @@ Modified VGGNet used to fine-tune ParseNet:
 Models trained on PASCAL (using extra data from [Hariharan et al.](http://www.cs.berkeley.edu/~bharath2/codes/SBD/download.html) and finetuned from the [fully convolutional reduced VGGNet](https://gist.github.com/weiliu89/2ed6e13bfd5b57cf81d6)):
 
  * [ParseNet PASCAL](https://gist.github.com/weiliu89/45e9e8de2c13af6476ca#file-readme-md)
-
