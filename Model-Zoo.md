@@ -88,7 +88,7 @@ These models are described in the [paper](http://cs.berkeley.edu/~jonlong/long_s
     CVPR 2015
     arXiv:1411.4038
 
-These are pre-release models. They do not run in any current version of BVLC/caffe, as they require unmerged PRs. They should run in the preview branch provided at https://github.com/longjon/caffe/tree/future.
+These are pre-release models. They do not run in any current version of BVLC/caffe, as they require unmerged PRs. They should run in the preview branch provided at https://github.com/longjon/caffe/tree/future. The [FCN-32s PASCAL-Context](https://gist.github.com/shelhamer/80667189b218ad570e82#file-readme-md) model is the most complete example including network definitions, solver configuration, and Python scripts for solving and inference.
 
 Models trained on PASCAL (using extra data from [Hariharan et al.](http://www.cs.berkeley.edu/~bharath2/codes/SBD/download.html) and finetuned from the ILSVRC-trained VGG-16 model above):
 * [FCN-32s PASCAL](https://gist.github.com/longjon/ac410cad48a088710872#file-readme-md): single stream, 32 pixel prediction stride version
