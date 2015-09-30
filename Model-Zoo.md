@@ -193,3 +193,16 @@ Modified VGGNet used to fine-tune ParseNet:
 Models trained on PASCAL (using extra data from [Hariharan et al.](http://www.cs.berkeley.edu/~bharath2/codes/SBD/download.html) and finetuned from the [fully convolutional reduced VGGNet](https://gist.github.com/weiliu89/2ed6e13bfd5b57cf81d6)):
 
  * [ParseNet PASCAL](https://gist.github.com/weiliu89/45e9e8de2c13af6476ca#file-readme-md)
+
+### <a name="crfasrnn"></a>Conditional Random Fields as Recurrent Neural Networks
+
+Code (with Matlab/Python API) and model are described in the ICCV 2015 [paper](http://www.robots.ox.ac.uk/~szheng/papers/CRFasRNN.pdf)
+
+    Conditional Random Fields as Recurrent Neural Networks
+    S. Zheng, S. Jayasumana, B. Romera-Paredes, V. Vineet, Z. Su, D. Du, C. Huang, P. Torr
+    ICCV 2015.
+
+Model is trained on Microsoft COCO and PASCAL (using extra data from [Hariharan et al.](http://www.cs.berkeley.edu/~bharath2/codes/SBD/download.html) 
+and finetuned from the [FCN-8s](https://gist.github.com/longjon/1bf3aa1e0b8e788d7e1d)):
+
+ * [CRF-RNN PASCAL](https://github.com/torrvision/crfasrnn)
