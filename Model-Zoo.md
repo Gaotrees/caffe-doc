@@ -209,7 +209,7 @@ and finetuned from the [FCN-8s](https://gist.github.com/longjon/1bf3aa1e0b8e788d
 
 ### <a name="hed"></a>Holistically-Nested Edge Detection
 
-These models are described in the ICCV 2015 [paper](http://arxiv.org/abs/1504.06375):
+The model and code provided are described in the ICCV 2015 [paper](http://arxiv.org/abs/1504.06375):
 
     Holistically-Nested Edge Detection
     Saining Xie and Zhuowen Tu
@@ -217,6 +217,6 @@ These models are described in the ICCV 2015 [paper](http://arxiv.org/abs/1504.06
 
 For details about training/evaluating HED, please take a look at http://github.com/s9xie/hed.
 
-Models trained on BSDS-500 Dataset (finetuned from the trimmed-VGGNet):
+Model trained on BSDS-500 Dataset (finetuned from the VGGNet):
 
  * [HED BSDS-500](https://gist.github.com/s9xie/c6bd432f7347548b0187)
