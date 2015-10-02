@@ -206,3 +206,17 @@ Model is trained on Microsoft COCO and PASCAL (using extra data from [Hariharan 
 and finetuned from the [FCN-8s](https://gist.github.com/longjon/1bf3aa1e0b8e788d7e1d)):
 
  * [CRF-RNN PASCAL](https://github.com/torrvision/crfasrnn)
+
+### <a name="hed"></a>Holistically-Nested Edge Detection
+
+These models are described in the ICCV 2015 [paper](http://arxiv.org/abs/1504.06375):
+
+    Holistically-Nested Edge Detection
+    Saining Xie and Zhuowen Tu
+    ICCV 2015
+
+For details about training/evaluating HED, please take a look at http://github.com/s9xie/hed.
+
+Models trained on BSDS-500 Dataset (finetuned from the trimmed-VGGNet):
+
+ * [HED BSDS-500](https://gist.github.com/s9xie/c6bd432f7347548b0187)
