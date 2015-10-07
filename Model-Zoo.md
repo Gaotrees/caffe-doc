@@ -220,3 +220,22 @@ For details about training/evaluating HED, please take a look at http://github.c
 Model trained on BSDS-500 Dataset (finetuned from the VGGNet):
 
  * [HED BSDS-500](https://gist.github.com/s9xie/c6bd432f7347548b0187)
+
+###Translating Videos to Natural Language 
+
+These models are described in [this NAACL-HLT 2015 paper](http://www.cs.utexas.edu/users/ml/papers/venugopalan.naacl15.pdf).  
+
+    Translating Videos to Natural Language Using Deep Recurrent Neural Networks 
+    S. Venugopalan, H. Xu, J. Donahue, M. Rohrbach, R. Mooney, K. Saenko   
+    NAACL-HLT 2015
+                                                                           
+More details can be found on [this project 
+page](https://www.cs.utexas.edu/~vsub/naacl15_project.html).               
+
+Model:                                                                     
+[VGG_mean_pool](https://gist.github.com/vsubhashini/3761b9ad43f60db9ac3d): 
+This model is an improved version of the mean pooled model described in the NAACL-HLT 2015 paper. It uses video frame features from the
+[VGG-16](https://gist.github.com/ksimonyan/211839e770f7b538e2d8#file-readme-md) layer model. This is trained only on the Youtube video dataset.       
+                                                                           
+Compatibility:
+These are pre-release models. They do not run in any current version of BVLC/caffe, as they require unmerged PRs. The models are currently supported  by the `recurrent` branch of the Caffe fork provided at https://github.com/jeffdonahue/caffe/tree/recurrent and https://github.com/vsubhashini/caffe/tree/recurrent.
