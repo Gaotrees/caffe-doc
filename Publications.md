@@ -69,9 +69,9 @@ arXiv 2014
 Jason Yosinski, Jeff Clune, Yoshua Bengio, Hod Lipson  
 NIPS 2014 (see also [arXiv](http://arxiv.org/abs/1411.1792) preprint)
 
-[C3D: Generic Features for Video Analysis](http://arxiv.org/abs/1412.0767)  
+[ Learning Spatiotemporal Features with 3D Convolutional Networks](http://arxiv.org/abs/1412.0767)  
 D. Tran, L. Bourdev, R. Fergus, L. Torresani, M. Paluri  
-arXiv 2014  
+ICCV 2015  
 
 [Age and Gender Classification using Convolutional Neural Networks](http://www.openu.ac.il/home/hassner/projects/cnn_agegender/)  
 Gil Levi, Tal Hassner    
