@@ -233,7 +233,7 @@ More details can be found on [this project
 page](https://www.cs.utexas.edu/~vsub/naacl15_project.html).               
 
 Model:                                                                     
-[VGG_mean_pool](https://gist.github.com/vsubhashini/3761b9ad43f60db9ac3d): 
+[Video2Text_VGG_mean_pool](https://gist.github.com/vsubhashini/3761b9ad43f60db9ac3d): 
 This model is an improved version of the mean pooled model described in the NAACL-HLT 2015 paper. It uses video frame features from the
 [VGG-16](https://gist.github.com/ksimonyan/211839e770f7b538e2d8#file-readme-md) layer model. This is trained only on the Youtube video dataset.       
                                                                            
