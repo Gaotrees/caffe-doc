@@ -239,3 +239,22 @@ This model is an improved version of the mean pooled model described in the NAAC
                                                                            
 Compatibility:
 These are pre-release models. They do not run in any current version of BVLC/caffe, as they require unmerged PRs. The models are currently supported  by the `recurrent` branch of the Caffe fork provided at https://github.com/jeffdonahue/caffe/tree/recurrent and https://github.com/vsubhashini/caffe/tree/recurrent.
+
+
+###VGG Face CNN descriptor
+
+These models are described in this [BMVC 2015 paper] (http://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/parkhi15.pdf).  
+
+    Deep Face Recognition 
+    Omkar M. Parkhi, Andrea Vedaldi, Andrew Zisserman    
+    BMVC 2015
+                                                                           
+More details can be found on [this project 
+page](http://www.robots.ox.ac.uk/~vgg/software/vgg_face/).
+
+Model:
+[VGG Face](http://www.robots.ox.ac.uk/~vgg/software/vgg_face/src/vgg_face_caffe.tar.gz):
+This is the very deep architecture based model trained from scratch using 2.6 Million images
+of celebrities collected from the web. The model has been imported to work with Caffe from the 
+original model trained using MatConvNet library.  
+
