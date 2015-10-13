@@ -248,7 +248,8 @@ These models are described in this [BMVC 2015 paper] (http://www.robots.ox.ac.uk
     Deep Face Recognition 
     Omkar M. Parkhi, Andrea Vedaldi, Andrew Zisserman    
     BMVC 2015
-                                                                           
+
+                                                                     
 More details can be found on [this project 
 page](http://www.robots.ox.ac.uk/~vgg/software/vgg_face/).
 
@@ -258,3 +259,4 @@ This is the very deep architecture based model trained from scratch using 2.6 Mi
 of celebrities collected from the web. The model has been imported to work with Caffe from the 
 original model trained using MatConvNet library.  
 
+If you find our models useful, please add suitable reference to our paper in your work.
