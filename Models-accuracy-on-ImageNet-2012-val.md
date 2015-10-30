@@ -1,5 +1,5 @@
 Simple comparison of [Model Zoo models](https://github.com/BVLC/caffe/wiki/Model-Zoo). 
-Single center crop, mean value = [104 117 123].
+Single center crop from 256x256 warped image, mean value = [104 117 123].
 
 |Name|Top-1|Top5 | 
 |---|---|---|
