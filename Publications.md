@@ -86,4 +86,10 @@ CVPR 2015, DeepVision workshop
 K. R. Mopuri, R. Venkatesh Babu    
 CVPR 2015, DeepVision workshop 
 
+
+[Emotion Recognition in the Wild via Convolutional Neural Networks and Mapped Binary Patterns](http://www.openu.ac.il/home/hassner/projects/cnn_emotions/LeviHassner(ICMI15).pdf)  
+Gil Levi, Tal Hassner    
+ICMI 2015
+
+
 **Add your own!**
