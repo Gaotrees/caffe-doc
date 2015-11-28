@@ -260,3 +260,9 @@ of celebrities collected from the web. The model has been imported to work with 
 original model trained using MatConvNet library.  
 
 If you find our models useful, please add suitable reference to our paper in your work.
+
+###Yearbook Photo Dating
+Model from the paper "A Century of Portraits: Exploring the Visual Historical Record of American High School Yearbooks," accepted at ICCV 2015 Extreme Imaging Workshop. 
+
+[Yearbook](https://gist.github.com/katerakelly/842f948d568d7f1f0044)
+
