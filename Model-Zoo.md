@@ -268,5 +268,5 @@ Model from the [ICCV 2015 Extreme Imaging Workshop paper](http://arxiv.org/abs/1
     Shiry Ginosar, Kate Rakelly, Brian Yin, Sarah Sachs, Alyosha Efros
     ICCV Workshop 2015
 
-[Yearbook](https://gist.github.com/katerakelly/842f948d568d7f1f0044)
+Model and prototxt files: [Yearbook](https://gist.github.com/katerakelly/842f948d568d7f1f0044)
 
