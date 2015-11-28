@@ -262,7 +262,11 @@ original model trained using MatConvNet library.
 If you find our models useful, please add suitable reference to our paper in your work.
 
 ###Yearbook Photo Dating
-Model from the paper "A Century of Portraits: Exploring the Visual Historical Record of American High School Yearbooks," accepted at ICCV 2015 Extreme Imaging Workshop. 
+Model from the [ICCV 2015 Extreme Imaging Workshop paper](http://arxiv.org/abs/1511.02575):
+
+    A Century of Portraits: Exploring the Visual Historical Record of American High School Yearbooks 
+    Shiry Ginosar, Kate Rakelly, Brian Yin, Sarah Sachs, Alyosha Efros
+    ICCV Workshop 2015
 
 [Yearbook](https://gist.github.com/katerakelly/842f948d568d7f1f0044)
 
