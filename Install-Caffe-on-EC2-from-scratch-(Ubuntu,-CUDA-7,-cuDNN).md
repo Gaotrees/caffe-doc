@@ -104,11 +104,14 @@ Remember to run `source ~/.bashrc` after saving `.bashrc`
 
 #### Installing cuDNN
 After registering with NVIDA, download cuDNN. Extract the tar and copy the headers and libraries to the CUDA directory.
+
+**Update**: Caffe now requires cuDNN v3. Get it [here](https://developer.nvidia.com/cudnn).
+
 ```Shell
-tar -zxf cudnn-6.5-linux-x64-v2.tgz
-cd cudnn-6.5-linux-x64-v2
-sudo cp lib* /usr/local/cuda/lib64/
-sudo cp cudnn.h /usr/local/cuda/include/
+tar -zxf cudnn-7.0-linux-x64-v3.0-prod.tgz
+cd cuda
+sudo cp lib64/* /usr/local/cuda/lib64/
+sudo cp include/cudnn.h /usr/local/cuda/include/
 ```
 
 #### Installing Caffe
