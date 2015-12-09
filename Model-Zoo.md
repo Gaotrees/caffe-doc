@@ -270,3 +270,14 @@ Model from the [ICCV 2015 Extreme Imaging Workshop paper](http://arxiv.org/abs/1
 
 Model and prototxt files: [Yearbook](https://gist.github.com/katerakelly/842f948d568d7f1f0044)
 
+### <a name="ccnn"></a>CCNN: Constrained Convolutional Neural Networks for Weakly Supervised Segmentation
+
+These models are described in the [ICCV 2015 paper](http://arxiv.org/abs/1506.03648).
+
+    Constrained Convolutional Neural Networks for Weakly Supervised Segmentation
+    Deepak Pathak, Philipp Krähenbühl, Trevor Darrell
+    ICCV 2015
+    arXiv:1506.03648
+
+These are pre-release models. They do not run in any current version of BVLC/caffe, as they require unmerged PRs.
+Full details, source code, models, prototxts are available here: [CCNN](https://github.com/pathak22/ccnn).
