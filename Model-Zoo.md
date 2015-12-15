@@ -166,7 +166,8 @@ The details of training this model are described in the following [report](http:
 
 The models are described in the following paper:
 
-    Gil Levi and Tal Hassner, Age and Gender Classification using Convolutional Neural Networks,
+    Age and Gender Classification using Convolutional Neural Networks
+    Gil Levi and Tal Hassner
     IEEE Workshop on Analysis and Modeling of Faces and Gestures (AMFG),
     at the IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), Boston, June 2015
 
@@ -283,3 +284,15 @@ These models are described in the [ICCV 2015 paper](http://arxiv.org/abs/1506.03
 
 These are pre-release models. They do not run in any current version of BVLC/caffe, as they require unmerged PRs.
 Full details, source code, models, prototxts are available here: [CCNN](https://github.com/pathak22/ccnn).
+
+### Emotion Recognition in the Wild via Convolutional Neural Networks and Mapped Binary Patterns
+
+We provide [models](https://gist.github.com/GilLevi/54aee1b8b0397721aa4b) for facial emotion classification for different image representation obtained using mapped binary patterns. See the [Project page](http://www.openu.ac.il/home/hassner/projects/cnn_emotions/) for more details. 
+
+The models are described in the following paper:
+
+    Emotion Recognition in the Wild via Convolutional Neural Networks and Mapped Binary Patterns
+    Gil Levi and Tal Hassner
+    Proc. ACM International Conference on Multimodal Interaction (ICMI), Seattle, Nov. 2015
+
+If you find our models useful, please add suitable reference to our paper in your work.
