@@ -100,7 +100,7 @@ Finally, update your path variables. Open your `~/.bashrc` file and ad the follo
 export PATH=$PATH:/usr/local/cuda-7.0/bin
 export LD_LIBRARY_PATH=:/usr/local/cuda-7.0/lib64
 ```
-Remember to run `source ~/.bashrc` after saving `.bashrc`
+Remember to run `source ~/.bashrc` after saving `.bashrc` and run ldconfig as root (`$ sudo ldconfig`)
 
 #### Installing cuDNN
 After registering with NVIDA, download cuDNN. Extract the tar and copy the headers and libraries to the CUDA directory.
