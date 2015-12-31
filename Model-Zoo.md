@@ -296,3 +296,12 @@ The models are described in the following paper:
     Proc. ACM International Conference on Multimodal Interaction (ICMI), Seattle, Nov. 2015
 
 If you find our models useful, please add suitable reference to our paper in your work.
+
+### Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks
+
+Download pre-computed Faster R-CNN detectors
+cd $FRCN_ROOT  
+./data/scripts/fetch_faster_rcnn_models.sh
+This will populate the $FRCN_ROOT/data folder with faster_rcnn_models. See data/README.md for details. These models were trained on VOC 2007 trainval.
+
+ref  https://github.com/rbgirshick/py-faster-rcnn/blob/master/data/scripts/fetch_faster_rcnn_models.sh
