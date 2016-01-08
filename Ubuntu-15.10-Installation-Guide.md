@@ -18,7 +18,7 @@ and open it for editing (with a text editor).
 The following example uses CPU only for the computations. Change it accordingly if you have an NVIDIA graphics card with the proprietary driver, CUDA toolkit and CUDNN installed on a real, physical machine. 
 
 
-''###################################################################'
+'###################################################################'
 '## Refer to http://caffe.berkeleyvision.org/installation.html'
 '# Contributions simplifying and improving our build system are welcome!'
 ''
