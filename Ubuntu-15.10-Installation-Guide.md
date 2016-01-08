@@ -32,6 +32,7 @@ https://stackoverflow.com/questions/30500977/fails-to-build-caffe-on-ubuntu-15-0
 The commands are:
 
 find . -type f -exec sed -i -e 's^"hdf5.h"^"hdf5/serial/hdf5.h"^g' -e 's^"hdf5_hl.h"^"hdf5/serial/hdf5_hl.h"^g' '{}' \;
+
 cd /usr/lib/x86_64-linux-gnu
 sudo ln -s libhdf5_serial.so.8.0.2 libhdf5.so
 sudo ln -s libhdf5_serial_hl.so.8.0.2 libhdf5_hl.so
