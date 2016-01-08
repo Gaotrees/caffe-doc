@@ -15,7 +15,7 @@ Copy the Makefile.config.example to Makefile.config like this:
 cp Makefile.config.example Makefile.config
 and open it for editing (with a text editor).
 
-The following configuration example uses CPU only for the computations. Change it accordingly if you have an NVIDIA graphics card with the proprietary driver, CUDA toolkit and CUDNN installed on a real, physical machine. (Unable to display the entire file.) It should contain the following lines.
+The following configuration example uses CPU only for the computations. Change it accordingly if you have an NVIDIA graphics card with the proprietary driver, CUDA toolkit and CUDNN installed on a real, physical machine. It should contain the following lines.
 
 
 PYTHON_INCLUDE := /usr/include/python2.7 /usr/lib/python2.7/dist-packages/numpy/core/include
