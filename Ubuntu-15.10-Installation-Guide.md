@@ -80,7 +80,7 @@ make distribute
 
 ----------------------------------------------------------------------------------------------------
 
-### # ****The GPU support prerequisites
+### The GPU support prerequisites
 
 
 In Ubuntu 15.10, enable the use of proprietary drivers in the Software & Updates Center for your desktop and install the NVIDIA graphics driver first from the main Ubuntu package repository.
