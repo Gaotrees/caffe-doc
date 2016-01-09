@@ -15,7 +15,7 @@ sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
 sudo apt-get install python-dev
 
 
-Go to the https://github.com/BVLC/caffee and download zip archive. Unpack it to ~/bin/ or any other location. Enter the directory in the terminal window.
+Go to the https://github.com/BVLC/caffe and download zip archive. Unpack it to ~/bin/ or any other location. Enter the directory in the terminal window.
 
 Copy the Makefile.config.example to Makefile.config like this:
 
