@@ -23,7 +23,7 @@ cp Makefile.config.example Makefile.config
 
 and open it for editing (with a text editor).
 
-The following configuration example uses CPU only for the computations. Change it accordingly if you have an NVIDIA graphics card with the proprietary driver, CUDA toolkit and CUDNN installed on a real, physical machine. It should contain the following lines.
+The following configuration example uses CPU only for the computations. Change it accordingly if you have an NVIDIA graphics card with the proprietary driver, CUDA toolkit and CUDNN installed on a real, physical machine. It should contain the following lines, so find them and fill them in.
 
 
 PYTHON_INCLUDE := /usr/include/python2.7 /usr/lib/python2.7/dist-packages/numpy/core/include
@@ -75,12 +75,12 @@ make distribute
 
 
 
-* Models download not covered in these instructions. *
+* Models download not covered in these instructions. See https://github.com/BVLC/caffe/wiki/Model-Zoo *
 
 
 ----------------------------------------------------------------------------------------------------
 
-****The GPU support prerequisites
+### # ****The GPU support prerequisites
 
 
 In Ubuntu 15.10, enable the use of proprietary drivers in the Software & Updates Center for your desktop and install the NVIDIA graphics driver first from the main Ubuntu package repository.
