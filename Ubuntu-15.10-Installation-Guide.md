@@ -103,7 +103,7 @@ Download and unpack as root user CUDNN from https://developer.nvidia.com/cudnn.
 
 Put all CUDNN files manually in the path where the CUDA toolkit is, each file in its own respective directory.
 
-Edit the Makefile.config in Caffe directory accordingly and recompile the Caffe. 
+Edit the Makefile.config in Caffe directory accordingly (as described in the config file itself) and recompile the Caffe. 
 
 
 ----------------------------------------------------------------------------------------
