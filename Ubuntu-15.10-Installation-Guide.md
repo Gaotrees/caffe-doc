@@ -58,6 +58,21 @@ cd python
 
 for req in $(cat requirements.txt); do pip install $req; done
 
+--------------------------------------------------------------------------------------------------------------
+
+NOTE: if the system was updated, perhaps the Python layer needs to be updated, because the Python module no longer works.
+
+cd python
+
+for req in $(cat requirements.txt); do pip install $req; done
+
+In case of any problems, try:
+
+for req in $(cat requirements.txt); do sudo -H pip install $req --upgrade; done
+
+
+--------------------------------------------------------------------------------------------------------------
+
 
 Next, execute:
 
