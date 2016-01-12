@@ -1,4 +1,4 @@
-Download OpenCV from http://opencv.org/downloads.html and unpack. Enter the unpacked directory.
+Download OpenCV from http://opencv.org/downloads.html and unpack. Enter the unpacked directory. Execute:
 
 
 sudo apt-get -y install libopencv-dev build-essential cmake git libgtk2.0-dev pkg-config python-dev python-numpy libdc1394-22 libdc1394-22-dev libjpeg-dev libpng12-dev libtiff5-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libxine2-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev libtbb-dev libqt4-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils unzip
@@ -28,6 +28,7 @@ Caffe can be compiled with the OpenCV version 3.1, but this version needs to be 
 
 Recompile...
 
+See https://github.com/BVLC/caffe/wiki/Ubuntu-15.10-Installation-Guide
 
 --------------------------------------------------------------------------------------------------------------
 NOTE: if the system was updated, perhaps the Python layer needs to be updated, because the Python module no longer works.
