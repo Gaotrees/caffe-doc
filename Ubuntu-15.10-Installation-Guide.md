@@ -60,9 +60,8 @@ for req in $(cat requirements.txt); do pip install $req; done
 
 --------------------------------------------------------------------------------------------------------------
 
-NOTE: if the system was updated, perhaps the Python layer needs to be updated, because the Python module no longer works.
+NOTE: If the operating system was updated, perhaps the Python layer needs to be updated and recompiled, because the Python module no longer works. Perform this step again in that case.
 
-cd python
 
 for req in $(cat requirements.txt); do pip install $req; done
 
