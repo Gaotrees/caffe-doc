@@ -43,6 +43,8 @@ Return to the Caffe directory and perform a cleanup operation with the command
 
 make clean
 
+(Read more here: https://github.com/BVLC/caffe/wiki/Ubuntu-15.10-Installation-Guide)
+
 Recompile the entire Caffe project, but first edit the Makefile.config to include the OpenCV library like this...
 
 LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu/hdf5/serial /usr/local/share/OpenCV/3rdparty/lib/
