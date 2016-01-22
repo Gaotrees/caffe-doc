@@ -12,6 +12,8 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB
 
 make
 
+READ THE ALTERNATIVE WAY TO INSTALL BELOW and decide which one you like best.
+
 sudo make install
 
 sudo /bin/bash -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
@@ -23,7 +25,9 @@ sudo apt-get update
 reboot the system.
 
 
-Alternatively, 
+ALTERNATIVE WAY TO INSTALL
+
+While you are in the build directory, execute these commands:
 
 sudo apt-get checkinstall
 
@@ -31,7 +35,7 @@ and then instead of "sudo make install" perform the following general command:
 
 sudo checkinstall
 
-while you are in the build directory. 
+
 
 This will create the OpenCV package that has a modern install/uninstall option.
 
