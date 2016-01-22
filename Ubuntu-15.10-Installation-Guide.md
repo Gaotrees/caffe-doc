@@ -150,6 +150,6 @@ You can check your Ubuntu environment variables after the reboot, by executing t
 
 export
 
-Edit the Makefile.config in Caffe directory accordingly (as described in the config file itself) and recompile the Caffe to support the GPU computation. 
+Edit the Makefile.config in Caffe directory accordingly (as described in the config file itself) and recompile the Caffe to support the GPU computation. To recompile, first execute "make clean".
 
 ----------------------------------------------------------------------------------------
