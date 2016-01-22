@@ -1,5 +1,7 @@
 The following guide includes the how-to instructions for the installation of BVLC/Caffe in Ubuntu 15.10 Linux. This also includes the KUbuntu 15.10 and the related distributions.
 
+Execute these commands first:
+
 sudo apt-get update
 
 sudo apt-get upgrade
@@ -14,21 +16,37 @@ sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
 
 sudo apt-get install python-dev
 
+For the instructions on how to use the OpenCV version 3.1, please see https://github.com/BVLC/caffe/wiki/Ubuntu-15.10-OpenCV-3.1-Installation-Guide
 
-Go to the https://github.com/BVLC/caffe and download zip archive. Unpack it to ~/bin/ or any other location. Enter the directory in the terminal window.
+The configuration settings will differ for OpenCV 3.1 as you can see above, but here we continue with the basic settings that imply the version 2.x.
+
+Go to the https://github.com/BVLC/caffe and download zip archive. Unpack it to ~/bin/ or any other location. Enter the caffe-master directory in the terminal window.
 
 Copy the Makefile.config.example to Makefile.config like this:
 
 cp Makefile.config.example Makefile.config
 
-and open it for editing (with a text editor).
+and open it for editing (with a text editor). I use the kate editor for this purpose, so the command that I execute goes as follows. You first need to install the kate editor with:
 
-The following configuration example uses CPU only for the computations. Change it accordingly if you have an NVIDIA graphics card with the proprietary driver, CUDA toolkit and CUDNN installed on a real, physical machine. The Makefile.config should contain the following lines, so find them and fill them in.
+sudo apt-get install kate
+
+and then you can edit the configuration file with:
+
+kate ./Makefile.config &
+
+The following line in the configuration file tells the program to use CPU only for the computations. 
+
+CPU_ONLY := 1
+
+This is the typical setting for a computer without any NVIDIA graphics card and it is typical for the installation of Caffe inside the typical virtual machine. (Notice that there is a special type of virtual machine inside the Ubuntu host machine that can access the physical NVIDIA graphics card directly. See https://github.com/NVIDIA/nvidia-docker)
+
+Change the line accordingly by commenting it out (# CPU_ONLY := 1) if you have an NVIDIA graphics card with the proprietary driver, CUDA toolkit and CUDNN installed. The Makefile.config should contain the following lines, so find them and fill them in.
 
 PYTHON_INCLUDE := /usr/include/python2.7 /usr/lib/python2.7/dist-packages/numpy/core/include  
 
-(Note: another user noticed that you may need to add /home/ubuntu/.local/lib/python2.7/site-packages/numpy/core/include)
-(For ways to protect and isolate a Python environment, explore the topic of virtual environments here: http://docs.python-guide.org/en/latest/dev/virtualenvs/)
+(Note: another user noticed that some may need to add /home/ubuntu/.local/lib/python2.7/site-packages/numpy/core/include)
+
+(For ways to create an isolated Python environment, explore the topic of virtual environments here: http://docs.python-guide.org/en/latest/dev/virtualenvs/)
 
 WITH_PYTHON_LAYER := 1
 
@@ -37,13 +55,9 @@ INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include /usr/include/h
 LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu/hdf5/serial
 
 
-
 Now lets continue with the Ubuntu 15.10 instructions.
 
-Execute the additional commands discussed here:
-https://stackoverflow.com/questions/30500977/fails-to-build-caffe-on-ubuntu-15-04
-
-The commands are:
+Execute the additional commands:
 
 find . -type f -exec sed -i -e 's^"hdf5.h"^"hdf5/serial/hdf5.h"^g' -e 's^"hdf5_hl.h"^"hdf5/serial/hdf5_hl.h"^g' '{}' \;
 
@@ -54,15 +68,17 @@ sudo ln -s libhdf5_serial.so.8.0.2 libhdf5.so
 sudo ln -s libhdf5_serial_hl.so.8.0.2 libhdf5_hl.so
 
 
-Now lets return to the unpacked Caffe directory and enter these commands:
+Now lets return to the unpacked Caffe directory caffe-master and enter these commands:
 
 cd python
 
 for req in $(cat requirements.txt); do pip install $req; done
 
+
 --------------------------------------------------------------------------------------------------------------
 
-NOTE: If the operating system was updated, perhaps the Python layer needs to be updated and recompiled, because the Python module no longer works. Perform this step again in that case.
+
+NOTE: If the Ubuntu operating system was updated, perhaps the Python layer needs to be updated and recompiled, because the Python module no longer works. Perform this step again in that case.
 
 
 for req in $(cat requirements.txt); do pip install $req; done
@@ -79,6 +95,8 @@ Next, execute:
 
 cd ..
 
+(now you are in caffe-master directory)
+
 make all
 
 make test
@@ -94,18 +112,27 @@ make distribute
 * Models download not covered in these instructions. See https://github.com/BVLC/caffe/wiki/Model-Zoo *
 
 
+For most Linux programs compiled from source, you can attempt to build a package that can be installed and uninstalled with a single click.
+
+sudo apt-get install checkinstall
+
+Now, when you execute the:
+
+sudo checkinstall
+
+and fill out a form with some easy questions, you will have the package made automatically. However, this uses the command "make install" in the background, which will fail, because the Caffe project does not have the target "install" configured in the Makefile.
+
 ----------------------------------------------------------------------------------------------------
 
 ### The GPU support prerequisites
 
 
-In Ubuntu 15.10, enable the use of proprietary drivers in the Software & Updates Center for your desktop and install the NVIDIA graphics driver first from the main Ubuntu package repository.
-https://help.ubuntu.com/community/BinaryDriverHowto/Nvidia
+In Ubuntu 15.10, enable the use of proprietary drivers in the Software & Updates Center for your desktop and install the NVIDIA graphics driver first from the main Ubuntu package repository. See https://help.ubuntu.com/community/BinaryDriverHowto/Nvidia
 
 Download the CUDA toolkit network installer and the CUDNN package from the NVIDIA site, after registering and filling out the forms.
 https://developer.nvidia.com/cuda-downloads
 
-Install the toolkit 7.5 version manually in the terminal as instructed
+Install the cuda toolkit 7.5 version manually in the terminal as instructed
 at the website.
 
 sudo dpkg -i cuda-repo-ubuntu1504_7.5-18_amd64.deb
@@ -117,9 +144,12 @@ sudo apt-get install cuda
 
 Download and unpack as root user CUDNN from https://developer.nvidia.com/cudnn.
 
-Put all CUDNN files manually in the path where the CUDA toolkit is, each file in its own respective directory.
+Put all CUDNN files manually starting with the search path directory where the CUDA toolkit is, each file in its own respective directory. That directory could be /usr/local/cuda.
 
-Edit the Makefile.config in Caffe directory accordingly (as described in the config file itself) and recompile the Caffe. 
+You can check your Ubuntu environment variables after the reboot, by executing the command:
 
+export
+
+Edit the Makefile.config in Caffe directory accordingly (as described in the config file itself) and recompile the Caffe to support the GPU computation. 
 
 ----------------------------------------------------------------------------------------
