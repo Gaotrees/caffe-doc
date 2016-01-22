@@ -26,7 +26,7 @@ and open it for editing (with a text editor).
 The following configuration example uses CPU only for the computations. Change it accordingly if you have an NVIDIA graphics card with the proprietary driver, CUDA toolkit and CUDNN installed on a real, physical machine. It should contain the following lines, so find them and fill them in.
 
 
-PYTHON_INCLUDE := /usr/include/python2.7 /usr/lib/python2.7/dist-packages/numpy/core/include
+PYTHON_INCLUDE := /usr/include/python2.7 /usr/lib/python2.7/dist-packages/numpy/core/include  (maybe need add  		/home/ubuntu/.local/lib/python2.7/site-packages/numpy/core/include/)
 
 WITH_PYTHON_LAYER := 1
 
