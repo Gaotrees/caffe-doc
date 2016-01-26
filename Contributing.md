@@ -33,7 +33,7 @@ To this:
 
 ### 3. Run Checks.
 
-There are two kinds of checks, the first ones are unit tests and the second one ins a code formatting test. They are run by:
+There are two kinds of checks, the first ones are unit tests and the second one is a code formatting test. They are run by:
 
     cd build
     make runtest
