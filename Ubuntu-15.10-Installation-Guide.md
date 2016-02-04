@@ -2,6 +2,8 @@ The following guide includes the how-to instructions for the installation of BVL
 
 Execute these commands first:
 
+```shell
+
 sudo apt-get update
 
 sudo apt-get upgrade
@@ -15,6 +17,8 @@ sudo apt-get install --no-install-recommends libboost-all-dev
 sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
 
 sudo apt-get install python-dev
+
+```
 
 For the instructions on how to use the OpenCV version 3.1, please see https://github.com/BVLC/caffe/wiki/Ubuntu-15.10-OpenCV-3.1-Installation-Guide
 
