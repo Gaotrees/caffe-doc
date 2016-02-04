@@ -322,3 +322,19 @@ This is the S2VT (RGB) model described in the ICCV 2015 paper. It uses video fra
 
 Compatibility:                                                                                                                                                                                  
 These are pre-release models. They do not run in any current version of BVLC/caffe, as they require unmerged PRs. The models are currently supported  by the `recurrent` branch of the Caffe    fork provided at https://github.com/jeffdonahue/caffe/tree/recurrent and https://github.com/vsubhashini/caffe/tree/recurrent.
+
+
+### ResNets: Deep Residual Networks from MSRA at ImageNet and COCO 2015
+
+This repository contains the original models (ResNet-50, ResNet-101, and ResNet-152) described in the paper "Deep Residual Learning for Image Recognition" (http://arxiv.org/abs/1512.03385). These models are those used in [ILSVRC] (http://image-net.org/challenges/LSVRC/2015/) and [COCO](http://mscoco.org/dataset/#detections-challenge2015) 2015 competitions, which won the 1st places in: ImageNet classification, ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation.
+
+More instructions with prototxt and binary weight files are in: https://github.com/KaimingHe/deep-residual-networks
+
+Reference:
+
+	@article{He2015,
+		author = {Kaiming He and Xiangyu Zhang and Shaoqing Ren and Jian Sun},
+		title = {Deep Residual Learning for Image Recognition},
+		journal = {arXiv preprint arXiv:1512.03385},
+		year = {2015}
+	}
