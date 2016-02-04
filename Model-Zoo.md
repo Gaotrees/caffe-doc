@@ -305,3 +305,19 @@ cd $FRCN_ROOT
 This will populate the $FRCN_ROOT/data folder with faster_rcnn_models. See data/README.md for details. These models were trained on VOC 2007 trainval.
 
 ref  https://github.com/rbgirshick/py-faster-rcnn/blob/master/data/scripts/fetch_faster_rcnn_models.sh
+
+###Sequence to Sequence - Video to Text                                                                                                                                                         
+                                                                                                                                                                                                
+These models are described in [this ICCV 2015 paper](http://www.cs.utexas.edu/users/ml/papers/venugopalan.iccv15.pdf).                                                                          
+                                                                                                                                                                                                
+    Sequence to Sequence - Video to Text                                                                                                                                                        
+    S. Venugopalan, M. Rohrbach, J. Donahue, T. Darrell, R. Mooney, K. Saenko                                                                                                                   
+    The IEEE International Conference on Computer Vision (ICCV) 2015                                                                                                                            
+                                                                                                                                                                                                
+More details can be found on [this project                                                                                                                                                      
+page](https://vsubhashini.github.io/s2vt.html).                                                                                                                                                 
+                                                                                                                                                                                                
+Model:                                                                                                                                                                                          
+[S2VT_VGG_RGB](https://gist.github.com/vsubhashini/38d087e140854fee4b14):                                                                                                                       
+This is the S2VT (RGB) model described in the ICCV 2015 paper. It uses video frame features from the                                                                                            [VGG-16](https://gist.github.com/ksimonyan/211839e770f7b538e2d8#file-readme-md) layer model. This is trained only on the Youtube video dataset.                                                                                                                                                                                                                                                 Compatibility:                                                                                                                                                                                  
+These are pre-release models. They do not run in any current version of BVLC/caffe, as they require unmerged PRs. The models are currently supported  by the `recurrent` branch of the Caffe    fork provided at https://github.com/jeffdonahue/caffe/tree/recurrent and https://github.com/vsubhashini/caffe/tree/recurrent.
