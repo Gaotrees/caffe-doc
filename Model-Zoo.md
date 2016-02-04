@@ -310,12 +310,12 @@ ref  https://github.com/rbgirshick/py-faster-rcnn/blob/master/data/scripts/fetch
                                                                                                                                                                                                 
 These models are described in [this ICCV 2015 paper](http://www.cs.utexas.edu/users/ml/papers/venugopalan.iccv15.pdf).                                                                          
                                                                                                                                                                                                 
-    Sequence to Sequence - Video to Text                                                                                                                                                        
-    S. Venugopalan, M. Rohrbach, J. Donahue, T. Darrell, R. Mooney, K. Saenko                                                                                                                   
-    The IEEE International Conference on Computer Vision (ICCV) 2015                                                                                                                            
+    Sequence to Sequence - Video to Text
+    S. Venugopalan, M. Rohrbach, J. Donahue, T. Darrell, R. Mooney, K. Saenko
+    The IEEE International Conference on Computer Vision (ICCV) 2015
                                                                                                                                                                                                 
 More details can be found on [this project page](https://vsubhashini.github.io/s2vt.html).
-                                                                                                                                             
+                                                                                                                               
 Model:                                                                                                                                                                                          
 [S2VT_VGG_RGB](https://gist.github.com/vsubhashini/38d087e140854fee4b14):                                                                                                                       
 This is the S2VT (RGB) model described in the ICCV 2015 paper. It uses video frame features from the                                                                                            [VGG-16](https://gist.github.com/ksimonyan/211839e770f7b538e2d8#file-readme-md) layer model. This is trained only on the Youtube video dataset.
