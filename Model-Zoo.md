@@ -197,6 +197,17 @@ Models trained on PASCAL (using extra data from [Hariharan et al.](http://www.cs
 
  * [ParseNet PASCAL](https://gist.github.com/weiliu89/45e9e8de2c13af6476ca#file-readme-md)
 
+### <a name="segnet"></a>SegNet and Bayesian SegNet
+
+SegNet is a real-time semantic segmentation architecture for scene understanding. Code and trained models for [SegNet](http://arxiv.org/abs/1511.00561) and [Bayesian SegNet](http://arxiv.org/abs/1511.02680) are available.
+
+    SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation
+    Vijay Badrinarayanan, Alex Kendall and Roberto Cipolla
+    arXiv preprint arXiv:1511.00561, 2015.
+
+ * [Code](https://github.com/alexgkendall/caffe-segnet)
+ * [Tutorial](http://mi.eng.cam.ac.uk/projects/segnet/)
+
 ### <a name="crfasrnn"></a>Conditional Random Fields as Recurrent Neural Networks
 
 Code (with Matlab/Python API) and model are described in the ICCV 2015 [paper](http://www.robots.ox.ac.uk/~szheng/papers/CRFasRNN.pdf)
