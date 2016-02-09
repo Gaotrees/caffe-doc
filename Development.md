@@ -2,7 +2,7 @@
 
 - Add a class declaration for your layer to `include/caffe/layers/your_layer.hpp`. Include an inline implementation of `type` and the `{*}Blobs()` methods to specify blob number requirements. Omit the `*_gpu` declarations if you'll only be implementing CPU code. 
   * `virtual inline const char* type() const { return "YourLayerName"; }`
-  * see /caffe/include/caffe/layers.hpp to enforce strict top and bottom Blob counts using the inline {*}Blobs() methods. 
+  * see /caffe/include/caffe/layers.hpp to enforce strict top and bottom Blob counts using the inline `{*}Blobs()` methods. 
 - Implement your layer in `src/caffe/layers/your_layer.cpp`.
   * (optional) `LayerSetUp` for one-time initialization: reading parameters, fixed-size allocations, etc.
   * `Reshape` for computing the sizes of top blobs, allocating buffers, and any other work that depends on the shapes of bottom blobs
