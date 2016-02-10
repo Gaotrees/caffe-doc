@@ -32,8 +32,3 @@ Nsight Eclipse is a tool made by NVidia to assist in edditing, building, debuggi
 1. Name the target `run_all_tests`.
 1. Clear the Make Target field.
 1. In the Build Command field enter `make runtest`
-
-## Translations
-
-Help translate the Caffe documentation into your language!
-A Japanese translation of the Caffe documentation is in the works.
