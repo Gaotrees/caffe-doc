@@ -11,7 +11,7 @@ Nsight Eclipse is a tool made by NVidia to assist in edditing, building, debuggi
 1. Navigate to your caffe directory.
 1. Select OK.
 1. Select Finish.
-1. Open the caffe Makefile.config and uncomment the debug line so that it looks like this: `DEBUG := 1`.
+1. Open the caffe Makefile.config and uncomment the debug line: `DEBUG := 1`.
 
 ## Building caffe and tests
 
