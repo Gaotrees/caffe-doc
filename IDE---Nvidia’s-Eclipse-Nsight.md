@@ -36,3 +36,19 @@ When this is complete, the Make Target Pane should have a target named `build_te
 1. In the Build Command field enter `make runtest`
 
 When this is complete, the Make Target Pane should have a target named `run_all_tests`. Double click this to run all of your tests.
+
+## Debugging
+
+### First Time
+
+1. Ensure that you've built everything (the code and the tests).
+1. Click the bug icon in the top menu.
+1. You will be presented with a list of bin objects.
+1. Select the one you want to debug.
+
+### Second Time and on (if you don't want to debug the same bin)
+
+1. Select the little arrow beside the bug icon.
+1. Select `Debug Configurations...`.
+1. Under the Main tab, select Search Project.
+1. Select the new bin you want to debug.
