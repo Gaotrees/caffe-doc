@@ -26,9 +26,13 @@ Nsight Eclipse is a tool made by NVidia to assist in edditing, building, debuggi
 1. Clear the Make Target field.
 1. In the Build Command field enter `make test -j <Number of cores that you have>`
 
+When this is complete, the Make Target Pane should have a target named `build_test`. Double click build your tests.
+
 ### Running All Tests
 
 1. In the Make Target Pane, right-click and select `New...`
 1. Name the target `run_all_tests`.
 1. Clear the Make Target field.
 1. In the Build Command field enter `make runtest`
+
+When this is complete, the Make Target Pane should have a target named `run_all_tests`. Double click this to run all of your tests.
