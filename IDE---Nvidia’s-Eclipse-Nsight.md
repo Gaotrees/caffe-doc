@@ -17,7 +17,7 @@ Nsight Eclipse is a tool made by NVidia to assist in edditing, building, debuggi
 
 ### Building caffe
 
-1. Select the hammer icon in the top menu bar. It should work out of the box.
+Select the hammer icon in the top menu bar. It should work out of the box.
 
 ### Building Tests
 
