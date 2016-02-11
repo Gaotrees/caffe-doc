@@ -227,7 +227,9 @@ More file setup.
         blob_top_vec_.push_back(blob_top_);
       }
       virtual ~SinLayerTest() { delete blob_bottom_; delete blob_top_; }
-    
+ 
+This is a helper method that will be used to calculate the forward data transformation of the network as it calls upon our layer.
+   
         void TestForward(Dtype filler_std)
       {
         FillerParameter filler_param;
@@ -251,6 +253,8 @@ More file setup.
         }
       }
     
+This is a helper method that will be used to calculate the gradient calculation on the backwards pass of the network through our layer.
+
       void TestBackward(Dtype filler_std)
       {
         FillerParameter filler_param;
