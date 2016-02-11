@@ -1,6 +1,6 @@
 # Making Your First Layer
 
-In this page we will learn how to make a simple layer, and how to write a test for it. This will demonstrate some of the concepts in this framework and will exemplify how to use some of the components.
+In this article we will go through an example layer and explain the basic concepts and calls required to be compliant with the caffe framework. This article we will not go into great detail into every aspect of the framework, but rather get a medium level understanding about what a layer is intended to do. We will learn by example, making and testing a very simple sin layer. 
 
 ## The Layer
 
