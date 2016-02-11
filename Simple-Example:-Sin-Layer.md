@@ -294,3 +294,9 @@ A descriptive unique test name `TestSinGradient`, that will test that our layer 
 Closing the file.
 
     }  // namespace caffe
+
+Now we can build our changes, build our test and run our test it!
+
+'> make'
+'> make test'
+`> make runtest GTEST_FILTER='SinLayerTest/*'`
