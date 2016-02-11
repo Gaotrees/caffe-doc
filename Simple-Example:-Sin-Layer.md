@@ -170,13 +170,13 @@ We take in an immutable reference of the bottom (what our layer had previously r
         const vector<bool>& propagate_down,
         const vector<Blob<Dtype>*>& bottom) {
       if (propagate_down[0]) {
-        const Dtype* top_ bottom = bottom[0]->gpu_data();
+        const Dtype* bottom_data = bottom[0]->gpu_data();
         const Dtype* top_diff = top[0]->gpu_diff();
         Dtype* bottom_diff = bottom[0]->mutable_gpu_diff();
         const int count = bottom[0]->count();
         // NOLINT_NEXT_LINE(whitespace/operators)
         SinBackward<Dtype><<<CAFFE_GET_BLOCKS(count), CAFFE_CUDA_NUM_THREADS>>>(
-            count, top_diff, top_ bottom, bottom_diff);
+            count, top_diff, bottom_data, bottom_diff);
         CUDA_POST_KERNEL_CHECK;
       }
     }
