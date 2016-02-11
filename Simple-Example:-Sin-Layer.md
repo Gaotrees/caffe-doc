@@ -56,6 +56,66 @@ Completing the file.
 
 ### CPU Version
 
+Basic file setup.
+
+    // Sin neuron activation function layer.
+    // Adapted from TanH layer
+    
+    #include <vector>
+    
+    #include "caffe/layers/sin_layer.hpp"
+    
+    namespace caffe {
+    
+When it is our layer's turn to process the data, caffe will call the `Forward_cpu` method. The forward step takes data in from the `bottom` (a previous layer generally) via an array of Blobs. In this layer we will be transforming the data via a `sin` function. 
+
+We take in an immutable reference of the bottom (what our layer will be getting input from), and a mutable reference to the top (what our layer will be outputting to). We will transform the input data and store it in the output. That's it!
+
+    template <typename Dtype>
+    void SinLayer<Dtype>::Forward_cpu(const vector<Blob<Dtype>*>& bottom,
+                                      const vector<Blob<Dtype>*>& top) 
+    { 
+      const Dtype* bottom_data = bottom[0]->cpu_data();
+      Dtype* top_data = top[0]->mutable_cpu_data();
+      const int count = bottom[0]->count();
+      for (int i = 0; i < count; ++i) {
+        top_data[i] = sin(bottom_data[i]);
+      }
+    }
+
+When it is our layer's turn to calculate the gradient (the effect we've had on the loss function), caffe will call the `Backward_cpu` method. The backward step takes data in from the `top` (a previous layer generally) via an array of Blobs. In this layer we will be, in part, calculating the loss with respect to this layer via the derivative of the `sin` function - the `cos` function. 
+
+We take in an immutable reference of the bottom (what our layer had previously received input from), an immutable copy of the derivative from the layer above us, and a mutable reference to the gradient that we will output. We calculate the gradient, applying the chain rule (a multiplication with the previous calculation), and set the output gradient (`bottom_diff`).
+
+    template <typename Dtype>
+    void SinLayer<Dtype>::Backward_cpu(const vector<Blob<Dtype>*>& top,
+                                        const vector<bool>& propagate_down,
+                                        const vector<Blob<Dtype>*>& bottom) 
+    { 
+      if (propagate_down[0]) {
+        const Dtype* bottom_data = bottom[0]->cpu_data();
+        const Dtype* top_diff = top[0]->cpu_diff();
+        Dtype* bottom_diff = bottom[0]->mutable_cpu_diff();
+        const int count = bottom[0]->count();
+        Dtype top_datum;
+        for (int i = 0; i < count; ++i) {
+          bottom_datum = bottom_data[i];
+          bottom_diff[i] = top_diff[i] * cos(bottom_datum);
+        }
+      }
+    }
+
+Closing off the class.
+    
+    #ifdef CPU_ONLY
+    STUB_GPU(SinLayer);
+    #endif
+    
+    INSTANTIATE_CLASS(SinLayer);
+    REGISTER_LAYER_CLASS(Sin);
+    
+    }  // namespace caffe    
+
 ### GPU Version
 
 ### Testing Your Layer
