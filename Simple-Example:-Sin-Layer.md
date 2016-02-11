@@ -190,6 +190,8 @@ Closing off the class.
 
 ### Testing Your Layer
 
+Basic file setup.
+
     #include <algorithm>
     #include <vector>
     
@@ -198,11 +200,16 @@ Closing off the class.
     #include "caffe/blob.hpp"
     #include "caffe/common.hpp"
     #include "caffe/filler.hpp"
-    #include "caffe/layers/sin_layer.hpp"
     
     #include "caffe/test/test_caffe_main.hpp"
     #include "caffe/test/test_gradient_check_util.hpp"
+
+Include the layer that we are testing!
     
+   #include "caffe/layers/sin_layer.hpp"
+
+More file setup.
+
     namespace caffe {
     
     template <typename TypeParam>
@@ -263,15 +270,23 @@ Closing off the class.
       vector<Blob<Dtype>*> blob_bottom_vec_;
       vector<Blob<Dtype>*> blob_top_vec_;
     };
+
+I don't know what this does yet.
     
     TYPED_TEST_CASE(SinLayerTest, TestDtypesAndDevices);
+
+Here we will be defining a test, with the test set name `SinLayerTest` (naming convention for grouping tests), and a descriptive unique test name `TestSin`.
     
     TYPED_TEST(SinLayerTest, TestSin) {
       this->TestForward(1.0);
     }
-    
+
+A descriptive unique test name `TestSinGradient`, that will test that our layer is calculating the gradient correctly when backpragating.
+
     TYPED_TEST(SinLayerTest, TestSinGradient) {
       this->TestBackward(1.0);
     }
-    
+
+Closing the file.
+
     }  // namespace caffe
