@@ -158,3 +158,13 @@ Now to quickly test Caffe, from the `CAFFE_ROOT` (wherever the Caffe code reside
 ./examples/mnist/train_lenet.sh
 ```
 You may get errors for `create_mnist.sh` but run `train_lenet.sh` anyway. Chances are it will still work. If you see the network training, then everything has been successfully set up. 
+
+You may get the following error : 
+```Shell
+libdc1394 error: Failed to initialize libdc1394
+```
+
+To fix it, disable the corresponding driver:
+```Shell
+sudo ln /dev/null /dev/raw1394
+```
