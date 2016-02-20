@@ -48,8 +48,6 @@ Change the line accordingly by commenting it out (# CPU_ONLY := 1) if you have a
 
 PYTHON_INCLUDE := /usr/include/python2.7 /usr/lib/python2.7/dist-packages/numpy/core/include  
 
-(Note: another user noticed that some may need to add /home/ubuntu/.local/lib/python2.7/site-packages/numpy/core/include)
-
 (For ways to create an isolated Python environment, explore the topic of virtual environments here: http://docs.python-guide.org/en/latest/dev/virtualenvs/)
 
 WITH_PYTHON_LAYER := 1
@@ -112,6 +110,13 @@ make pycaffe      -should be finished already, so you can omit this one
 make distribute
 
 
+In order to make the Python work with Caffe, open the file ~/.bashrc for editing in your favorite text editor. There, add the following line at the end of file:
+
+export PYTHONPATH=/path/to/caffe-master/python:$PYTHONPATH
+
+You can also execute that same line immediately as a command for immediate effects.
+
+In order to use the Caffe binaries, libraries, or include files, they need to be reachable through the search path, so one solution is to copy them into their respective directories: from the distribute directory to the /usr/bin or /usr/lib or /usr/include.
 
 * Models download not covered in these instructions. See https://github.com/BVLC/caffe/wiki/Model-Zoo *
 
