@@ -1,4 +1,4 @@
-# caffe output
+# Caffe Output
 
 ## .caffemodel
 
