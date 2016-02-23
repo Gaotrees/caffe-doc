@@ -1,4 +1,4 @@
-# Weights
+# Borrowing Weights
 
 ## What are Weights
 
@@ -41,3 +41,7 @@ For example, let say the original model had a layer name ip1, then we should nam
 *  Train our new hybrid model declaring the location of the weights:
 
 `caffe train —solver ourSolver.prototxt —weights theirModel.caffemodel`
+
+## What About the Other Layers of Our Network?
+
+The other layers of our network will be initialized just like any other brand new layer (usually ~zero).
