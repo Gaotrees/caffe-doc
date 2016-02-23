@@ -15,6 +15,7 @@ To borrow the weights of an already trained model, we need to do two things:
 2) Rename our layer to match the name of the original model's layer.
 
 For example, let say the original model had a layer name ip1, then we should name our layer ip1:
+
     layer {
       name: "ip1"
       type: "InnerProduct"
