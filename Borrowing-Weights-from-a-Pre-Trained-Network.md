@@ -36,6 +36,7 @@ For example, let say the original model had a layer name ip1, then we should nam
         }
       }
     }
+
 2. Train our new hybrid model declaring the location of the weights:
 
 `caffe train —solver ourSolver.prototxt —weights theirModel.caffemodel`
