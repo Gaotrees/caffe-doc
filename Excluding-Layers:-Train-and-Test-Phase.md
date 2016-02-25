@@ -45,3 +45,4 @@ The first two layers of the MNist example is presented. Note that the input data
         backend: LMDB
       }
     }
+    ...
