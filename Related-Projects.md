@@ -9,6 +9,14 @@
 Please take a look at @rbgirshick work at https://github.com/rbgirshick/fast-rcnn
 
 ***
+
+The [Facebook Caffe Extensions](https://github.com/facebook/fb-caffe-exts) includes the `predictor` inference API, a `torch2caffe` translator, and other conversion scripts and tools. Thanks to @ajtulloch.
+
+***
+
+The [NVIDIA GPU Rest Engine](https://github.com/NVIDIA/gpu-rest-engine) demonstrates a server for low-latency image classification inference. It is a technical demo that shows how you can add a REST API on top of Caffe using the Go language, and how to package all your dependencies inside a Docker container. Thanks to @flx42.
+
+***
 ![Expresso screenshot](http://val.serc.iisc.ernet.in/expresso/main-screen.png)
 **[Expresso](https://github.com/val-iisc/expresso)** is a Python-based GUI for designing, training and using CNNs. Expresso uses Caffe as its backend CNN framework. Some of its salient features : 
  - A convenient wizard-like interface to contextually guide the user during common scenarios
