@@ -10,7 +10,7 @@ Please take a look at @rbgirshick work at https://github.com/rbgirshick/fast-rcn
 
 ***
 
-The [Facebook Caffe Extensions](https://github.com/facebook/fb-caffe-exts) includes the `predictor` inference API, a `torch2caffe` translator, and other conversion scripts and tools. Thanks to @ajtulloch.
+The [Facebook Caffe Extensions](https://github.com/facebook/fb-caffe-exts) include the `predictor` inference API, a `torch2caffe` translator, and other conversion scripts and tools. Thanks to @ajtulloch.
 
 ***
 
