@@ -123,6 +123,11 @@ Then run:
 ```Shell
 sudo easy_install pillow
 ```
+You could have "TypeError: 'NoneType' object is not callable" error when installing pillow, then try:
+```Shell
+sudo apt-get install pypy-dev
+```
+
 Now we can download Caffe. Navigate to the directory of your choice for the cloning.
 ```Shell
 cd ~
@@ -158,4 +163,3 @@ Now to quickly test Caffe, from the `CAFFE_ROOT` (wherever the Caffe code reside
 ./examples/mnist/train_lenet.sh
 ```
 You may get errors for `create_mnist.sh` but run `train_lenet.sh` anyway. Chances are it will still work. If you see the network training, then everything has been successfully set up. 
-
