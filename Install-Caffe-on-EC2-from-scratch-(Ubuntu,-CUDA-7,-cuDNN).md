@@ -163,3 +163,13 @@ Now to quickly test Caffe, from the `CAFFE_ROOT` (wherever the Caffe code reside
 ./examples/mnist/train_lenet.sh
 ```
 You may get errors for `create_mnist.sh` but run `train_lenet.sh` anyway. Chances are it will still work. If you see the network training, then everything has been successfully set up. 
+
+If you want to use Python wrapper for caffe, then you should add path to the PYTHONPATH variable:
+```Shell
+export PYTHONPATH=/home/username/caffe/python
+```
+
+I got an error "Failed to initialize libdc1394" when I tried to import caffe. Actually, libdc1394 is a library for controlling camera hardware, so we can disable it:
+```Shell
+sudo ln /dev/null /dev/raw1394
+```
