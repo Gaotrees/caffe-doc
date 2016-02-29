@@ -50,7 +50,7 @@ In it's current state, the design of the network is not designed for deployment.
       }
     }
     
-    ...
+    **...**
     
     layer {
       name: "accuracy"
