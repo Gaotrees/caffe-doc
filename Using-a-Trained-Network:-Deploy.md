@@ -118,7 +118,59 @@ These two layers are no longer valid, as we will not be providing labelled data:
     }
     ....
 
+becomes
+
+    ....
+
+#### Remove any layer that is dependent upon data labels.
+
+The Accuracy Layer and the SoftmaxWithLoss Layer are still expecting labels, but there are none to provide, thus there layers are no longer needed as well:
+
+    ...
+    layer {
+      name: "accuracy"
+      type: "Accuracy"
+      bottom: "ip2"
+      bottom: "label"
+      top: "accuracy"
+      include {
+        phase: TEST
+      }
+    }
+    layer {
+      name: "loss"
+      type: "SoftmaxWithLoss"
+      bottom: "ip2"
+      bottom: "label"
+      top: "loss"
+    }
 
 becomes
 
     ....
+
+#### Set the Network Up To Accept Data.
+
+The MNist data is of size 32x32 and in RGB. For simplicity we will keep the batch size at 1. This new data entry point in our network looks like this:
+
+    input: "data"
+    input_shape {
+      dim: 1 # batchsize
+      dim: 3 # number of colour channels - rgb
+      dim: 32 # width
+      dim: 32 # height
+    }
+    ...
+
+This would be the first lines in the prototxt, following the network's name.
+
+#### Have the network output the result.
+
+Our network prior to this was computing a Softmax with Loss, and by all means we still want the Softmax. We can now add a new layer to the end of our network to produce a Softmax output:
+
+    layer {
+      name: "loss"
+      type: "Softmax"
+      bottom: "ip2"
+      top: "loss"
+    }
