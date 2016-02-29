@@ -81,6 +81,7 @@ Following the previously stated steps, we can take this network to production.
 #### Remove the Data Layer(s) That Were Used For Training.
 
 These two layers are no longer valid, as we will not be providing labelled data:
+
     layer {
       name: "mnist"
       type: "Data"
