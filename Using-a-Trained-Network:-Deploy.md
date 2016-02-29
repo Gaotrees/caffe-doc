@@ -174,3 +174,29 @@ Our network prior to this was computing a Softmax with Loss, and by all means we
       bottom: "ip2"
       top: "loss"
     }
+
+### Using the New Network
+
+Now that our deployment network is complete, we can use it as originally intended. We want to provide it one 32x32 image with three color channels. To do this, we will use Matlab.
+
+For example's sake we will be using the weights from net_4800.caffemodel (you'll have to train your own).
+
+    model = 'deploy.prototxt';
+    weights = 'net_4800.caffemodel';
+
+    caffe.set_mode_gpu();
+    caffe.set_device(0);
+    
+    net = caffe.Net(model, weights, 'test');
+
+Now we have our network, we can give it a run, by providing it an image.
+
+    image = imread('example_4.png');
+    res = net.forward({image});
+    prob = res{1};
+
+If we take a look at prob, we should see a column of probabilities, where the 4th row has the highest value.
+
+### If You Run Into Trouble
+
+In the case of Matlab crashing, this is caused by a `Check(...)` in the caffe code. A `Check(...)` failure triggers an `abort()`, which Matlab takes very seriously. To diagnose what the problem is, start Matlab from a console window, so that you can see the caffe output. The issue will be immediately discoverable from the caffe network construction logs, and NOT from the Matlab logs in this case.
