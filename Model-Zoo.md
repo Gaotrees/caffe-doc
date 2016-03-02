@@ -308,6 +308,16 @@ The models are described in the following paper:
 
 If you find our models useful, please add suitable reference to our paper in your work.
 
+### Facial Landmark Detection with Tweaked Convolutional Neural Networks
+We provide [source code](http://bit.ly/gtvnl2b) and [model](http://bit.ly/1ni6lpS) for article:
+Yue Wu and Tal Hassner, "Facial Landmark Detection with Tweaked Convolutional Neural Networks", arXiv preprint arXiv:1511.04031, 12 Nov. 2015. 
+See [project page](http://www.openu.ac.il/home/hassner/projects/tcnn_landmarks/) for more information about this project.
+
+Written by [Ishay Tubi](https://www.linkedin.com/in/ishay2b)
+
+This software is provided as is, without any warranty, with no legal constraints.
+If you find our models useful, please add suitable reference to our paper in your work.
+
 ### Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks
 
 Download pre-computed Faster R-CNN detectors
