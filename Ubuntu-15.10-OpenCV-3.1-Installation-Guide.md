@@ -35,7 +35,7 @@ THE ALTERNATIVE WAY TO INSTALL
 
 While you are in the build directory, execute these commands:
 
-sudo apt-get checkinstall
+sudo apt-get install checkinstall
 
 sudo checkinstall
 
