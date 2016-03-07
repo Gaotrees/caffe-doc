@@ -1,43 +1,36 @@
+## Build
 Prepare your Ubuntu system dependencies by executing this command:
 
-sudo apt-get -y install libopencv-dev build-essential cmake git libgtk2.0-dev pkg-config python-dev python-numpy libdc1394-22 libdc1394-22-dev libjpeg-dev libpng12-dev libtiff5-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libxine2-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev libtbb-dev libqt4-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils unzip
+    sudo apt-get install --assume-yes libopencv-dev build-essential cmake git libgtk2.0-dev pkg-config python-dev python-numpy libdc1394-22 libdc1394-22-dev libjpeg-dev libpng12-dev libtiff5-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libxine2-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev libtbb-dev libqt4-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils unzip
 
+Download OpenCV from http://opencv.org/downloads.html and unpack.
 
-Download OpenCV from http://opencv.org/downloads.html and unpack. Enter the unpacked directory. Execute:
+Enter the unpacked directory. Execute:
 
-mkdir build
-
-cd build/
-
-cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D WITH_V4L=ON -D WITH_QT=ON -D WITH_OPENGL=ON ..
-
-make
+    mkdir build
+    cd build/
+    cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D WITH_V4L=ON -D WITH_QT=ON -D WITH_OPENGL=ON ..
+    make
 
 This completes the building process of OpenCV 3.1.
 
+## Installation
+### Using `make`
+Execute the following:
 
-READ THE TWO POSSIBLE WAYs TO INSTALL OpenCV 3.1 BELOW and decide which one you like best.
+    sudo make install
+    sudo /bin/bash -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
+    sudo ldconfig
+    sudo apt-get update
 
-THE DEFAULT WAY TO INSTALL
+and reboot the system.
 
-sudo make install
-
-sudo /bin/bash -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
-
-sudo ldconfig
-
-sudo apt-get update
-
-reboot the system.
-
-
-THE ALTERNATIVE WAY TO INSTALL
+### Using `checkinstall`
 
 While you are in the build directory, execute these commands:
 
-sudo apt-get install checkinstall
-
-sudo checkinstall
+    sudo apt-get install checkinstall
+    sudo checkinstall
 
 This will create the OpenCV package that has a modern install/uninstall option.
 
