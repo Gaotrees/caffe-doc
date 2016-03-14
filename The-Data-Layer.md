@@ -1,4 +1,4 @@
-# Making a Custom Data Layer
+# The Data Layer
 
 A data layer is generally the first layer of any network. The data layer is exactly like any other layer except that it has a very special task: shaping and populating the initial blobs that will traverse the network. The data layer has no backward pass, as it is not responsible for any error produced in the network.
 
