@@ -297,6 +297,6 @@ Closing the file.
 
 Now we can build our changes, build our test and run our test it!
 
-'> make'
-'> make test'
-`> make runtest GTEST_FILTER='SinLayerTest/*'`
+    > make
+    > make test
+    > make runtest GTEST_FILTER='SinLayerTest/*'`
