@@ -6,7 +6,7 @@ A data layer is generally the first layer of any network. The data layer is exac
 
 Blobs are defined by two pieces of information: their shape, and the data they contain. A blob's shape is it's physical dimensions, whereas a blob's data is the values at each index in the blob. As a subclasser of the `BaseDataLayer` or more accurately (`BasePrefetchingDataLayer`), you are required to implement two methods: `DataLayerSetUp`, and `load_batch`, along side the constructor, destructor, and blob count methods.
 
-### DataLayerSetUp
+### DataLayerSetUp(const vector<Blob<Dtype>*>& bottom,const vector<Blob<Dtype>*>& top) {
 
 The `DataLayerSetup` method is responsible for setting up the data layer. This method implementation generally initializes all of your parameters, and defines the shape of the `top` blobs.
 
