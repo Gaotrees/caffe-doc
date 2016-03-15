@@ -275,7 +275,7 @@ This is a helper method that will be used to calculate the gradient calculation 
       vector<Blob<Dtype>*> blob_top_vec_;
     };
 
-I don't know what this does yet.
+This is required to make the type of your test (in our case SinLayerTest).
     
     TYPED_TEST_CASE(SinLayerTest, TestDtypesAndDevices);
 
