@@ -8,11 +8,12 @@ This parameter indicates the base (beginning) learning rate of the network. The 
 
 ##### lr_policy
 
-This parameter indicates how the learning rate should change over time.
+This parameter indicates how the learning rate should change over time. This value is a quoted string.
 
 Options include:
 
-1. step - drop the learning rate in step sizes indicated by the gamma parameter.
+1. "step" - drop the learning rate in step sizes indicated by the **gamma** parameter.
+1. "multistep" - drop the learning rate in step size indicated by the **gamma** at each specified **stepvalue**.
 
 ##### gamma
 
@@ -21,6 +22,10 @@ This parameter indicates how much the learning rate should change every time we 
 ##### stepsize
 
 This parameter indicates how often (at some iteration count) that we should move onto the next "step" of training. This value is a positive integer.
+
+##### stepvalue
+
+This parameter indicates one of potentially many iteration counts that we should move onto the next "step" of training. This value is a positive integer. There are often more than one of these parameters present, each one indicated the next step iteration.
 
 ##### max_iter
 
@@ -66,3 +71,10 @@ This parameter indicates how often the test phase of the network will be execute
 ##### display
 
 This parameter indicates how often caffe should output results to the screen. This value is a positive integer and specifies an iteration count.
+
+##### type
+
+#####
+
+lr_policy: 
+type: "Adam"
