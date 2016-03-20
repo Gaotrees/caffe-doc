@@ -74,7 +74,15 @@ This parameter indicates how often caffe should output results to the screen. Th
 
 ##### type
 
-#####
+##### lr_policy
 
-lr_policy: 
-type: "Adam"
+This parameter indicates the back propagation algorithm used to train the network. This value is a quoted string.
+
+Options include:
+
+1. Stochastic Gradient Descent "SGD"
+1. AdaDelta "AdaDelta"
+1. Adaptive Gradient "AdaGrad"
+1. Adam "Adam"
+1. Nesterov’s Accelerated Gradient "Nesterov"
+1. RMSprop "RMSProp"
