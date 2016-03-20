@@ -74,8 +74,6 @@ This parameter indicates how often caffe should output results to the screen. Th
 
 ##### type
 
-##### lr_policy
-
 This parameter indicates the back propagation algorithm used to train the network. This value is a quoted string.
 
 Options include:
