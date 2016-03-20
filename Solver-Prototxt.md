@@ -11,6 +11,7 @@ This parameter indicates the base (beginning) learning rate of the network. The 
 This parameter indicates how the learning rate should change over time.
 
 Options include:
+
 1. step - drop the learning rate in step sizes indicated by the gamma parameter.
 
 #### gamma
@@ -34,5 +35,6 @@ This parameter indicates how much of the previous weight will be retained in the
 This parameter indicates which mode will be used in solving the network.
 
 Options include:
+
 1. CPU
 1. GPU
