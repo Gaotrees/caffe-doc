@@ -5,6 +5,7 @@ A network is defined by it's design (.prototxt), and it's weights (.caffemodel).
 # Modifying the Network for Deployment
 
 In it's current state, the design of the network is not designed for deployment. Before we can release our network as a product, we often need to alter it in a few ways:
+
 1. Remove the data layer that was used for training, as for in the case of classification we are no longer providing labels for our data.
 1. Remove any layer that is dependent upon data labels.
 1. Set the network up to accept data.
