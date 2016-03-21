@@ -28,15 +28,21 @@ Go to the https://github.com/BVLC/caffe and download zip archive. Unpack it to ~
 
 Copy the Makefile.config.example to Makefile.config like this:
 
+```
 cp Makefile.config.example Makefile.config
+```
 
 and open it for editing (with a text editor). I use the kate editor for this purpose, so the command that I execute goes as follows. You first need to install the kate editor with:
 
+```
 sudo apt-get install kate
+```
 
 and then you can edit the configuration file with:
 
+```
 kate ./Makefile.config &
+```
 
 The following line in the configuration file tells the program to use CPU only for the computations. 
 
@@ -61,6 +67,7 @@ Now lets continue with the Ubuntu 15.10 instructions.
 
 Execute the additional commands:
 
+```
 find . -type f -exec sed -i -e 's^"hdf5.h"^"hdf5/serial/hdf5.h"^g' -e 's^"hdf5_hl.h"^"hdf5/serial/hdf5_hl.h"^g' '{}' \;
 
 cd /usr/lib/x86_64-linux-gnu
@@ -68,13 +75,15 @@ cd /usr/lib/x86_64-linux-gnu
 sudo ln -s libhdf5_serial.so.8.0.2 libhdf5.so
 
 sudo ln -s libhdf5_serial_hl.so.8.0.2 libhdf5_hl.so
-
+```
 
 Now lets return to the unpacked Caffe directory caffe-master and enter these commands:
 
+```
 cd python
 
 for req in $(cat requirements.txt); do pip install $req; done
+```
 
 
 --------------------------------------------------------------------------------------------------------------
@@ -82,12 +91,13 @@ for req in $(cat requirements.txt); do pip install $req; done
 
 NOTE: If the Ubuntu operating system was updated, perhaps the Python layer needs to be updated and recompiled, because the Python module no longer works. Perform this step again in that case.
 
-
+```
 for req in $(cat requirements.txt); do pip install $req; done
 
 In case of any problems, try:
 
 for req in $(cat requirements.txt); do sudo -H pip install $req --upgrade; done
+```
 
 
 --------------------------------------------------------------------------------------------------------------
@@ -95,6 +105,7 @@ for req in $(cat requirements.txt); do sudo -H pip install $req --upgrade; done
 
 Next, execute:
 
+```
 cd ..
 
 (now you are in caffe-master directory)
@@ -108,7 +119,7 @@ make runtest
 make pycaffe      -should be finished already, so you can omit this one
 
 make distribute
-
+```
 
 In order to make the Python work with Caffe, open the file ~/.bashrc for editing in your favorite text editor. There, add the following line at the end of file:
 
@@ -123,11 +134,15 @@ In order to use the Caffe binaries, libraries, or include files, they need to be
 
 For most Linux programs compiled from source, you can attempt to build a package that can be installed and uninstalled with a single click.
 
+```
 sudo apt-get install checkinstall
+```
 
 Now, when you execute the:
 
+```
 sudo checkinstall
+```
 
 and fill out a form with some easy questions, you will have the package made automatically. However, this uses the command "make install" in the background, which will fail, because the Caffe project does not have the target "install" configured in the Makefile.
 
@@ -144,11 +159,13 @@ https://developer.nvidia.com/cuda-downloads
 Install the cuda toolkit 7.5 version manually in the terminal as instructed
 at the website.
 
+```
 sudo dpkg -i cuda-repo-ubuntu1504_7.5-18_amd64.deb
 
 sudo apt-get update
 
 sudo apt-get install cuda
+```
 
 
 Download and unpack as root user CUDNN from https://developer.nvidia.com/cudnn.
@@ -157,7 +174,9 @@ Put all CUDNN files manually starting with the search path directory where the C
 
 You can check your Ubuntu environment variables after the reboot, by executing the command:
 
+```
 export
+```
 
 Edit the Makefile.config in Caffe directory accordingly (as described in the config file itself) and recompile the Caffe to support the GPU computation. To recompile, first execute "make clean".
 
