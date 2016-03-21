@@ -46,21 +46,21 @@ kate ./Makefile.config &
 
 The following line in the configuration file tells the program to use CPU only for the computations. 
 
-CPU_ONLY := 1
+> CPU_ONLY := 1
 
 This is the typical setting for a computer without any NVIDIA graphics card and it is typical for the installation of Caffe inside the typical virtual machine. (Notice that there is a special type of virtual machine inside the Ubuntu host machine that can access the physical NVIDIA graphics card directly. See https://github.com/NVIDIA/nvidia-docker)
 
 Change the line accordingly by commenting it out (# CPU_ONLY := 1) if you have an NVIDIA graphics card with the proprietary driver, CUDA toolkit and CUDNN installed. The Makefile.config should contain the following lines, so find them and fill them in.
 
-PYTHON_INCLUDE := /usr/include/python2.7 /usr/lib/python2.7/dist-packages/numpy/core/include  
+> PYTHON_INCLUDE := /usr/include/python2.7 /usr/lib/python2.7/dist-packages/numpy/core/include  
 
-(For ways to create an isolated Python environment, explore the topic of virtual environments here: http://docs.python-guide.org/en/latest/dev/virtualenvs/)
+> (For ways to create an isolated Python environment, explore the topic of virtual environments here: http://docs.python-guide.org/en/latest/dev/virtualenvs/)
 
-WITH_PYTHON_LAYER := 1
+> WITH_PYTHON_LAYER := 1
 
-INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include /usr/include/hdf5/serial
+> INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include /usr/include/hdf5/serial
 
-LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu/hdf5/serial
+> LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu/hdf5/serial
 
 
 Now lets continue with the Ubuntu 15.10 instructions.
@@ -123,7 +123,7 @@ make distribute
 
 In order to make the Python work with Caffe, open the file ~/.bashrc for editing in your favorite text editor. There, add the following line at the end of file:
 
-export PYTHONPATH=/path/to/caffe-master/python:$PYTHONPATH
+> export PYTHONPATH=/path/to/caffe-master/python:$PYTHONPATH
 
 You can also execute that same line immediately as a command for immediate effects.
 
