@@ -14,6 +14,7 @@ Options include:
 
 1. "step" - drop the learning rate in step sizes indicated by the **gamma** parameter.
 1. "multistep" - drop the learning rate in step size indicated by the **gamma** at each specified **stepvalue**.
+1. "fixed" - the learning rate does not change.
 
 ##### gamma
 
