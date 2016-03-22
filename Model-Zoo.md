@@ -372,13 +372,10 @@ Downloading the Model: [caffemodel](http://heatmapping.org/files/bvlc_model_zoo/
 
 Please reference the above submission when using the model via
 
-    @ARTICLE{bach-arxiv15,
+    @inproceedings{bach-cvpr16,
        author = {Sebastian Bach and Alexander Binder and Gr{\'e}goire Montavon and Klaus-Robert M{\"u}ller and Wojciech Samek},
        title = {Analyzing Classifiers: Fisher Vectors and Deep Neural Networks},
-       archivePrefix = {ArXiv},
-       eprint = {1512.00172},
-       year = 2015,
-       month = dec, 
-       primaryClass = "cs.CV",
-       url = {http://arxiv.org/pdf/1512.00172v1},
+       booktitle = {CVPR},
+       year = 2016,
+       organization = {IEEE}
     }
