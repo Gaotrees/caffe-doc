@@ -69,3 +69,4 @@ This is a guide to setting up Caffe in a 14.04 virtual machine with CUDA 6.5 and
   * `./examples/mnist/create_mnist.sh`
   * `./examples/mnist/train_lenet.sh`
   * See http://caffe.berkeleyvision.org/gathered/examples/mnist.html for more information...
+  * To get most of the bash commands given in this page as a shell script to speed up installation see https://github.com/abhishekraok/promising-patterns/blob/master/CaffeUbuntuVMInstall.sh
