@@ -12,6 +12,22 @@ or visit the [model zoo documentation](http://caffe.berkeleyvision.org/model_zoo
  - [Finetuning on Flickr Style](https://gist.github.com/sergeyk/034c6ac3865563b69e60): same as provided in `models/`, but listed here as a Gist for an example.
  - BVLC GoogleNet: `models/bvlc_googlenet`
 
+### SqueezeNet: AlexNet-level accuracy with 50x fewer parameters
+
+    @article{SqueezeNet,
+        Author = {Forrest N. Iandola and Matthew W. Moskewicz and Khalid Ashraf and Song Han and William J. Dally and Kurt Keutzer},
+        Title = {SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and $<$1MB model size},
+        Journal = {arXiv:1602.07360},
+        Year = {2016}
+    }
+
+Please cite the paper if you use the model.
+
+[**Model** trained on ImageNet](https://github.com/DeepScale/SqueezeNet) (including weights, solver, train_val, and deploy prototxt files)
+* Error rate on ImageNet ILSVRC-2012 is better than or equal to the `bvlc_alexnet` model. 
+
+
+
 ### Network in Network model
 The Network in Network model is described in the following [ICLR-2014 paper](http://arxiv.org/abs/1312.4400):
 
