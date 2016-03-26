@@ -73,6 +73,10 @@ NIPS 2014 (see also [arXiv](http://arxiv.org/abs/1411.1792) preprint)
 D. Tran, L. Bourdev, R. Fergus, L. Torresani, M. Paluri  
 ICCV 2015  
 
+[Audio-Based Multimedia Event Detection with DNNs and Sparse Sampling](http://www.forrestiandola.com/ICMR_paper_camera_ready_2015.pdf)  
+Khalid Ashraf, Benjamin Elizalde, Forrest Iandola, Matthew Moskewicz, Julia Bernd, Gerald Friedland, Kurt Keutzer.  
+International Conference on Multimedia Retrieval (ICMR), 2015.
+
 [Age and Gender Classification using Convolutional Neural Networks](http://www.openu.ac.il/home/hassner/projects/cnn_agegender/)  
 Gil Levi, Tal Hassner    
 CVPR 2015, AMFG workshop 
@@ -86,10 +90,17 @@ CVPR 2015, DeepVision workshop
 K. R. Mopuri, R. Venkatesh Babu    
 CVPR 2015, DeepVision workshop 
 
+[Deformable Part Models are Convolutional Neural Networks](http://arxiv.org/abs/1409.5403)  
+Ross Girshick, Forrest Iandola, Trevor Darrell, and Jitendra Malik  
+CVPR, 2015.
 
 [Emotion Recognition in the Wild via Convolutional Neural Networks and Mapped Binary Patterns](http://www.openu.ac.il/home/hassner/projects/cnn_emotions/LeviHassner(ICMI15).pdf)  
 Gil Levi, Tal Hassner    
 ICMI 2015
+
+[SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and < 1MB model size](http://arxiv.org/abs/1602.07360)  
+Forrest N. Iandola, Matthew W. Moskewicz, Khalid Ashraf, Song Han, William J. Dally, and Kurt Keutzer  
+arXiv:1602.07360, 2016
 
 
 **Add your own!**
