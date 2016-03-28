@@ -59,14 +59,35 @@ This is a guide to setting up Caffe in a 14.04 virtual machine with CUDA 6.5 and
   * `./data/ilsvrc12/get_ilsvrc_aux.sh`
 * Modify `python/classify.py` to add the `--print_results` option
   * Compare `https://github.com/jetpacapp/caffe/blob/master/python/classify.py` (version from 2014-07-18) to the current version of `classify.py` in the official Caffe distribution `https://github.com/BVLC/caffe/blob/master/python/classify.py` 
+
 * Test your installation by running the ImageNet model on an image of a kitten:
   * `cd ~/caffe` (or whatever you called your Caffe directory)
   * `python python/classify.py --print_results examples/images/cat.jpg foo`
   * Expected result: `[('tabby', '0.27933'), ('tiger cat', '0.21915'), ('Egyptian cat', '0.16064'), ('lynx', '0.12844'), ('kit fox', '0.05155')]`
+  * If running this command results in `ValueError: Mean shape incompatible with input shape.` in `python/caffe/io.py`, modify `python/caffe/io.py` as follows:
+ 
+````
+# Replace this
+if ms != self.inputs[in_][1:]:`
+    raise ValueError('Mean shape incompatible with input shape.')
+```
+```
+# With this
+if ms != self.inputs[in_][1:]:
+    print(self.inputs[in_])
+    in_shape = self.inputs[in_][1:]
+    m_min, m_max = mean.min(), mean.max()
+    normal_mean = (mean - m_min) / (m_max - m_min)
+    mean = resize_image(normal_mean.transpose((1,2,0)),in_shape[1:]).transpose((2,0,1)) * (m_max - m_min) + m_min
+    #raise ValueError('Mean shape incompatible with input shape.')
+```
+  [Source](https://stackoverflow.com/questions/30808735/error-when-using-classify-in-caffe), [Explanation](https://stackoverflow.com/questions/28692209/using-gpu-despite-setting-cpu-only-yielding-unexpected-keyword-argument/28979649#28979649)
+
 * Test your installation by training a net on the MNIST dataset of handwritten digits:
   * `cd ~/caffe` (or whatever you called your Caffe directory)
   * `./data/mnist/get_mnist.sh`
   * `./examples/mnist/create_mnist.sh`
+  * Now edit `./examples/mnist/lenet_solver.prototxt` and change `solver_mode` from `GPU` to `CPU`
   * `./examples/mnist/train_lenet.sh`
   * See http://caffe.berkeleyvision.org/gathered/examples/mnist.html for more information...
   * To get most of the bash commands given in this page as a shell script to speed up installation see https://github.com/abhishekraok/promising-patterns/blob/master/CaffeUbuntuVMInstall.sh
