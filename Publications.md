@@ -17,11 +17,11 @@ This is a short paper that motivates the framework, compares it to other impleme
 Yangqing Jia, Evan Shelhamer, Jeff Donahue, Sergey Karayev, Jonathan Long, Ross
 Girshick, Sergio Guadarrama, Trevor Darrell  
 ACM MM Open Source Competition 2014  
-[arXiv](http://arxiv.org/pdf/1408.5093v1.pdf) / [acmm](https://github.com/UCB-ICSI-Vision-Group/caffe-paper/raw/arxiv/caffe.pdf)
+[arXiv](http://arxiv.org/pdf/1408.5093v1.pdf) / [acmm]
 
 ## Publications using Caffe
 
-[Google Scholar index for Caffe](http://scholar.google.com/scholar?oi=bibs&hl=en&cites=17333247995453974016).
+[Google Scholar index for Caffe](http://scholar.google.com/scholar?oi=bibs&hl=en&cites=1739257544589912763).
 
 [Tell Me What You See and I will Show You Where It Is](http://pages.cs.wisc.edu/~jiaxu/projects/weak-label-seg/)  
 Jia Xu, Alexander G. Schwing, Raquel Urtasun.   
