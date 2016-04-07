@@ -395,3 +395,18 @@ Please reference the above submission when using the model via
        year = 2016,
        organization = {IEEE}
     }
+
+### <a name="mixdcnn"></a>Mixture DCNN
+
+Mixture DCNN is a novel multi-model architecture which achieves better performance than an ensemble of DCNNs as evaluated on three different fine-grained datasets. Please cite the following paper if you use these models in your research.
+
+    @inproceedings{GeWACV2016,
+      author    = {ZongYuan Ge and Alex Bewley and Christopher McCool and Ben Upcroft and Peter Corke and Conrad Sanderson},
+      title     = {Fine-Grained Classification via Mixture of Deep Convolutional Neural Networks},
+      booktitle = {Winter Conference on the Applications of Computer Vision (WACV)},
+      publisher = {IEEE},
+      year      = {2016}
+    }
+
+ * [Models](https://github.com/zongyuange/MixDCNN)
+ * [Paper](http://arxiv.org/abs/1511.09209)
