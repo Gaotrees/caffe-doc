@@ -410,3 +410,17 @@ Mixture DCNN is a novel multi-model architecture which achieves better performan
 
  * [Models](https://github.com/zongyuange/MixDCNN)
  * [Paper](http://arxiv.org/abs/1511.09209)
+
+### CNN Object Proposal Models for Salient Object Detection
+
+CNN models described in the following CVPR'15 papger "[Unconstrained Salient Oject Detection] (http://cs-people.bu.edu/jmzhang/sod.html)":
+
+    Unconstrained Salient Object Detection via Proposal Subset Optimization
+    J. Zhang, S. Sclaroff, Z. Lin, X. Shen, B. Price and R. Mech. 
+    CVPR, 2016.
+
+The following models are finetuned on the Salient Object Subitizing dataset (~5000 images) with bounding box annotations:
+ * [VGG16](https://gist.github.com/jimmie33/509111f8a00a9ece2c3d5dde6a750129): This model is used in the paper.
+ * [GoogleNet](https://gist.github.com/jimmie33/339fd0a938ed026692267a60b44c0c58): It is smaller, faster and slightly better than the VGG16 model.
+
+It is recommended that you download the full system [here](https://github.com/jimmie33/SOD), which will automatically download all the needed models and data.
