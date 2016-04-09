@@ -419,8 +419,9 @@ CNN models for the following CVPR'16 paper:
     J. Zhang, S. Sclaroff, Z. Lin, X. Shen, B. Price and R. Mech. 
     CVPR, 2016.
     
-    [PDF](http://cs-people.bu.edu/jmzhang/SOD/CVPR16SOD_camera_ready.pdf)
-    [Webpage](http://cs-people.bu.edu/jmzhang/sod.html)
+[PDF](http://cs-people.bu.edu/jmzhang/SOD/CVPR16SOD_camera_ready.pdf)
+
+[Webpage](http://cs-people.bu.edu/jmzhang/sod.html)
 
 The following models are finetuned on [the Salient Object Subitizing dataset](http://cs-people.bu.edu/jmzhang/sos.html) (~5000 images) with bounding box annotations:
  * [VGG16](https://gist.github.com/jimmie33/509111f8a00a9ece2c3d5dde6a750129): This model is used in the paper.
