@@ -12,7 +12,7 @@ datum.set_width(3); // our data has three inputs
 datum.set_height(1); // our data is one-dimensional
 datum.set_channels(1);
 
-google::protobuf::RepeatedField<float>* dataumFloatData = datum.mutable_float_data();
+google::protobuf::RepeatedField<float>* datumFloatData = datum.mutable_float_data();
 datumFloatData.Add(0.0f);
 datumFloatData.Add(1.0f);
 datumFloatData.Add(0.0f);
