@@ -79,38 +79,18 @@ We implemented GoogLeNet using a single GPU. Our main contribution is an effecti
 * Please check [http://vision.princeton.edu/pvt/GoogLeNet/](http://vision.princeton.edu/pvt/GoogLeNet/) for more information. Pre-trained models on ImageNet and Places, and the training code are available for download.
 * Make sure cls2_fc2 and cls3_fc have num_output = 1000 in the prototxt. Otherwise, the trained model would crash on test.
 
-### <a name="fcn"></a>Fully Convolutional Semantic Segmentation Models (FCN-Xs)
+### <a name="fcn"></a>Fully Convolutional Networks for Semantic Segmentation (FCNs)
 
 These models are described in the [paper](http://cs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf):
 
     Fully Convolutional Models for Semantic Segmentation
-    Jonathan Long, Evan Shelhamer, Trevor Darrell
+    Jonathan Long*, Evan Shelhamer*, Trevor Darrell
     CVPR 2015
     arXiv:1411.4038
 
-They are available under the same license as the Caffe-bundled models (i.e., for unrestricted use; see http://caffe.berkeleyvision.org/model_zoo.html#bvlc-model-license).
+Details, model definitions, pre-trained weights, and code are public on github: https://github.com/shelhamer/fcn.berkeleyvision.org.
 
-These are pre-release models. They do not run in any current version of BVLC/caffe, as they require unmerged PRs. They should run in the preview branch provided at https://github.com/longjon/caffe/tree/future. The [FCN-32s PASCAL-Context](https://gist.github.com/shelhamer/80667189b218ad570e82#file-readme-md) model is the most complete example including network definitions, solver configuration, and Python scripts for solving and inference.
-
-Models trained on PASCAL (using extra data from [Hariharan et al.](http://www.cs.berkeley.edu/~bharath2/codes/SBD/download.html) and finetuned from the ILSVRC-trained VGG-16 model above):
-* [FCN-32s PASCAL](https://gist.github.com/longjon/ac410cad48a088710872#file-readme-md): single stream, 32 pixel prediction stride version
-* [FCN-16s PASCAL](https://gist.github.com/longjon/d24098e083bec05e456e#file-readme-md): two stream, 16 pixel prediction stride version
-* [FCN-8s PASCAL](https://gist.github.com/longjon/1bf3aa1e0b8e788d7e1d#file-readme-md): three stream, 8 pixel prediction stride version
-* [FCN-AlexNet PASCAL](https://gist.github.com/shelhamer/3f2c75f3c8c71357f24c#file-readme.md): AlexNet (CaffeNet) single stream, 32 pixel prediction stride version
-
-To reproduce the validation scores, use the [seg11valid](https://gist.github.com/shelhamer/edb330760338892d511e) split defined by the paper in footnote 7. Since SBD train and PASCAL VOC 11 segval intersect, we only evaluate on the non-intersecting set for validation purposes.
-
-Models trained on SIFT Flow (also finetuned from VGG-16):
-* [FCN-16s SIFT Flow](https://gist.github.com/longjon/f35e3a101e1478f721f5#file-readme-md): two stream, 16 pixel prediction stride version
-
-Models trained on NYUDv2 (also finetuned from VGG-16, and using HHA features from Gupta et al. https://github.com/s-gupta/rcnn-depth):
-* [FCN-32s NYUDv2](https://gist.github.com/longjon/16db1e4ad3afc2614067#file-readme-md): single stream, 32 pixel prediction stride version
-* [FCN-16s NYUDv2](https://gist.github.com/longjon/dd1f5097af6b531bddcc#file-readme-md): two stream, 16 pixel prediction stride version
-
-Models trained on PASCAL-Context including training model definition, solver configuration, and barebones solving script (finetuned from the ILSVRC-trained VGG-16 model):
-* [FCN-32s PASCAL-Context](https://gist.github.com/shelhamer/80667189b218ad570e82#file-readme-md): single stream, 32 pixel prediction stride version
-* [FCN-16s PASCAL-Context](https://gist.github.com/shelhamer/08652f2ba191f64e619a#file-readme-md): two stream, 16 pixel prediction stride version
-* [FCN-8s PASCAL-Context](https://gist.github.com/shelhamer/91eece041c19ff8968ee#file-readme-md): three stream, 8 pixel prediction stride version
+These models are compatible with Caffe master, unlike earlier FCNs that required a pre-release branch (note: this reference edition of the models is still in progress and not all of the models have yet been ported to master). The models are available under the same license as the Caffe-bundled models (i.e., for unrestricted use; see http://caffe.berkeleyvision.org/model_zoo.html#bvlc-model-license).
 
 ### CaffeNet fine-tuned for Oxford flowers dataset
 https://gist.github.com/jimgoo/0179e52305ca768a601f
