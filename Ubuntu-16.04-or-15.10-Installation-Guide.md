@@ -115,6 +115,7 @@ for req in $(cat requirements.txt); do sudo -H pip install $req --upgrade; done
 
 --------------------------------------------------------------------------------------------------------------
 
+The build process will fail in Ubuntu 16.05 due to the GCC 5.x compiler, when compiling Cuda sources. The workaround is pending...
 
 Next, execute:
 
@@ -166,32 +167,34 @@ and fill out a form with some easy questions, you will have the package made aut
 
 In Ubuntu desktop, enable the use of proprietary drivers in the Software & Updates Center for your desktop and install the NVIDIA graphics driver first from the main Ubuntu package repository. See https://help.ubuntu.com/community/BinaryDriverHowto/Nvidia
 
-Alternatively, the best option is to use the Muon package manager (especially in Kubuntu 16.04). There you will find the NVIDIA driver and Cuda Toolkit packages. They are given through the standard Canonical and Canonical Partners software sources (repositories). You may need to install the Muon with
+Alternatively, the best option is to use the Muon package manager (especially in Kubuntu 16.04). There you will find the NVIDIA driver and Cuda Toolkit packages. They are given through the standard Canonical and Canonical Partners software sources (repositories). Before this installation occurs, you may need to install the Muon manager itself with the following command:
 
     sudo apt-get install muon
 
-and discover which driver number you need with
+and discover which driver number you need with:
 
     sudo ubuntu-drivers devices
     
-Download the CUDA toolkit network installer and the CUDNN package from the NVIDIA site, after registering and filling out the forms.
+If you don't use Muon, download the CUDA toolkit network installer and the CUDNN package from the NVIDIA site, after registering and filling out the forms.
 https://developer.nvidia.com/cuda-downloads
 
 Install the cuda toolkit 7.5 version manually in the terminal as instructed
 at the website.
 
 ```
-sudo dpkg -i cuda-repo-ubuntu1504_7.5-18_amd64.deb
+    sudo dpkg -i cuda-repo-ubuntu1504_7.5-18_amd64.deb
 
-sudo apt-get update
+    sudo apt-get update
 
-sudo apt-get install cuda
+    sudo apt-get install cuda
 ```
 
 
-Download and install .deb package for the CUDNN library from https://developer.nvidia.com/cudnn.
+Download and install .deb package for the CUDNN 5 library from https://developer.nvidia.com/cudnn.
 
 Alternatively, put all the downloaded and unpacked CUDNN version 4 files manually starting with the search path directory where the CUDA toolkit is, each file in its own respective directory. That directory could be /usr/local/cuda or /usr if you installed from the Muon package manager. CUDNN 4 works with Caffe.
+
+Examples, from lib64 folder to /usr/lib/x86_64-linux-gnu/ and from include folder to /usr/include/
 
 You can check your Ubuntu environment variables after the reboot, by executing the command:
 
