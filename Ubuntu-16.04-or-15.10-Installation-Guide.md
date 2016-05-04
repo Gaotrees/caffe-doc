@@ -72,7 +72,7 @@ Change the line accordingly by commenting it out (# CPU_ONLY := 1) if you have a
 > LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu/hdf5/serial
 
 
-Now lets continue with the Ubuntu 16.04 or 15.10 instructions.
+Now lets continue with the instructions for version 15.10.
 
 Execute the additional commands:
 
@@ -85,6 +85,8 @@ sudo ln -s libhdf5_serial.so.8.0.2 libhdf5.so
 
 sudo ln -s libhdf5_serial_hl.so.8.0.2 libhdf5_hl.so
 ```
+
+In Ubuntu 16.04, the file versions are different. Visit /usr/lib/x86_64-linux-gnu/ and list the contents. Thee versions are 10.1.0 and 10.0.2 respectively.
 
 Now lets return to the unpacked Caffe directory caffe-master and enter these commands:
 
