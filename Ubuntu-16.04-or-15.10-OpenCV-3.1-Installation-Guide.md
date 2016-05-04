@@ -3,7 +3,7 @@ Prepare your Ubuntu system dependencies by executing this command:
 
     sudo apt-get install --assume-yes libopencv-dev build-essential cmake git libgtk2.0-dev pkg-config python-dev python-numpy libdc1394-22 libdc1394-22-dev libjpeg-dev libpng12-dev libtiff5-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libxine2-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev libtbb-dev libqt4-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils unzip
 
-In Ubuntu 16.04, you can execute:
+In Ubuntu 16.04, you can resolve dependencies (many are listed below), but the make process will fail at this moment:
 
     sudo apt-get install build-essential cmake git
 
@@ -19,7 +19,7 @@ Enter the unpacked directory. Execute:
     cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D WITH_V4L=ON -D WITH_QT=ON -D WITH_OPENGL=ON ..
     make
 
-This completes the building process of OpenCV 3.1.
+This completes the building process of OpenCV 3.1. (The make process does not work with Cuda 7.5 and GCC 5 in Ubuntu 16.04.)
 
 ## Installation
 ### Using `make`
