@@ -49,7 +49,7 @@ Return to the Caffe directory and perform a cleanup operation with the command
 
 make clean
 
-(Read more here: https://github.com/BVLC/caffe/wiki/Ubuntu-15.10-Installation-Guide)
+(Read more here: https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-or-15.10-Installation-Guide)
 
 First, edit the Makefile.config to include the OpenCV 3.1 library like this...
 
