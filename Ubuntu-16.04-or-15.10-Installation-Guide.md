@@ -1,4 +1,4 @@
-The following guide includes the how-to instructions for the installation of BVLC/Caffe in Ubuntu 15.10 Linux. This also includes the KUbuntu 15.10 and the related distributions.
+The following guide includes the how-to instructions for the installation of BVLC/Caffe in Ubuntu 16.04 or 15.10 Linux. This also includes the KUbuntu 16.04 or 15.10 and the related distributions.
 
 Execute these commands first:
 
