@@ -29,7 +29,7 @@ sudo apt-get install libopencv-dev
 
 ```
 
-For the instructions on how to use the OpenCV version 3.1, please see https://github.com/BVLC/caffe/wiki/Ubuntu-15.10-OpenCV-3.1-Installation-Guide
+For the instructions on how to use the OpenCV version 3.1, please see https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-or-15.10-OpenCV-3.1-Installation-Guide
 
 The configuration settings will differ for OpenCV 3.1 as you can see above, but here we continue with the basic settings that imply the version 2.x.
 
@@ -72,7 +72,7 @@ Change the line accordingly by commenting it out (# CPU_ONLY := 1) if you have a
 > LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu/hdf5/serial
 
 
-Now lets continue with the Ubuntu 15.10 instructions.
+Now lets continue with the Ubuntu 16.04 or 15.10 instructions.
 
 Execute the additional commands:
 
