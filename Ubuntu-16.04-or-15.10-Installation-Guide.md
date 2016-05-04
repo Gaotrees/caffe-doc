@@ -189,9 +189,9 @@ sudo apt-get install cuda
 ```
 
 
-Download and unpack as root user CUDNN from https://developer.nvidia.com/cudnn.
+Download and install .deb package for the CUDNN library from https://developer.nvidia.com/cudnn.
 
-Put all CUDNN files manually starting with the search path directory where the CUDA toolkit is, each file in its own respective directory. That directory could be /usr/local/cuda.
+Alternatively, put all the downloaded and unpacked CUDNN version 4 files manually starting with the search path directory where the CUDA toolkit is, each file in its own respective directory. That directory could be /usr/local/cuda or /usr if you installed from the Muon package manager. CUDNN 4 works with Caffe.
 
 You can check your Ubuntu environment variables after the reboot, by executing the command:
 
