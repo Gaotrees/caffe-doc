@@ -164,8 +164,16 @@ and fill out a form with some easy questions, you will have the package made aut
 ### The GPU support prerequisites
 
 
-In Ubuntu 15.10, enable the use of proprietary drivers in the Software & Updates Center for your desktop and install the NVIDIA graphics driver first from the main Ubuntu package repository. See https://help.ubuntu.com/community/BinaryDriverHowto/Nvidia
+In Ubuntu desktop, enable the use of proprietary drivers in the Software & Updates Center for your desktop and install the NVIDIA graphics driver first from the main Ubuntu package repository. See https://help.ubuntu.com/community/BinaryDriverHowto/Nvidia
 
+Alternatively, the best option is to use the Muon package manager (especially in Kubuntu 16.04). There you will find the NVIDIA driver and Cuda Toolkit packages. They are given through the standard Canonical and Canonical Partners software sources (repositories). You may need to install the Muon with
+
+    sudo apt-get install muon
+
+and discover which driver number you need with
+
+    sudo ubuntu-drivers devices
+    
 Download the CUDA toolkit network installer and the CUDNN package from the NVIDIA site, after registering and filling out the forms.
 https://developer.nvidia.com/cuda-downloads
 
