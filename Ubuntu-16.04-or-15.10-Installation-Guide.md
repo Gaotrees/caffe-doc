@@ -115,9 +115,21 @@ for req in $(cat requirements.txt); do sudo -H pip install $req --upgrade; done
 
 --------------------------------------------------------------------------------------------------------------
 
-The build process will fail in Ubuntu 16.05 due to the GCC 5.x compiler, when compiling Cuda sources. The workaround is pending... You may try to use an older compiler. This is one of the required packages:
+The build process will fail in Ubuntu 16.05 due to the GCC 5.x compiler, when compiling Cuda sources. The workaround is pending... You may try to use an older compiler. This is how it might go:
 
-    sudo apt-get install g++-4.9
+    sudo apt-get install g++-4.9 gcc-4.9 libgcc-4.9
+
+    sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 10
+    sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 20
+
+    sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 10
+    sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 20
+
+    sudo update-alternatives --install /usr/bin/cc cc /usr/bin/gcc 30
+    sudo update-alternatives --set cc /usr/bin/gcc
+
+    sudo update-alternatives --install /usr/bin/c++ c++ /usr/bin/g++ 30
+    sudo update-alternatives --set c++ /usr/bin/g++
 
 
 Next, in any case execute:
