@@ -102,8 +102,8 @@ ICMI 2015
 Forrest N. Iandola, Matthew W. Moskewicz, Khalid Ashraf, Song Han, William J. Dally, and Kurt Keutzer  
 arXiv:1602.07360, 2016
 
-[Learning Compact Binary Descriptors with Unsupervised Deep Neural Networks](http://www.iis.sinica.edu.tw/~kevinlin311.tw/cvpr16-deepbit.pdf)
-K. Lin, J. Lu, C.-S. Chen, J. Zhou
-CVPR 2016  
+[Learning Compact Binary Descriptors with Unsupervised Deep Neural Networks](http://www.iis.sinica.edu.tw/~kevinlin311.tw/cvpr16-deepbit.pdf)  
+K. Lin, J. Lu, C.-S. Chen, J. Zhou    
+CVPR 2016   
 
 **Add your own!**
