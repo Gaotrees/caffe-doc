@@ -126,6 +126,8 @@ The build process will fail in Ubuntu 16.05 due to the GCC 5.x compiler, when co
 
     sudo update-alternatives --remove-all gcc 
     sudo update-alternatives --remove-all g++
+    sudo update-alternatives --remove-all cc
+    sudo update-alternatives --remove-all c++
 
     sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 10
     sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 20
@@ -137,9 +139,14 @@ The build process will fail in Ubuntu 16.05 due to the GCC 5.x compiler, when co
     sudo update-alternatives --set c++ /usr/bin/g++
 
     sudo update-alternatives --query gcc
+    sudo update-alternatives --query g++
+    sudo update-alternatives --query cc
+    sudo update-alternatives --query c++
 
 
-No, this does not help the Ubuntu 16.04. You could try to pass an argument (CXX_FLAGS) to the compiler -D_FORCE_INLINES by editing the CMAKE files (for example: set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D_FORCE_INLINES")) or makefiles. The procedure is not specified. This should work, or you must wait for an updated Cuda Toolkit sources to compile with the associated software in Ubuntu 16.04 such as Caffe, Torch and Theano.
+
+
+No, this does not help the Ubuntu 16.04 for now. You could try to pass an argument (CXX_FLAGS) to the compiler -D_FORCE_INLINES by editing the CMAKE files (for example: set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D_FORCE_INLINES")) or makefiles. The procedure is not specified. This should work, or you must wait for an updated Cuda Toolkit sources to compile with the associated software in Ubuntu 16.04 such as Caffe, Torch and Theano.
 
 Next, in any case execute:
 
