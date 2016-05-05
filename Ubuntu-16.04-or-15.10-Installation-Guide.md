@@ -18,11 +18,16 @@ sudo apt-get install --no-install-recommends libboost-all-dev
 
 sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
 
+(Python general)
+sudo apt-get install python-pip
+
 (Python 2.7 development files)
 sudo apt-get install python-dev
+sudo apt-get install python-numpy python-scipy
 
 (or, Python 3.5 development files)
 sudo apt-get install python3-dev
+sudo apt-get install python3-numpy python3-scipy
 
 (OpenCV 2.4)
 sudo apt-get install libopencv-dev
