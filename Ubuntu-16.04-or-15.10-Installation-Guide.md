@@ -218,7 +218,7 @@ Download and install .deb package for the CUDNN 5 library from https://developer
 
 Alternatively, put all the downloaded and unpacked CUDNN version 4 files manually starting with the search path directory where the CUDA toolkit is, each file in its own respective directory. That directory could be /usr/local/cuda or /usr if you installed from the Muon package manager. CUDNN 4 works with Caffe.
 
-Examples, from lib64 folder to /usr/lib/x86_64-linux-gnu/ and from include folder to /usr/include/
+Example of unpacking and installing the CUDNN 4 archive. The unpacked directory content should be copied from /lib64 directory to /usr/lib/x86_64-linux-gnu/ and from /include directory to /usr/include/.
 
 You can check your Ubuntu environment variables after the reboot, by executing the command:
 
