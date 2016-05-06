@@ -1,4 +1,4 @@
-The following guide includes the how-to instructions for the installation of BVLC/Caffe in Ubuntu 16.04 (preliminary procedure) or 15.10 Linux (tested). This also includes the KUbuntu 16.04 or 15.10 and the related distributions.
+The following guide includes the how-to instructions for the installation of BVLC/Caffe in Ubuntu 16.04 (preliminary procedure does not function with the current Cuda Toolkit) or 15.10 Linux (works well). This also includes the KUbuntu 16.04 or 15.10 and the related distributions.
 
 Execute these commands first:
 
