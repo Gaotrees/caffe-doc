@@ -8,29 +8,29 @@ sudo apt-get update
 
 sudo apt-get upgrade
 
-sudo apt-get install build-essential cmake git pkg-config
+sudo apt-get install -y build-essential cmake git pkg-config
 
-sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libhdf5-serial-dev protobuf-compiler
+sudo apt-get install -y libprotobuf-dev libleveldb-dev libsnappy-dev libhdf5-serial-dev protobuf-compiler
 
-sudo apt-get install libatlas-base-dev 
+sudo apt-get install -y libatlas-base-dev 
 
-sudo apt-get install --no-install-recommends libboost-all-dev
+sudo apt-get install -y --no-install-recommends libboost-all-dev
 
-sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
+sudo apt-get install -y libgflags-dev libgoogle-glog-dev liblmdb-dev
 
-(Python general)
-sudo apt-get install python-pip
+# (Python general)
+sudo apt-get install -y python-pip
 
-(Python 2.7 development files)
-sudo apt-get install python-dev
-sudo apt-get install python-numpy python-scipy
+# (Python 2.7 development files)
+sudo apt-get install -y python-dev
+sudo apt-get install -y python-numpy python-scipy
 
-(or, Python 3.5 development files)
-sudo apt-get install python3-dev
-sudo apt-get install python3-numpy python3-scipy
-
-(OpenCV 2.4)
-sudo apt-get install libopencv-dev
+# (or, Python 3.5 development files)
+sudo apt-get install -y python3-dev
+sudo apt-get install -y python3-numpy python3-scipy
+ 
+# (OpenCV 2.4)
+sudo apt-get install -y libopencv-dev
 
 (or, OpenCV 3.1 - see the instructions below)
 
