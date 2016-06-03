@@ -405,3 +405,14 @@ The following models are finetuned on [the Salient Object Subitizing dataset](ht
  * [GoogleNet](https://gist.github.com/jimmie33/339fd0a938ed026692267a60b44c0c58): This model is smaller, faster and slightly better than the VGG16 model.
 
 It is recommended that you download the full system [here](https://github.com/jimmie33/SOD), which will automatically download all the needed models and data.
+
+### Deep Hand: How to Train a CNN on 1 Million Hand Images When Your Data Is Continuous and Weakly Labelled
+
+We provide pretrained CNN models our CVPR'16 paper (Oral): 
+
+    Deep Hand: How to Train a CNN on 1 Million Hand Images When Your Data Is Continuous and Weakly Labelled
+    O. Koller, H. Ney, R. Bowden
+    CVPR, 2016.
+    
+[[PDF](https://www-i6.informatik.rwth-aachen.de/publications/download/1000/KollerOscarNeyHermannBowdenRichard--DeepHHowtoTrainaCNNon1MillionHImagesWhenYourDataIsContinuousWeaklyLabelled--2016.pdf)] 
+[[Webpage](http://www-i6.informatik.rwth-aachen.de/~koller/1miohands)]
