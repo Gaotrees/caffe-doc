@@ -408,11 +408,11 @@ It is recommended that you download the full system [here](https://github.com/ji
 
 ### Deep Hand: How to Train a CNN on 1 Million Hand Images When Your Data Is Continuous and Weakly Labelled
 
-We provide pretrained CNN models our CVPR'16 paper (Oral): 
+We provide pretrained CNN models of our CVPR'16 paper (Oral): 
 
     Deep Hand: How to Train a CNN on 1 Million Hand Images When Your Data Is Continuous and Weakly Labelled
     O. Koller, H. Ney, R. Bowden
-    CVPR, 2016.
+    CVPR 2016, Las Vegas, NV, USA.
     
 [[PDF](https://www-i6.informatik.rwth-aachen.de/publications/download/1000/KollerOscarNeyHermannBowdenRichard--DeepHHowtoTrainaCNNon1MillionHImagesWhenYourDataIsContinuousWeaklyLabelled--2016.pdf)] 
 [[Webpage](http://www-i6.informatik.rwth-aachen.de/~koller/1miohands)]
