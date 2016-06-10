@@ -21,7 +21,7 @@ Options include:
 
 ##### gamma
 
-This parameter indicates how much the learning rate should change every time we reach the next "step." The value is a real number, and can be though of as multiplying the current learning rate by said number to gain a new learning rate.
+This parameter indicates how much the learning rate should change every time we reach the next "step." The value is a real number, and can be thought of as multiplying the current learning rate by said number to gain a new learning rate.
 
 ##### stepsize
 
