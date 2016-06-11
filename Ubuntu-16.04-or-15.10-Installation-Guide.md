@@ -120,33 +120,7 @@ for req in $(cat requirements.txt); do sudo -H pip install $req --upgrade; done
 
 --------------------------------------------------------------------------------------------------------------
 
-The build process will fail in Ubuntu 16.05 due to the GCC 5.x compiler, when compiling Cuda 7.5 sources. The updated version of Cuda Toolkit is required! The workaround is pending... You may try to use an older compiler. This is how it might go:
-
-    sudo apt-get install g++-4.9 gcc-4.9 libgcc-4.9
-
-    sudo update-alternatives --remove-all gcc 
-    sudo update-alternatives --remove-all g++
-    sudo update-alternatives --remove-all cc
-    sudo update-alternatives --remove-all c++
-
-    sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 10
-    sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 20
-    sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 10
-    sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 20
-    sudo update-alternatives --install /usr/bin/cc cc /usr/bin/gcc 30
-    sudo update-alternatives --set cc /usr/bin/gcc
-    sudo update-alternatives --install /usr/bin/c++ c++ /usr/bin/g++ 30
-    sudo update-alternatives --set c++ /usr/bin/g++
-
-    sudo update-alternatives --query gcc
-    sudo update-alternatives --query g++
-    sudo update-alternatives --query cc
-    sudo update-alternatives --query c++
-
-
-
-
-No, this does not help the Ubuntu 16.04 for now. You could try to pass an argument (CXX_FLAGS) to the compiler -D_FORCE_INLINES by editing the CMAKE files (for example: set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D_FORCE_INLINES")) or makefiles. The procedure is not specified. This should work, or you must wait for an updated Cuda Toolkit sources to compile with the associated software in Ubuntu 16.04 such as Caffe, Torch and Theano.
+The build process will fail in Ubuntu 16.05 due to the GCC 5.x compiler, when compiling Cuda 7.5 sources. The updated version of Cuda Toolkit 8.0RC is compatible with GCC 5.x compiler in Ubuntu 16.05. Once Cuda Toolkit 8.0RC is installed, Caffe will successfully build and run in Ubuntu 16.05.
 
 Next, in any case execute:
 
