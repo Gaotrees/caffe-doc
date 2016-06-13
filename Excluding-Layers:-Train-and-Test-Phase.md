@@ -8,7 +8,7 @@ There are times when a network should behave slightly differently depending on w
 
 ## Example: MNist
 
-The first two layers of the MNist example is presented. Note that the input data and batch size differs depending on the current phase.
+The first two layers of the MNist example is presented. Note that the input data and batch size differ depending on the current phase.
 
     name: "LeNet"
     layer {
