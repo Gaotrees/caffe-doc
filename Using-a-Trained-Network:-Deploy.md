@@ -1,10 +1,10 @@
 # Using a Trained Network
 
-A network is defined by it's design (.prototxt), and it's weights (.caffemodel). As a network is being trained, the current state of that network's weights are stored in a .caffemodel. With both of these we can move from the train/test phase into the production phase.
+A network is defined by its design (.prototxt), and its weights (.caffemodel). As a network is being trained, the current state of that network's weights are stored in a .caffemodel. With both of these we can move from the train/test phase into the production phase.
 
 # Modifying the Network for Deployment
 
-In it's current state, the design of the network is not designed for deployment. Before we can release our network as a product, we often need to alter it in a few ways:
+In its current state, the design of the network is not designed for deployment. Before we can release our network as a product, we often need to alter it in a few ways:
 
 1. Remove the data layer that was used for training, as for in the case of classification we are no longer providing labels for our data.
 1. Remove any layer that is dependent upon data labels.
