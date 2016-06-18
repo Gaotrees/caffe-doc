@@ -52,3 +52,6 @@ When this is complete, the Make Target Pane should have a target named `run_all_
 1. Select `Debug Configurations...`.
 1. Under the Main tab, select Search Project.
 1. Select the new bin you want to debug.
+
+### Some references
+http://www.pittnuts.com/2015/06/build-and-debug-caffe-in-nsight/
