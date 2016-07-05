@@ -105,7 +105,15 @@ Remember to run `source ~/.bashrc` after saving `.bashrc` and run ldconfig as ro
 #### Installing cuDNN
 After registering with NVIDA, download cuDNN. Extract the tar and copy the headers and libraries to the CUDA directory.
 
-**Update**: Caffe now requires cuDNN v3. Get it [here](https://developer.nvidia.com/cudnn).
+**Update**: Caffe now requires cuDNN v4. Get it [here](https://developer.nvidia.com/cudnn).
+
+This is a small, 75MB download which you should save to your local machine (i.e., the laptop/desktop you are using to read this tutorial) and then upload to your EC2 instance. To accomplish this, simply use scp , replacing the paths and IP address as necessary:
+
+```Shell
+scp -i EC2KeyPair.pem ~/Downloads/cudnn-7.0-linux-x64-v4.0-prod.tgz ubuntu@<ec2-ip_address>:~
+```
+
+Once loaded on your instance untar and copy
 
 ```Shell
 tar -zxf cudnn-7.0-linux-x64-v3.0-prod.tgz
