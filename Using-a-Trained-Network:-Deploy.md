@@ -17,7 +17,7 @@ Caffe comes with an examples folder. In our example we will be looking at the mn
 
 ### Training/Testing
 
-The mnist network has two data layers, one designated for training and the other for testing, each of which specifies the location of an lmdb file where the images are stored. The output of the network is a Softmax with a Loss, that is to say it computer a probabilistic likelihood per class, and uses this to determine the error that the network has made. An Accuracy layer, on the other hand, is available at Test time to report the score of the network on the current batch.
+The mnist network has two data layers, one designated for training and the other for testing, each of which specifies the location of an lmdb file where the images are stored. The output of the network is a Softmax with a Loss, that is to say it computes a probabilistic likelihood per class, and uses this to determine the error that the network has made. An Accuracy layer, on the other hand, is available at Test time to report the score of the network on the current batch.
 
     name: "LeNet"
     layer {
