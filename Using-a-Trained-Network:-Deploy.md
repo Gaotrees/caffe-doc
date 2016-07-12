@@ -125,7 +125,7 @@ becomes
 
 #### Remove any layer that is dependent upon data labels.
 
-The Accuracy Layer and the SoftmaxWithLoss Layer are still expecting labels, but there are none to provide, thus there layers are no longer needed as well:
+The Accuracy Layer and the SoftmaxWithLoss Layer are still expecting labels, but there are none to provide, thus these layers are no longer needed as well:
 
     ...
     layer {
