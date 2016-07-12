@@ -416,3 +416,18 @@ We provide pretrained CNN models of our CVPR'16 paper (Oral):
     
 [[PDF](https://www-i6.informatik.rwth-aachen.de/publications/download/1000/KollerOscarNeyHermannBowdenRichard--DeepHHowtoTrainaCNNon1MillionHImagesWhenYourDataIsContinuousWeaklyLabelled--2016.pdf)] 
 [[Webpage](http://www-i6.informatik.rwth-aachen.de/~koller/1miohands)]
+
+### Mulimodal Compact Bilinear Pooling for VQA
+
+The current state-of-the-art model for visual question answering, as described in the following paper:
+
+```
+@article{fukui16mcb,
+  title={Multimodal Compact Bilinear Pooling for Visual Question Answering and Visual Grounding},
+  author={Fukui, Akira and Park, Dong Huk and Yang, Daylen and Rohrbach, Anna and Darrell, Trevor and Rohrbach, Marcus},
+  journal={arXiv:1606.01847},
+  year={2016},
+}
+```
+
+[[arXiv](https://arxiv.org/abs/1606.01847)] [[GitHub repo](https://github.com/akirafukui/vqa-mcb/)]
