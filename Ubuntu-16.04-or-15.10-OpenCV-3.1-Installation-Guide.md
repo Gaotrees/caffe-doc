@@ -19,7 +19,16 @@ Enter the unpacked directory. Execute:
     cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D WITH_V4L=ON -D WITH_QT=ON -D WITH_OPENGL=ON ..
     make
 
-This completes the building process of OpenCV 3.1. (The make process does not work with Cuda 7.5 and GCC 5 in Ubuntu 16.04.)
+This completes the building process of OpenCV 3.1. 
+
+### Issues and handling
+
+The make process does not work with Cuda 7.5 and GCC 5 in Ubuntu 16.04. The problem is related to `__mempcpy_inline` and `memcpy` in the `string.h`. To solve this problem one needs to force inlines to CUDA (see [this post](https://github.com/BVLC/caffe/issues/4046) and [this topic](https://github.com/opencv/opencv/issues/6500) for related discussions).
+
+So, run 
+
+    cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D WITH_V4L=ON -D WITH_QT=ON -D WITH_OPENGL=ON -DCUDA_NVCC_FLAGS="-D_FORCE_INLINES" ..
+    make
 
 ## Installation
 ### Using `make`
