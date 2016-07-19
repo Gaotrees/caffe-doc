@@ -20,7 +20,7 @@ Note also that AMI creation will involve an additional cleanup step to get rid o
 	if [ ! -f "cudnn-6.5-linux-x64-v2.tgz" ] ; then
 	  exit 1;
 	fi
-	wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1404/x86_64/cuda-repo-ubuntu1404_7.0-28_amd64.deb
+	wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1404/x86_64/cuda-command-line-tools-7-5_7.5-18_amd64.deb
 	sudo dpkg -i cuda-repo-ubuntu1404_7.0-28_amd64.deb
 
 	sudo apt-get update
