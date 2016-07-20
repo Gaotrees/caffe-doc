@@ -26,4 +26,6 @@ As a framework Caffe can be extended to many ends. Check out [[related projects|
 ## Translations
 
 Help translate the Caffe documentation into your language!
-A Japanese translation of the Caffe documentation is in the works.
+
+- [Farsi Translation](http://deeplearning.ir/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-caffe-%D8%A8%D8%AE%D8%B4-%D8%A7%D9%88%D9%84/) thanks to Seyyed Hossein Hasan Pour
+- A Japanese translation of the Caffe documentation is in the works.
