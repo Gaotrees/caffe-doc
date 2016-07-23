@@ -431,3 +431,23 @@ The current state-of-the-art model for visual question answering, as described i
 ```
 
 [[arXiv](https://arxiv.org/abs/1606.01847)] [[GitHub repo](https://github.com/akirafukui/vqa-mcb/)]
+
+### Pose-Aware CNN Models (PAMs) for Face Recognition 
+
+We provide the following:
+- pretrained CNN models of our CVPR'16 paper for pose-aware face recognition in the wild
+- [IJB-A](http://www.nist.gov/itl/iad/ig/facechallenges.cfm) yaw estimates from our pose estimation module 
+
+_(your informations are required to proceed to the download page in the link below)_
+
+``` latex
+@INPROCEEDINGS{masi2016cvpr, 
+    author={Iacopo Masi and Stephen Rawls and G{\'e}rard Medioni and Prem Natarajan}, 
+    booktitle={CVPR}, 
+    title={Pose-{A}ware {F}ace {R}ecognition in the {W}ild}, 
+    year={2016}
+    }
+```
+    
+[[PDF](http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Masi_Pose-Aware_Face_Recognition_CVPR_2016_paper.pdf)] 
+[[Webpage](http://goo.gl/forms/NK6adyd7DFJhlmHG2)] 
