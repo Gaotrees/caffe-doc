@@ -20,7 +20,9 @@ Please refer [here](https://codeyarns.com/2013/02/07/how-to-fix-nvidia-driver-fa
 
 `dkms status`
 
-`sudo dkms remove bbswitch/0.8 -k 4.4.0-31-generic #do this based on your dkms status`
+do this based on your dkms status:
+
+`sudo dkms remove bbswitch/0.8 -k 4.4.0-31-generic`
 
 download the compatible driver (GTX 1080 in my case) from nvidia website and install it
 
