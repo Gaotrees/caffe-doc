@@ -1,5 +1,8 @@
 # Using a Trained Network
 
+Note: This page seems outdated or at least, contrasts with the 'new' input layer. Which is not to say that this page doesn't work anymore, it does for the example given. cf. https://github.com/BVLC/caffe/blob/master/models/bvlc_reference_caffenet/deploy.prototxt and the discussion about the input layer. If you have two inputs, for example with a Siamese network, then the bare input blob may not work and you may need the layer inputs.
+
+
 A network is defined by its design (.prototxt), and its weights (.caffemodel). As a network is being trained, the current state of that network's weights are stored in a .caffemodel. With both of these we can move from the train/test phase into the production phase.
 
 # Modifying the Network for Deployment
