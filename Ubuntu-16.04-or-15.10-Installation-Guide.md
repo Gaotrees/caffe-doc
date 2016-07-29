@@ -122,7 +122,7 @@ for req in $(cat requirements.txt); do sudo -H pip install $req --upgrade; done
 
 The build process will fail in Ubuntu 16.05 due to the GCC 5.x compiler, when compiling Cuda 7.5 sources. The updated version of Cuda Toolkit 8.0RC is compatible with GCC 5.x compiler in Ubuntu 16.05. Once Cuda Toolkit 8.0RC is installed, Caffe will successfully build and run in Ubuntu 16.05.
 
-Next, in any case execute:
+In any case, the next step is to execute the following code to build Caffe:
 
 ```
 cd ..
@@ -139,6 +139,14 @@ make pycaffe      -should be finished already, so you can omit this one
 
 make distribute
 ```
+
+Note that the build process can be sped up by appending -j $(($(nproc) + 1)) to the above commands, which distributes the build across the available processors on your system. For example:
+
+`make all`
+
+can become
+
+`make all -j $(($(nproc) + 1))`
 
 In order to make the Python work with Caffe, open the file ~/.bashrc for editing in your favorite text editor. There, add the following line at the end of file:
 
