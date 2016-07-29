@@ -79,7 +79,7 @@ Change the line accordingly by commenting it out (# CPU_ONLY := 1) if you have a
 > LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/hdf5/serial
 
 
-Now lets continue with the instructions for version 15.10.
+Now lets continue with the instructions for version 15.10 first, followed by instructions for 16.04 users. 
 
 Execute the additional commands:
 
@@ -93,11 +93,11 @@ sudo ln -s libhdf5_serial.so.8.0.2 libhdf5.so
 sudo ln -s libhdf5_serial_hl.so.8.0.2 libhdf5_hl.so
 ```
 
-In Ubuntu 16.04, the file versions are different. Visit /usr/lib/x86_64-linux-gnu/ and list the contents. The versions are 10.1.0 and 10.0.2 respectively.
+The above commands will need to be executed for Ubuntu 16.04 as well, but the file versions for libhdf5_serial.so and libhdf5_serial_h1.so are different and so the last two lines will need to be altered. Visit /usr/lib/x86_64-linux-gnu/ and list the relevant contents of that directory using a command such as `ls | grep hdf5`. The versions of libhdf5 that need to be linked to are 10.1.0 and 10.0.2 respectively.
 
-Now lets return to the unpacked Caffe directory caffe-master and enter these commands:
+Now for both platforms lets return to the unpacked Caffe directory caffe-master and enter these commands:
 
-```
+`````
 cd python
 
 for req in $(cat requirements.txt); do pip install $req; done
