@@ -1,3 +1,7 @@
+# OS X 10.11.5 and later
+
+Follow a set of instructions for a clean installation from here: https://gist.github.com/doctorpangloss/f8463bddce2a91b949639522ea1dcbe4
+
 # OSX 10.9
 
 The installation instructors provided on the official page should work in most cases. If you were not able to get them to work, the instructions here might be of help. Any packages you can install with Homebrew, you should, for ease of maintenance and installation. 
