@@ -116,7 +116,7 @@ CNN subitizing models described in the following papers ([project page](http://w
     http://cs-people.bu.edu/jmzhang/SOS/SOS_preprint.pdf
 
     Salient Object Subitizing
-    J. Zhang, S. Ma, M. Sameki, S. Sclaroff, M. Betke, Z. Lin, X. Shen, B. Price and R. Mech. 
+    J. Zhang, S. Ma, M. Sameki, S. Sclaroff, M. Betke, Z. Lin, X. Shen, B. Price and R. Mech.
     arXiv, 2016.
     http://arxiv.org/abs/1607.07525
 
