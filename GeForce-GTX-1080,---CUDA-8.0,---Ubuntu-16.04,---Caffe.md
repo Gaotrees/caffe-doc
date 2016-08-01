@@ -2,7 +2,7 @@
 
 As the default gcc in Ubuntu 16.04 is very new, if you have compiling error similar to `#error -- unsupported GNU version! gcc versions later than 5.3 are not supported!`
 
-Try to uncomment the `#error` line in file `/usr/local/cuda/include/host_config.h`
+Try to comment the `#error` line in file `/usr/local/cuda/include/host_config.h`
 
 `#if __GNUC__ > 5 || (__GNUC__ == 5 && __GNUC_MINOR__ > 3)`
 
