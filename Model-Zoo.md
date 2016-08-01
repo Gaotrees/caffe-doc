@@ -110,9 +110,15 @@ I0215 15:28:30.835083  6585 caffe.cpp:121] Optimization Done.
 ### CNN Models for Salient Object Subitizing.
 CNN subitizing models described in the following papers ([project page](http://www.cs.bu.edu/groups/ivc/Subitizing/)):
 
-    [Salient Object Subitizing. J. Zhang, S. Ma, M. Sameki, S. Sclaroff, M. Betke, Z. Lin, X. Shen, B. Price and R. Mech.  CVPR, 2015.](http://cs-people.bu.edu/jmzhang/SOS/SOS_preprint.pdf)
+    Salient Object Subitizing
+    J. Zhang, S. Ma, M. Sameki, S. Sclaroff, M. Betke, Z. Lin, X. Shen, B. Price and R. Mech.
+    CVPR, 2015.
+    http://cs-people.bu.edu/jmzhang/SOS/SOS_preprint.pdf
 
-    [Salient Object Subitizing. J. Zhang, S. Ma, M. Sameki, S. Sclaroff, M. Betke, Z. Lin, X. Shen, B. Price and R. Mech. arXiv, 2016.](http://arxiv.org/abs/1607.07525)
+    Salient Object Subitizing
+    J. Zhang, S. Ma, M. Sameki, S. Sclaroff, M. Betke, Z. Lin, X. Shen, B. Price and R. Mech. 
+    arXiv, 2016.
+    http://arxiv.org/abs/1607.07525
 
 Models:
  * [GoogleNet](https://gist.github.com/jimmie33/7ea9f8ac0da259866b854460f4526034): CNN model finetuned on the Extended Salient Object Subitizing dataset (~11K images) and synthetic images. This model significantly improves over our previous models. **Recommended**.
