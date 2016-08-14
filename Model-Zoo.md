@@ -458,3 +458,17 @@ _(your informations are required to proceed to the download page in the link bel
     
 [[PDF](http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Masi_Pose-Aware_Face_Recognition_CVPR_2016_paper.pdf)] 
 [[Webpage](http://goo.gl/forms/NK6adyd7DFJhlmHG2)] 
+
+### Learning Structured Sparsity in Deep Neural Networks
+
+Train deep neural networks with structured sparsity to speed up DNNs:
+```
+@incollection{Wen_NIPS2016,
+    Title = {Learning Structured Sparsity in Deep Neural Networks},
+    Author = {Wen, Wei and Wu, Chunpeng and Wang, Yandan and Chen, Yiran and Li, Hai},
+    bookTitle = {Advances in Neural Information Processing Systems},
+    Year = {2016}
+}
+```
+
+[[GitHub repo](https://github.com/wenwei202/caffe/tree/scnn)] [[Webpage](https://drive.google.com/folderview?id=0B50edhjyQ0sRd3JLQ1V0OHdHcUE&usp=sharing)] 
