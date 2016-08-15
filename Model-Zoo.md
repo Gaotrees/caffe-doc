@@ -472,3 +472,21 @@ Train deep neural networks with structured sparsity to speed up DNNs:
 ```
 
 [[arXiv](http://arxiv.org/abs/1608.03665)] [[Caffemodel](https://drive.google.com/folderview?id=0B50edhjyQ0sRd3JLQ1V0OHdHcUE&usp=sharing)]  [[GitHub repo](https://github.com/wenwei202/caffe/tree/scnn)]
+
+
+### Neural Activation Constellations: Unsupervised Part Model Discovery with Convolutional Networks
+
+We provide fine-tuned  models for CUB200-2011 birds (AlexNet + VGG19), Oxford flowers 102 (AlexNet + VGG19), Oxford IIIT PETS (AlexNet + VGG19), and NABirds dataset (GoogLeNet). We also provide our AlexNet model which was trained on ImageNet with the Stanford dogs test data excluded. 
+
+No bounding box or part annotations were used for fine-tuning. Part-based object proposal filtering and two-step fine-tuning was used as described in the corresponding paper
+
+```
+@inproceedings{Simon15:NAC,
+    author = {Marcel Simon and Erik Rodner},
+    booktitle = {International Conference on Computer Vision (ICCV)},
+    title = {Neural Activation Constellations: Unsupervised Part Model Discovery with Convolutional Networks},
+    year = {2015},
+}
+```
+
+[[Models](https://drive.google.com/file/d/0B6VgjAr4t_oTQXN2Y3VYaEMwVDA/view?usp=sharing)] [[Paper](http://arxiv.org/abs/1504.08289)] [[Github repo](https://github.com/cvjena/part_constellation_models)] [[Slides](https://cms.rz.uni-jena.de/dbvmedia/de/Simon/ICCV15_SimonRodner_slides.pdf)]
