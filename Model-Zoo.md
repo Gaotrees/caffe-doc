@@ -471,4 +471,4 @@ Train deep neural networks with structured sparsity to speed up DNNs:
 }
 ```
 
-[[Caffemodel](https://drive.google.com/folderview?id=0B50edhjyQ0sRd3JLQ1V0OHdHcUE&usp=sharing)]  [[GitHub repo](https://github.com/wenwei202/caffe/tree/scnn)]
+[[arXiv](http://arxiv.org/abs/1608.03665] [[Caffemodel](https://drive.google.com/folderview?id=0B50edhjyQ0sRd3JLQ1V0OHdHcUE&usp=sharing)]  [[GitHub repo](https://github.com/wenwei202/caffe/tree/scnn)]
