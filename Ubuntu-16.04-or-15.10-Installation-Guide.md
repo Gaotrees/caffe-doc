@@ -93,7 +93,15 @@ sudo ln -s libhdf5_serial.so.8.0.2 libhdf5.so
 sudo ln -s libhdf5_serial_hl.so.8.0.2 libhdf5_hl.so
 ```
 
-The above commands will need to be executed for Ubuntu 16.04 as well, but the file versions for libhdf5_serial.so and libhdf5_serial_h1.so are different and so the last two lines will need to be altered. Visit /usr/lib/x86_64-linux-gnu/ and list the relevant contents of that directory using a command such as `ls | grep hdf5`. The versions of libhdf5 that need to be linked to are 10.1.0 and 10.0.2 respectively.
+The above commands will need to be executed for Ubuntu 16.04 as well, but the file versions for libhdf5_serial.so and libhdf5_serial_hl.so are different and so the last two lines will need to be altered. Visit /usr/lib/x86_64-linux-gnu/ and list the relevant contents of that directory using a command such as `ls -l | grep hdf5`. The versions of libhdf5 that need to be linked to are 10.1.0 and 10.0.2 respectively (_it should work for Ubuntu 15.10 also_):
+
+```
+cd /usr/lib/x86_64-linux-gnu
+
+sudo ln -s libhdf5_serial.so libhdf5.so
+
+sudo ln -s libhdf5_serial_hl.so libhdf5_hl.so
+```
 
 Now for both platforms lets return to the unpacked Caffe directory caffe-master and enter these commands:
 
