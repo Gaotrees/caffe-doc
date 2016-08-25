@@ -100,9 +100,10 @@ find . -type f -exec sed -i -e 's^"hdf5.h"^"hdf5/serial/hdf5.h"^g' -e 's^"hdf5_h
 
 cd /usr/lib/x86_64-linux-gnu
 
-sudo ln -s libhdf5_serial.so libhdf5.so.10
+sudo ln -s libhdf5_serial.so.10.1.0 libhdf5.so
 
-sudo ln -s libhdf5_serial_hl.so libhdf5_hl.so.10
+sudo ln -s libhdf5_serial_hl.so.10.0.2 libhdf5_hl.so 
+
 ```
 
 Now for both platforms lets return to the unpacked Caffe directory caffe-master and enter these commands:
