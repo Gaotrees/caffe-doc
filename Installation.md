@@ -17,6 +17,7 @@ These unofficial instructions collect tips and guides but without any guarantees
 See the official instructions.
 
 ## Windows
+The official windows port can be accessed from [Microsoft/caffe](https://github.com/Microsoft/caffe), which is supported by Microsoft. 
 
 There is an unofficial Windows port of Caffe at [niuzhiheng/caffe:windows](https://github.com/niuzhiheng/caffe). Thanks @niuzhiheng!
 
