@@ -490,3 +490,23 @@ No bounding box or part annotations were used for fine-tuning. Part-based object
 ```
 
 [[Models](https://drive.google.com/file/d/0B6VgjAr4t_oTQXN2Y3VYaEMwVDA/view?usp=sharing)] [[Paper](http://arxiv.org/abs/1504.08289)] [[Github repo](https://github.com/cvjena/part_constellation_models)] [[Slides](https://cms.rz.uni-jena.de/dbvmedia/de/Simon/ICCV15_SimonRodner_slides.pdf)]
+
+### Inception-BN full ImageNet model
+
+Inception-v2 model trained on full ImageNet dataset with 14,197,087 images in 21,841 classes. 
+
+The model was converted from the MXNet InceptionBN-21k network trained by Mu Li. Details and evaluation results can be found at https://github.com/dmlc/mxnet-model-gallery/blob/master/imagenet-21k-inception.md.
+
+```
+@inproceedings{Ioffe15:ArXiv,
+    author = {Sergey Ioffe and Christian Szegedy},
+    booktitle = {arXiv:1502.03167},
+    title = {Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift},
+    year = {2015}
+}
+```
+
+[[GitHub repo](https://github.com/pertusa/InceptionBN-21K-for-Caffe)] 
+[[Paper](https://arxiv.org/abs/1502.03167)] 
+[[Original MXNet network](https://github.com/dmlc/mxnet-model-gallery/blob/master/imagenet-21k-inception.md)]
+
