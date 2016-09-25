@@ -1,6 +1,6 @@
 # Datum
 
-Datum is a Google Protobuf Message class used to store data and optionally a label. A Datum can be though of a as a matrix with three dimensions: width, height, and channel.
+Datum is a Google Protobuf Message class used to store data and optionally a label. A Datum can be thought of a as a matrix with three dimensions: width, height, and channel.
 
 ## Simple Example
 
