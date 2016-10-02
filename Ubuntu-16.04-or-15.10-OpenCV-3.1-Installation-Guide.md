@@ -16,10 +16,11 @@ Enter the unpacked directory. Execute:
 
     mkdir build
     cd build/
-    cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D WITH_V4L=ON -D WITH_QT=ON -D WITH_OPENGL=ON ..
+    cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D WITH_V4L=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D WITH_CUBLAS=ON ..
+
     make
 
-This completes the building process of OpenCV 3.1. 
+This completes the building process of OpenCV 3.1. (http://docs.opencv.org/3.1.0/d7/d9f/tutorial_linux_install.html)
 
 ### Issues and handling
 
