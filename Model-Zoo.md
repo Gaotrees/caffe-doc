@@ -351,7 +351,7 @@ Reference:
 
 ### Pascal VOC 2012 Multilabel Classification Model
 
-This model has been used for the paper "Analyzing Classifiers: Fisher Vectors and Deep Neural Networks" (http://arxiv.org/abs/1512.00172), which is to appear in the proceedings of CVPR 2016.
+This model has been used for the paper "Analyzing Classifiers: Fisher Vectors and Deep Neural Networks" (http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Bach_Analyzing_Classifiers_Fisher_CVPR_2016_paper.pdf), published in the proceedings of CVPR 2016.
 Kindly note, that it has been trained in a multilabel setting with a multilabel-compatible loss function. It should not be used in conjunction with a softmax layer
 In particular $f_{i}(x)>0$ denotes presence of class i and multiple classes can be predicted in one image.
 
@@ -359,12 +359,12 @@ Downloading the Model: [caffemodel](http://heatmapping.org/files/bvlc_model_zoo/
 
 Please reference the above submission when using the model via
 
-    @inproceedings{bach-cvpr16,
-       author = {Sebastian Bach and Alexander Binder and Gr{\'e}goire Montavon and Klaus-Robert M{\"u}ller and Wojciech Samek},
-       title = {Analyzing Classifiers: Fisher Vectors and Deep Neural Networks},
-       booktitle = {CVPR},
-       year = 2016,
-       organization = {IEEE}
+    @inproceedings{lapuschkinCVPR16,
+        title={Analyzing classifiers: Fisher vectors and deep neural networks},
+        author={Lapuschkin, S. and Binder, A. and Montavon, G. and M{\"u}ller, K.-R. and Samek, W.},
+        booktitle={CVPR},
+        pages={2912-2920},
+        year={2016}
     }
 
 ### SqueezeNet: AlexNet-level accuracy with 50x fewer parameters
