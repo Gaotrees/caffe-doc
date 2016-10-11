@@ -49,7 +49,7 @@ While you are in the build directory, execute these commands:
     sudo apt-get install checkinstall
     sudo checkinstall
 
-This will create the OpenCV package that has a modern install/uninstall option.
+Fill in the text as required to give the description and the package name. This will create the OpenCV 3.1 package that has a modern install/uninstall option.
 
 --------------------------------------------------------------------------------
 
