@@ -93,7 +93,9 @@ sudo ln -s libhdf5_serial.so.8.0.2 libhdf5.so
 sudo ln -s libhdf5_serial_hl.so.8.0.2 libhdf5_hl.so
 ```
 
-The above commands will need to be executed for Ubuntu 16.04 as well, but the file versions for libhdf5_serial.so and libhdf5_serial_hl.so are different and so the last two lines will need to be altered. Visit /usr/lib/x86_64-linux-gnu/ and list the relevant contents of that directory using a command such as `ls -l | grep hdf5`. The versions of libhdf5 that need to be linked to are 10.1.0 and 10.0.2 respectively:
+The above commands are no longer needed on Ubuntu 16.04 after a certain system update. If your Ubuntu 16.04 still needs this step to be performed, take the following considerations. 
+
+The file versions for libhdf5_serial.so and libhdf5_serial_hl.so are different and so the last two lines will need to be altered. Visit /usr/lib/x86_64-linux-gnu/ and list the relevant contents of that directory using a command such as `ls -l | grep hdf5`. The versions of libhdf5 that need to be linked to are 10.1.0 and 10.0.2 respectively:
 
 ```
 find . -type f -exec sed -i -e 's^"hdf5.h"^"hdf5/serial/hdf5.h"^g' -e 's^"hdf5_hl.h"^"hdf5/serial/hdf5_hl.h"^g' '{}' \;
