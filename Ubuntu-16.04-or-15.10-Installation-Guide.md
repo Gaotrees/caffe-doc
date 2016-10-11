@@ -132,8 +132,7 @@ for req in $(cat requirements.txt); do sudo -H pip install $req --upgrade; done
 --------------------------------------------------------------------------------------------------------------
 
 
-
-The next step is to execute the following code to build Caffe:
+The next step is to build Caffe:
 
 ```
 cd ..
@@ -149,6 +148,7 @@ and replace this line:
 with the following line
     NVCCFLAGS += -D_FORCE_INLINES -ccbin=$(CXX) -Xcompiler -fPIC $(COMMON_FLAGS).
 
+(See the discussion at: https://github.com/BVLC/caffe/issues/4046)
 
 make all
 
