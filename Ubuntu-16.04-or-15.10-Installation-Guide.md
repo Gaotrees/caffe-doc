@@ -213,8 +213,8 @@ and discover which driver number you need with:
 If you don't use Muon, download the CUDA toolkit network installer and the CUDNN package from the NVIDIA site, after registering and filling out the forms.
 https://developer.nvidia.com/cuda-downloads
 
-Install the cuda toolkit 7.5 version manually in the terminal as instructed
-at the website.
+Install the Cuda Toolkit 8.0 or 7.5 version manually in the terminal as instructed
+at the website. For example...
 
 ```
     sudo dpkg -i cuda-repo-ubuntu1504_7.5-18_amd64.deb
@@ -225,11 +225,11 @@ at the website.
 ```
 
 
-Download and install .deb package for the CUDNN 5 library from https://developer.nvidia.com/cudnn.
+Download and install .deb package for the CUDNN library from https://developer.nvidia.com/cudnn.
 
-Alternatively, put all the downloaded and unpacked CUDNN version 4 files manually starting with the search path directory where the CUDA toolkit is, each file in its own respective directory. That directory could be /usr/local/cuda or /usr if you installed from the Muon package manager. CUDNN 4 works with Caffe.
+Alternatively, put all the downloaded and unpacked CUDNN files manually starting with the search path directory where the CUDA toolkit is, each file in its own respective directory. That directory could be /usr/local/cuda or /usr if you installed from the Muon package manager. 
 
-Example of unpacking and installing the CUDNN 4 archive. The unpacked directory content should be copied from /lib64 directory to /usr/lib/x86_64-linux-gnu/ and from /include directory to /usr/include/.
+Example of unpacking and installing the CUDNN archive. The unpacked directory content should be copied from /lib64 directory to /usr/lib/x86_64-linux-gnu/ and from /include directory to /usr/include/.
 
 You can check your Ubuntu environment variables after the reboot, by executing the command:
 
