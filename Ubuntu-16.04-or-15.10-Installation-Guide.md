@@ -131,14 +131,24 @@ for req in $(cat requirements.txt); do sudo -H pip install $req --upgrade; done
 
 --------------------------------------------------------------------------------------------------------------
 
-The build process will fail in Ubuntu 16.05 due to the GCC 5.x compiler, when compiling Cuda 7.5 sources. The updated version of Cuda Toolkit 8.0RC is compatible with GCC 5.x compiler in Ubuntu 16.05. Once Cuda Toolkit 8.0RC is installed, Caffe will successfully build and run in Ubuntu 16.05.
 
-In any case, the next step is to execute the following code to build Caffe:
+
+The next step is to execute the following code to build Caffe:
 
 ```
 cd ..
 
 (now you are in caffe-master directory)
+
+The build process will fail in Ubuntu 16.04. Edit the Makefile with an editor such as 
+
+    kate ./Makefile
+
+and replace this line:
+    NVCCFLAGS += -ccbin=$(CXX) -Xcompiler -fPIC $(COMMON_FLAGS)
+with the following line
+    NVCCFLAGS += -D_FORCE_INLINES -ccbin=$(CXX) -Xcompiler -fPIC $(COMMON_FLAGS).
+
 
 make all
 
