@@ -141,23 +141,24 @@ cd ..
 
 The build process will fail in Ubuntu 16.04. Edit the Makefile with an editor such as 
 ```
-    kate ./Makefile
+kate ./Makefile
 ```
 and replace this line:
-    NVCCFLAGS += -ccbin=$(CXX) -Xcompiler -fPIC $(COMMON_FLAGS)
+```
+NVCCFLAGS += -ccbin=$(CXX) -Xcompiler -fPIC $(COMMON_FLAGS)
+```
 with the following line
-    NVCCFLAGS += -D_FORCE_INLINES -ccbin=$(CXX) -Xcompiler -fPIC $(COMMON_FLAGS).
+```
+NVCCFLAGS += -D_FORCE_INLINES -ccbin=$(CXX) -Xcompiler -fPIC $(COMMON_FLAGS).
+```
 
 (See the discussion at: https://github.com/BVLC/caffe/issues/4046)
 
+```
 make all
-
 make test
-
 make runtest
-
 make pycaffe      -should be finished already, so you can omit this one
-
 make distribute
 ```
 
