@@ -136,13 +136,13 @@ The next step is to build Caffe:
 
 ```
 cd ..
-
+```
 (now you are in caffe-master directory)
 
 The build process will fail in Ubuntu 16.04. Edit the Makefile with an editor such as 
-
+```
     kate ./Makefile
-
+```
 and replace this line:
     NVCCFLAGS += -ccbin=$(CXX) -Xcompiler -fPIC $(COMMON_FLAGS)
 with the following line
