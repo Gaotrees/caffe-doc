@@ -40,7 +40,7 @@ For the instructions on how to use the OpenCV version 3.1, please see https://gi
 
 The configuration settings will differ for OpenCV 3.1 as you can see above, but here we continue with the basic settings that imply the version 2.x.
 
-Go to the https://github.com/BVLC/caffe and download zip archive. Unpack it to ~/bin/ or any other location. Enter the caffe-master directory in the terminal window.
+Go to the https://github.com/BVLC/caffe and download the zip archive. Unpack it to ~/bin/ or any other location. Enter the caffe-master directory in the terminal window.
 
 Copy the Makefile.config.example to Makefile.config like this:
 
@@ -70,14 +70,13 @@ Change the line accordingly by commenting it out (# CPU_ONLY := 1) if you have a
 
 > PYTHON_INCLUDE := /usr/include/python2.7 /usr/lib/python2.7/dist-packages/numpy/core/include  
 
-> (For ways to create an isolated Python environment, explore the topic of virtual environments here: http://docs.python-guide.org/en/latest/dev/virtualenvs/)
-
 > WITH_PYTHON_LAYER := 1
 
 > INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial
 
 > LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/hdf5/serial
 
+(For ways to create an isolated Python environment, explore the topic of virtual environments here: http://docs.python-guide.org/en/latest/dev/virtualenvs/)
 
 Now lets continue with the instructions for the Ubuntu 15.10 first, followed by the instructions for Ubuntu 16.04 users. 
 
