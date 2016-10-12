@@ -3,6 +3,22 @@
 This article covers how to unit test a Python Layer. It does not cover how to install, or manage your Python Layer. We will be assuming that we have a class named `PythonAccuracy` in a file named `python_accuracy`.
 
 
+## Imports
+
+The following code imports the libraries:
+
+```
+import unittest
+import caffe
+import caffe.proto.caffe_pb2 as caffe_proto
+from caffe import layers as L
+from caffe import params as P
+import tempfile
+from python_confused_files import PythonConfusedData
+import numpy as np
+import os
+```
+
 ## Boilerplate
 
 Python is a second class citizen when it comes to ones ability to unit test it with Caffe. In C++ we are able to instantiate a Layer, set up the bottom blobs, and forward our single layer. In Python we have to work around with with a simple NetSpec. (I could be wrong about this and if I determine a way to instantiate a Python Layer directly and unit test it comfortably I will update this.)
@@ -45,13 +61,14 @@ This will make a prototxt string (describing a network). Here, we make a dummy l
 Let's write our first unit test:
 
 ```
-def test_layer_creation(self):
+class TestPythonConfusedData(unittest.TestCase):
+    def test_layer_creation(self):
         net_proto = example_network(batch_size=1)
         net = load_net(net_proto)
         
         self.assertIsNotNone(net)
 
-def test_incorrect_predictions_are_stored_in_folders(self):
+    def test_incorrect_predictions_are_stored_in_folders(self):
         INNER_PRODUCT_A = [1.0, 0.0, 0.0]
         INNER_PRODUCT_A = [1.0, 0.0, 0.0]
 
