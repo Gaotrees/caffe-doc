@@ -123,9 +123,11 @@ NOTE: If the Ubuntu operating system was updated, perhaps the Python layer needs
 
 ```
 for req in $(cat requirements.txt); do pip install $req; done
+```
 
 In case of any problems, try:
 
+```
 for req in $(cat requirements.txt); do sudo -H pip install $req --upgrade; done
 ```
 
