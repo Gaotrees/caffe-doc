@@ -3,7 +3,7 @@
 This article covers how to unit test a Python Layer. It does not cover how to install, or manage your Python Layer. We will be assuming that we have a class named `PythonAccuracy` in a file named `python_accuracy`.
 
 
-## NetSpec
+## Boilerplate
 
 Python is a second class citizen when it comes to ones ability to unit test it with Caffe. In C++ we are able to instantiate a Layer, set up the bottom blobs, and forward our single layer. In Python we have to work around with with a simple NetSpec. (I could be wrong about this and if I determine a way to instantiate a Python Layer directly and unit test it comfortably I will update this.)
 
