@@ -251,3 +251,7 @@ export
 Edit the Makefile.config in Caffe directory accordingly (as described in the config file itself) and recompile the Caffe to support the GPU computation. To recompile, first execute "make clean".
 
 ----------------------------------------------------------------------------------------
+
+### Test the Caffe framework with DeepDream project
+
+A fun thing to try with the Caffe framework for python is to use it in the DeepDream project. Visit the following site for specific source code. https://github.com/google/deepdream One of the trained neural network used in this procedure, can be found here: http://places.csail.mit.edu/model/googlenet_places205.tar.gz Before you begin, you need to prepare the Ubuntu 16.04 system for the use of IPython and Jupyter. For these instructions, see: https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jupyter-notebook-to-run-ipython-on-ubuntu-16-04
