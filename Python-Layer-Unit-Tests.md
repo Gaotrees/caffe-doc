@@ -1,5 +1,3 @@
-# Unit Tests
-
 ## What this article covers
 
 This article covers how to unit test a Python Layer. It does not cover how to install, or manage your Python Layer. We will be assuming that we have a class named `PythonAccuracy` in a file named `python_accuracy`.
