@@ -1,4 +1,4 @@
-The following guide includes the how-to instructions for the installation of BVLC/Caffe in Ubuntu 16.04 (preliminary procedure does not function with the current Cuda Toolkit) or 15.10 Linux (works well). This also includes the KUbuntu 16.04 or 15.10 and the related distributions.
+The following guide includes the how-to instructions for the installation of BVLC/Caffe in Ubuntu 16.04 with Cuda Toolkit 8.0, CUDNN 5.1 library and OpenCV version 2 or 3. (A small record remains from the previous tutorial for Ubuntu 15.10 and the Cuda Toolkit 7.5, but that part will not be updated any further.) This guide also covers the KUbuntu distribution and the related distributions.
 
 Execute these commands first:
 
@@ -79,7 +79,7 @@ Change the line accordingly by commenting it out (# CPU_ONLY := 1) if you have a
 > LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/hdf5/serial
 
 
-Now lets continue with the instructions for version 15.10 first, followed by instructions for 16.04 users. 
+Now lets continue with the instructions for the Ubuntu 15.10 first, followed by the instructions for Ubuntu 16.04 users. 
 
 Execute the additional commands:
 
@@ -130,6 +130,7 @@ In case of any problems, try:
 for req in $(cat requirements.txt); do sudo -H pip install $req --upgrade; done
 ```
 
+The default Python version is 2. You can edit the Makefile.conf to enable the Python 3, but this will fail during the linking phase: boost_python3 cannot be found on Ubuntu 16.04. Instead, this file should be /usr/lib/x86_64-linux-gnu/libboost_python-py35.so.1.58.0. This requires further testing. 
 
 --------------------------------------------------------------------------------------------------------------
 
@@ -204,7 +205,7 @@ and fill out a form with some easy questions, you will have the package made aut
 
 In Ubuntu desktop, enable the use of proprietary drivers in the Software & Updates Center for your desktop and install the NVIDIA graphics driver first from the main Ubuntu package repository. See https://help.ubuntu.com/community/BinaryDriverHowto/Nvidia
 
-Alternatively, the best option is to use the Muon package manager (especially in Kubuntu 16.04). There you will find the NVIDIA driver and Cuda Toolkit packages. They are given through the standard Canonical and Canonical Partners software sources (repositories). Before this installation occurs, you may need to install the Muon manager itself with the following command:
+Alternatively, the best option is to use the Muon package manager (especially in Kubuntu 16.04). There, you will find the NVIDIA driver and Cuda Toolkit 7.5 packages. (Thus far, Cuda Toolkit 8.0 has not appeared in this package manager.) They are given through the standard Canonical and Canonical Partners software sources (repositories). Before this installation occurs, you may need to install the Muon manager itself with the following command:
 
     sudo apt-get install muon
 
@@ -212,26 +213,31 @@ and discover which driver number you need with:
 
     sudo ubuntu-drivers devices
     
-If you don't use Muon, download the CUDA toolkit network installer and the CUDNN package from the NVIDIA site, after registering and filling out the forms.
+If you want the latest version of Cuda Toolkit 8.0, then download the Cuda Toolkit 8.0 network installer and the CUDNN 5.1 package from the NVIDIA site, after registering and filling out the forms.
 https://developer.nvidia.com/cuda-downloads
 
-Install the Cuda Toolkit 8.0 or 7.5 version manually in the terminal as instructed
+Install the Cuda Toolkit 8.0 or 7.5 package manually in the terminal as instructed
 at the website. For example...
 
 ```
-    sudo dpkg -i cuda-repo-ubuntu1504_7.5-18_amd64.deb
-
-    sudo apt-get update
-
-    sudo apt-get install cuda
+ sudo dpkg -i cuda-repo-ubuntu1604_8.0.44-1_amd64.deb
+ sudo apt-get update`
+ sudo apt-get install cuda
 ```
 
+or...
 
-Download and install .deb package for the CUDNN library from https://developer.nvidia.com/cudnn.
+```
+ sudo dpkg -i cuda-repo-ubuntu1504_7.5-18_amd64.deb
+ sudo apt-get update
+ sudo apt-get install cuda
+```
 
-Alternatively, put all the downloaded and unpacked CUDNN files manually starting with the search path directory where the CUDA toolkit is, each file in its own respective directory. That directory could be /usr/local/cuda or /usr if you installed from the Muon package manager. 
+Download and install the archive that contains the CUDNN library from https://developer.nvidia.com/cudnn.
 
-Example of unpacking and installing the CUDNN archive. The unpacked directory content should be copied from /lib64 directory to /usr/lib/x86_64-linux-gnu/ and from /include directory to /usr/include/.
+Put all the downloaded and unpacked CUDNN files manually starting with the search path directory where the CUDA toolkit is, each file in its own respective directory. That directory could be /usr/local/cuda or /usr if you installed Cuda 7.5 with the Muon package manager. 
+
+Example: the unpacked directory content should be copied from /lib64 directory in the downloaded archive to /usr/lib/x86_64-linux-gnu/ and from /include directory to /usr/include/.
 
 You can check your Ubuntu environment variables after the reboot, by executing the command:
 
