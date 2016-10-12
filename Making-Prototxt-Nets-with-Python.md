@@ -1,6 +1,6 @@
 #NetSpec
 
-This article covers how to make Prototxt nets without having to look at a single protobuf message.
+This article covers how to make Prototxt nets without having to look at a single protobuf message. The approach can use any of the existing and registered layers.
 
 ## Diving In
 
