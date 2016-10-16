@@ -24,7 +24,7 @@ Select the hammer icon in the top menu bar. It should work out of the box.
 1. In the Make Target Pane, right-click and select `New...`
 1. Name the target `build_test`.
 1. Clear the Make Target field.
-1. In the Build Command field enter `make test -j <Number of cores that you have>`
+1. In the Build Command field enter `make test -j`
 
 When this is complete, the Make Target Pane should have a target named `build_test`. Double click build your tests.
 
