@@ -1,6 +1,6 @@
 ## How to Build OpenCV 3.1
 
-In Ubuntu 16.04, install the dependencies first and then build the OpenCV 3.1 source. 
+In Ubuntu 16.04, install the dependencies first and then build the OpenCV 3.1 from source. 
 
 ```
 sudo apt-get install --assume-yes build-essential cmake git
@@ -11,6 +11,8 @@ sudo apt-get install --assume-yes libv4l-dev libtbb-dev libfaac-dev libmp3lame-d
 sudo apt-get install --assume-yes libvorbis-dev libxvidcore-dev v4l-utils
 ```
 
+In order to install the NVIDIA Cuda Toolkit with CUDNN library, see https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-or-15.10-Installation-Guide#the-gpu-support-prerequisites 
+
 Download the latest source archive for OpenCV 3.1 from http://opencv.org/downloads.html and unpack it.
 
 Enter the unpacked directory. Execute:
@@ -20,7 +22,7 @@ Enter the unpacked directory. Execute:
     cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D WITH_V4L=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D WITH_CUBLAS=ON -DCUDA_NVCC_FLAGS="-D_FORCE_INLINES" ..
     make
 
-This completes the building process of OpenCV 3.1. (http://docs.opencv.org/3.1.0/d7/d9f/tutorial_linux_install.html)
+This completes the build procedure of OpenCV 3.1. (http://docs.opencv.org/3.1.0/d7/d9f/tutorial_linux_install.html)
 
 
 ## Installation
