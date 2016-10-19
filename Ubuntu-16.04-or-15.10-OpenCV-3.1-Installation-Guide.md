@@ -1,35 +1,27 @@
-## Build
-Prepare your Ubuntu system dependencies by executing this command:
+## How to Build OpenCV 3.1
+
+In Ubuntu 16.04, you can resolve dependencies (many are listed below), and build the OpenCV 3.1. 
+Prepare your Ubuntu system dependencies by executing these commands:
+
+    sudo apt-get install build-essential cmake git
 
     sudo apt-get install --assume-yes libopencv-dev build-essential cmake git libgtk2.0-dev pkg-config python-dev python-numpy libdc1394-22 libdc1394-22-dev libjpeg-dev libpng12-dev libtiff5-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libxine2-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev libtbb-dev libqt4-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils unzip
 
-In Ubuntu 16.04, you can resolve dependencies (many are listed below), but the make process will fail at this moment:
-
-    sudo apt-get install build-essential cmake git
 
     sudo apt-get install ffmpeg libopencv-dev libgtk-3-dev python-numpy python3-numpy libdc1394-22 libdc1394-22-dev libjpeg-dev libpng12-dev libtiff5-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libxine2-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libv4l-dev libtbb-dev qtbase5-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils unzip
 
 
-Download OpenCV from http://opencv.org/downloads.html and unpack.
+Download the latest source archive for OpenCV 3.1 from http://opencv.org/downloads.html and unpack it.
 
 Enter the unpacked directory. Execute:
 
     mkdir build
     cd build/
-    cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D WITH_V4L=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D WITH_CUBLAS=ON ..
-
+    cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D WITH_V4L=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D WITH_CUBLAS=ON -DCUDA_NVCC_FLAGS="-D_FORCE_INLINES" ..
     make
 
 This completes the building process of OpenCV 3.1. (http://docs.opencv.org/3.1.0/d7/d9f/tutorial_linux_install.html)
 
-### Issues and handling
-
-The make process does not work with Cuda 7.5 and GCC 5 in Ubuntu 16.04. The problem is related to `__mempcpy_inline` and `memcpy` in the `string.h`. To solve this problem one needs to force inlines to CUDA (see [this post](https://github.com/BVLC/caffe/issues/4046) and [this topic](https://github.com/opencv/opencv/issues/6500) for related discussions).
-
-So, run 
-
-    cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D WITH_V4L=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D WITH_CUBLAS=ON -DCUDA_NVCC_FLAGS="-D_FORCE_INLINES" ..
-    make
 
 ## Installation
 ### Using `make`
@@ -42,7 +34,7 @@ Execute the following:
 
 and reboot the system.
 
-### Using `checkinstall`
+### Using `checkinstall` (this gives incomplete results without the installation by using ```make```)
 
 While you are in the build directory, execute these commands:
 
