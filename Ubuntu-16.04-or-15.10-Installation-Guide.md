@@ -36,7 +36,7 @@ sudo apt-get install -y libopencv-dev
 
 ```
 
-If you have NVIDIA graphics card, see the instructions for NVIDIA Graphics Driver, Cuda Toolkit and CUDNN installation at the end of this document, or by clicking https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-or-15.10-Installation-Guide#the-gpu-support-prerequisites.
+If you own an NVIDIA graphics card, see the instructions for the installation of NVIDIA Graphics Driver, Cuda Toolkit and CUDNN library at the end of this document, or by clicking https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-or-15.10-Installation-Guide#the-gpu-support-prerequisites.
 
 For the instructions on how to use the OpenCV version 3.1, please see https://github.com/BVLC/caffe/wiki/OpenCV-3.1-Installation-Guide-on-Ubuntu-16.04
 
