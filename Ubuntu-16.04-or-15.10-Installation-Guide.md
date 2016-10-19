@@ -186,7 +186,18 @@ You can also execute that same line immediately as a command for immediate effec
 
 In order to use the Caffe binaries, libraries, or include files, they need to be reachable through the search path, so one solution is to copy them into their respective directories: from the distribute directory to the /usr/bin or /usr/lib or /usr/include.
 
-* Models download not covered in these instructions. See https://github.com/BVLC/caffe/wiki/Model-Zoo *
+The binary models can be download with the following script. In caffe-master folder, 
+
+```
+cd scripts
+./download_model_binary.py ../models/bvlc_alexnet/
+./download_model_binary.py ../models/bvlc_googlenet/
+./download_model_binary.py ../models/bvlc_reference_caffenet/
+./download_model_binary.py ../models/bvlc_reference_rcnn_ilsvrc13/
+./download_model_binary.py ../models/finetune_flickr_style/
+```
+
+* For more models, see https://github.com/BVLC/caffe/wiki/Model-Zoo *
 
 
 For most Linux programs compiled from source, you can attempt to build a package that can be installed and uninstalled with a single click.
