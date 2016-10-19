@@ -1,4 +1,4 @@
-The following guide includes the how-to instructions for the installation of BVLC/Caffe in Ubuntu 16.04 with Cuda Toolkit 8.0, CUDNN 5.1 library and OpenCV version 2 or 3. (A small record remains from the previous tutorial for Ubuntu 15.10 and the Cuda Toolkit 7.5, but that part will not be updated any further.) This guide also covers the KUbuntu distribution and the related distributions.
+The following guide includes the how-to instructions for the installation of BVLC/Caffe in Ubuntu 16.04 with Cuda Toolkit 8.0, CUDNN 5.1 library and OpenCV version 2 or 3. (A small record remains from the previous tutorial for Ubuntu 15.10 with the Cuda Toolkit 7.5, but that part will not be updated any further.) This guide also covers the KUbuntu distribution and the related distributions.
 
 Execute these commands first:
 
@@ -36,7 +36,9 @@ sudo apt-get install -y libopencv-dev
 
 ```
 
-For the instructions on how to use the OpenCV version 3.1, please see https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-or-15.10-OpenCV-3.1-Installation-Guide
+If you have NVIDIA graphics card, see the instructions for NVIDIA Graphics Driver, Cuda Toolkit and CUDNN installation at the end of this document, or by clicking https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-or-15.10-Installation-Guide#the-gpu-support-prerequisites.
+
+For the instructions on how to use the OpenCV version 3.1, please see https://github.com/BVLC/caffe/wiki/OpenCV-3.1-Installation-Guide-on-Ubuntu-16.04
 
 The configuration settings will differ for OpenCV 3.1 as you can see above, but here we continue with the basic settings that imply the version 2.x.
 
