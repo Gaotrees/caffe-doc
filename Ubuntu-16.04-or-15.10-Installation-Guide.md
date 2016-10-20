@@ -219,17 +219,13 @@ and fill out a form with some easy questions, you will have the package made aut
 ### The GPU support prerequisites
 
 
-In Ubuntu desktop, enable the use of proprietary drivers in the Software & Updates Center for your desktop and install the NVIDIA graphics driver first from the main Ubuntu package repository. See https://help.ubuntu.com/community/BinaryDriverHowto/Nvidia
+In Ubuntu desktop, enable the use of proprietary drivers in the Software & Updates Center for your desktop and install the NVIDIA graphics driver from the main Ubuntu package repository. See https://help.ubuntu.com/community/BinaryDriverHowto/Nvidia 
 
-Alternatively, the best option is to use the Muon package manager (especially in Kubuntu 16.04). There, you will find the NVIDIA driver and Cuda Toolkit 7.5 packages. (Thus far, Cuda Toolkit 8.0 has not appeared in this package manager.) They are given through the standard Canonical and Canonical Partners software sources (repositories). Before this installation occurs, you may need to install the Muon manager itself with the following command:
-
-    sudo apt-get install muon
-
-and discover which driver number you need with:
+Discover which driver number you need with:
 
     sudo ubuntu-drivers devices
-    
-If you want the latest version of Cuda Toolkit 8.0, then download the Cuda Toolkit 8.0 network installer and the CUDNN 5.1 package from the NVIDIA site, after registering and filling out the forms.
+
+The LATEST version of Cuda Toolkit 8.0 is available from the NVIDIA website. Download the Cuda Toolkit 8.0 network installer and the CUDNN 5.1 package from the NVIDIA site, after registering and filling out the forms.
 https://developer.nvidia.com/cuda-downloads
 
 Install the Cuda Toolkit 8.0 or 7.5 package manually in the terminal as instructed
@@ -255,13 +251,17 @@ Put all the downloaded and unpacked CUDNN files manually starting with the searc
 
 Example: the unpacked directory content should be copied from /lib64 directory in the downloaded archive to /usr/lib/x86_64-linux-gnu/ and from /include directory to /usr/include/.
 
+In Kubuntu 16.04, you also need to enable the use of proprietary drivers (in System Settings -> Driver Manager). The previous best option was to use the Muon package manager for all software installations. There, you can find the NVIDIA driver and the Cuda Toolkit 7.5 package. (Thus far, Cuda Toolkit 8.0 has not appeared in this package manager.) The packages are given through the standard Canonical and Canonical Partners software sources (repositories). You need to install the Muon manager itself with the following command:
+
+    sudo apt-get install muon
+
 You can check your Ubuntu environment variables after the reboot, by executing the command:
 
 ```
 export
 ```
 
-Edit the Makefile.config in Caffe directory accordingly (as described in the config file itself) and recompile the Caffe to support the GPU computation. To recompile, first execute "make clean".
+Edit the Makefile.config in Caffe directory accordingly (as described in the config file itself) and recompile the Caffe to support the GPU computation. To recompile, first execute ```make clean```.
 
 ----------------------------------------------------------------------------------------
 
