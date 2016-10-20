@@ -228,7 +228,7 @@ Discover which driver number you need with:
 The LATEST version of Cuda Toolkit 8.0 is available from the NVIDIA website. Download the Cuda Toolkit 8.0 network installer and the CUDNN 5.1 package from the NVIDIA site, after registering and filling out the forms.
 https://developer.nvidia.com/cuda-downloads
 
-Install the Cuda Toolkit 8.0 or 7.5 package manually in the terminal as instructed
+Install the Cuda Toolkit 8.0 package manually in the terminal as instructed
 at the website. For example...
 
 ```
@@ -237,17 +237,9 @@ at the website. For example...
  sudo apt-get install cuda
 ```
 
-or...
-
-```
- sudo dpkg -i cuda-repo-ubuntu1504_7.5-18_amd64.deb
- sudo apt-get update
- sudo apt-get install cuda
-```
-
 Download and install the archive that contains the CUDNN library from https://developer.nvidia.com/cudnn.
 
-Put all the downloaded and unpacked CUDNN files manually starting with the search path directory where the CUDA toolkit is, each file in its own respective directory. That directory could be /usr/local/cuda or /usr if you installed Cuda 7.5 with the Muon package manager. 
+Put all the downloaded and unpacked CUDNN files manually starting with the search path directory where the CUDA toolkit is, each file in its own respective directory. That directory could be /usr/local/cuda or /usr if you installed Cuda 7.5 from the Ubuntu repository. 
 
 Example: the unpacked directory content should be copied from /lib64 directory in the downloaded archive to /usr/lib/x86_64-linux-gnu/ and from /include directory to /usr/include/.
 
