@@ -186,7 +186,7 @@ You can also execute that same line immediately as a command for immediate effec
 
 In order to use the Caffe binaries, libraries, or include files, they need to be reachable through the search path, so one solution is to copy them into their respective directories: from the distribute directory to the /usr/bin or /usr/lib or /usr/include.
 
-The binary models can be download with the following script. In caffe-master folder, 
+The binary models can be download with the following script. In caffe-master directory, 
 
 ```
 cd scripts
