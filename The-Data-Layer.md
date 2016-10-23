@@ -18,6 +18,8 @@ The `load_batch` method is responsible for generating the data. This method impl
 
 The data layer's duty is to feed the network a blob of data. The data layer can perform an unlimited number of alterations to this piece of data before passing it off to the next layer. These alterations can be done in-line, meaning no altered versions of the data have to be stored on a hard drive. With each pass of the data layer we can manipulate any single piece of data, or even create data from scratch.
 
+Along with data augmentation, the real power of the data layer (base pre-fetch layer), is that it can buffer data for later processing. This means that if your data layer is fast enough at gathering data it will not slow down your network. Generally, these layers should be written for the CPU to leave the GPU for actual learning. Always try to see if you can make your augmentation layers into data layers, to take advantage of the base pre-fetch speed boost.
+
 ### Example: Data Augmentation
 
 Data augmentation is a technique used to add variation to the data, for example one might augment an image through rotations, scales, additive brightness changes, and multiplicative brightness changes. The technique of data augmentation has been shown to enrich the data and add more invariance to a network.
