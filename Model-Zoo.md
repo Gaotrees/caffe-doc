@@ -510,3 +510,11 @@ The model was converted from the MXNet InceptionBN-21k network trained by Mu Li.
 [[Paper](https://arxiv.org/abs/1502.03167)] 
 [[Original MXNet network](https://github.com/dmlc/mxnet-model-gallery/blob/master/imagenet-21k-inception.md)]
 
+### DeepYeast
+
+11-layer convolutional neural network trained on two-channel microscopy images of yeast cells carrying fluorescent proteins with different subcellular localizations.
+
+[[Web](http://www.cs.ut.ee/~leopoldp/2016_DeepYeast)] 
+[[Paper](http://biorxiv.org/content/early/2016/04/28/050757)] 
+[[Model](http://www.cs.ut.ee/~leopoldp/2016_DeepYeast/code/caffe_model)]
+
