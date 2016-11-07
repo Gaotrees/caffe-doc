@@ -162,6 +162,14 @@ NVCCFLAGS += -D_FORCE_INLINES -ccbin=$(CXX) -Xcompiler -fPIC $(COMMON_FLAGS).
 
 (See the discussion at: https://github.com/BVLC/caffe/issues/4046)
 
+When compiling with OpenCV 3.0 or errors show `imread`,`imencode`, or `imdecode` 
+open your Makefile with some text editor, add opencv_imgcodecs behind.
+```
+ LIBRARIES += glog gflags protobuf leveldb snappy \
+  lmdb boost_system hdf5_hl hdf5 m \
+  opencv_core opencv_highgui opencv_imgproc opencv_imgcodecs
+```
+(See the discussion at: https://github.com/BVLC/caffe/issues/1276)
 ```
 make all
 make test
