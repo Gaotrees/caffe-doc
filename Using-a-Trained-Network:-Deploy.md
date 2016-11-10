@@ -161,8 +161,8 @@ The MNist data is of size 32x32 and in RGB. For simplicity we will keep the batc
     input_shape {
       dim: 1 # batchsize
       dim: 3 # number of colour channels - rgb
-      dim: 32 # width
       dim: 32 # height
+      dim: 32 # width
     }
     ...
 
