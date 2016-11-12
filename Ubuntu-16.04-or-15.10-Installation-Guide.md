@@ -1,4 +1,4 @@
-The following guide includes the how-to instructions for the installation of BVLC/Caffe in Ubuntu 16.04 with Cuda Toolkit 8.0, CUDNN 5.1 library and OpenCV version 2 or 3. (A small record remains from the previous tutorial for Ubuntu 15.10 with the Cuda Toolkit 7.5, but that part will not be updated any further.) This guide also covers the KUbuntu distribution and the related distributions.
+The following guide includes the how-to instructions for the installation of BVLC/Caffe on Ubuntu 16.04 with Cuda Toolkit 8.0, CUDNN 5.1 library and OpenCV version 2 or 3. (A small record remains from the previous tutorial for Ubuntu 15.10 with the Cuda Toolkit 7.5, but that part will not be updated any further.) This guide also covers the KUbuntu distribution and the related distributions.
 
 Execute these commands first:
 
@@ -268,3 +268,13 @@ Edit the Makefile.config in Caffe directory accordingly (as described in the con
 ### Test the Caffe framework with DeepDream project
 
 A fun way to try the Caffe framework for python is to use it in the DeepDream project. Visit the following site for specific source code: https://github.com/google/deepdream One of the trained neural networks used in this procedure, can be found here: http://places.csail.mit.edu/model/googlenet_places205.tar.gz Before you begin, you need to prepare the Ubuntu 16.04 system for the use of IPython and Jupyter. For these instructions, see: https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jupyter-notebook-to-run-ipython-on-ubuntu-16-04
+
+Then, you can add Python 2 and Python 3 kernels for the execution of IPython Notebooks (usually with the command ```jupyter notebook filename```).
+
+```
+python2 -m pip install ipykernel
+python2 -m ipykernel install --user
+
+python3 -m pip install ipykernel
+python3 -m ipykernel install --user
+```
