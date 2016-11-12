@@ -1,6 +1,6 @@
 # Making Your First Layer
 
-In this article we will go through an example layer and explain the basic concepts and calls required to be compliant with the caffe framework. This article we will not go into great detail into every aspect of the framework, but rather get a medium level understanding about what a layer is intended to do. We will learn by example, making and testing a very simple sin layer. 
+In this article we will go through an example layer and explain the basic concepts and calls required to be compliant with the caffe framework. This article we will not go into great detail into every aspect of the framework, but rather get a medium level understanding about what a layer is intended to do. We will learn by example, making and testing a very simple layer which computes the `sine` function of its inputs. 
 
 ## The Layer
 
@@ -8,7 +8,7 @@ This layer will take in data from the bottom Blob, transform into new data and s
 
 ### The Header Definition
 
-The typical includes and setup:
+Create a new file at `include/caffe/layers/sin_layer.hpp`. Begin by adding the following standard setup:
 
     #ifndef CAFFE_SIN_LAYER_HPP_
     #define CAFFE_SIN_LAYER_HPP_
@@ -29,7 +29,7 @@ The typical includes and setup:
       explicit SinLayer(const LayerParameter& param)
           : NeuronLayer<Dtype>(param) {}
 
-A method that must be overridden. This is necessary to link the protobuf code to your C++ code. Essentially you are creating an identifier that will act as a link this layer to the framework. The must be unique and should be named after your layer, not including the "Layer" part ie. `"sin_layer"` becomes `"Sin"`.  
+A method that must be overridden. This is necessary to link the protobuf code to your C++ code. Essentially you are creating an identifier that will act as a link this layer to the framework. The must be unique and should be named after your layer, not including the "Layer" part i.e. `"sin_layer"` becomes `"Sin"`.  
     
       virtual inline const char* type() const { return "Sin"; }
 
@@ -46,7 +46,7 @@ These methods must be overridden as well. They will define the forward and backw
       virtual void Backward_gpu(const vector<Blob<Dtype>*>& top,
           const vector<bool>& propagate_down, const vector<Blob<Dtype>*>& bottom);
 
-Completing the file.
+Finally, complete the file by adding the following:
 
     };
       
@@ -56,7 +56,7 @@ Completing the file.
 
 ### CPU Version
 
-Basic file setup.
+Next, create a new file to hold the implementation of the layer at `src/caffe/layers/sin_layer.cpp`. Begin by adding the basic file setup:
 
     // Sin neuron activation function layer.
     // Adapted from TanH layer which was adapted from the ReLU layer code written by Yangqing Jia
@@ -97,7 +97,7 @@ We take in an immutable reference of the bottom (what our layer had previously r
         const Dtype* top_diff = top[0]->cpu_diff();
         Dtype* bottom_diff = bottom[0]->mutable_cpu_diff();
         const int count = bottom[0]->count();
-        Dtype top_datum;
+        Dtype bottom_datum;
         for (int i = 0; i < count; ++i) {
           bottom_datum = bottom_data[i];
           bottom_diff[i] = top_diff[i] * cos(bottom_datum);
@@ -118,7 +118,7 @@ Closing off the class.
 
 ### GPU Version
 
-Basic file setup.
+To add a GPU implementation of the layer, create a file at `src/caffe/layers/sin_layer.cu` and add the following:
 
     // Sin neuron activation function layer.
     // Adapted from TanH layer which was adapted from the ReLU layer code written by Yangqing Jia
@@ -190,7 +190,7 @@ Closing off the class.
 
 ### Testing Your Layer
 
-Basic file setup.
+To ensure that your new layer is functioning correctly, it is important to numerically check the gradients that it produces. We can do this by adding some tests. Add the following to a file called `src/caffe/test/test_sin_layer.cpp`:
 
     #include <algorithm>
     #include <vector>
@@ -204,9 +204,9 @@ Basic file setup.
     #include "caffe/test/test_caffe_main.hpp"
     #include "caffe/test/test_gradient_check_util.hpp"
 
-Include the layer that we are testing!
+Remember to include the layer that we are testing!
     
-   #include "caffe/layers/sin_layer.hpp"
+    #include "caffe/layers/sin_layer.hpp"
 
 More file setup.
 
@@ -285,7 +285,7 @@ Here we will be defining a test, with the test set name `SinLayerTest` (naming c
       this->TestForward(1.0);
     }
 
-A descriptive unique test name `TestSinGradient`, that will test that our layer is calculating the gradient correctly when backpragating.
+A descriptive unique test name `TestSinGradient`, that will test that our layer is calculating the gradient correctly when backpropagating.
 
     TYPED_TEST(SinLayerTest, TestSinGradient) {
       this->TestBackward(1.0);
