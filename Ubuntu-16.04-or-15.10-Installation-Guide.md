@@ -269,7 +269,7 @@ Edit the Makefile.config in Caffe directory accordingly (as described in the con
 
 A fun way to try the Caffe framework for python is to use it in the DeepDream project. Visit the following site for specific source code: https://github.com/google/deepdream One of the trained neural networks used in this procedure, can be found here: http://places.csail.mit.edu/model/googlenet_places205.tar.gz Before you begin, you need to prepare the Ubuntu 16.04 system for the use of IPython and Jupyter. For these instructions, see: https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jupyter-notebook-to-run-ipython-on-ubuntu-16-04
 
-Then, you can add Python 2 and Python 3 kernels for the execution of IPython Notebooks (usually with the command ```jupyter notebook filename```).
+Then, you can add Python 2 and Python 3 kernels for the execution of IPython Notebooks (usually with the command ```ipython notebook filename```).
 
 ```
 python2 -m pip install ipykernel
