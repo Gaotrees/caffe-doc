@@ -510,6 +510,33 @@ The model was converted from the MXNet InceptionBN-21k network trained by Mu Li.
 [[Paper](https://arxiv.org/abs/1502.03167)] 
 [[Original MXNet network](https://github.com/dmlc/mxnet-model-gallery/blob/master/imagenet-21k-inception.md)]
 
+### ResNet-101 for Face Recognition
+
+This page contains a ResNet-101 deep network model, tuned for face recognition.
+
+We fine-tuned this model using the procedure described in _I. Masi*, A. Tran*, T. Hassner*, J. Leksut, G. Medioni, "Do We Really Need to Collect Million of Faces for Effective Face Recognition? "_, in Proc. of ECCV 2016 [1] on the publicly available CASIA WebFace set.
+
+_(your informations are required to proceed to the download page in the link below)_
+
+Please, remember to cite our paper below, if you use our model, thanks.
+
+``` latex
+@inproceedings{masi16dowe,
+      title={Do {W}e {R}eally {N}eed to {C}ollect {M}illions of {F}aces 
+      for {E}ffective {F}ace {R}ecognition?},
+      booktitle = {European Conference on Computer Vision},
+      author={Iacopo Masi 
+      and Anh Tran 
+      and Tal Hassner 
+      and Jatuporn Toy Leksut 
+      and G\'{e}rard Medioni},
+      year={2016},
+    }
+```
+    
+[[PDF](http://www.openu.ac.il/home/hassner/projects/augmented_faces/Masietal2016really.pdf)] 
+[[Webpage](http://www.openu.ac.il/home/hassner/projects/augmented_faces/)] 
+
 ### DeepYeast
 
 11-layer convolutional neural network trained on two-channel microscopy images of yeast cells carrying fluorescent proteins with different subcellular localizations.
