@@ -514,7 +514,7 @@ The model was converted from the MXNet InceptionBN-21k network trained by Mu Li.
 
 This page contains a ResNet-101 deep network model, tuned for face recognition.
 
-We fine-tuned this model using the procedure described in _I. Masi\*, A. Tran\*, T. Hassner\*, J. Leksut, G. Medioni, "Do We Really Need to Collect Million of Faces for Effective Face Recognition? "_, in Proc. of ECCV 2016 [1] on the publicly available CASIA WebFace set.
+We fine-tuned this model using the procedure described in _I. Masi\*, A. Tran\*, T. Hassner\*, J. Leksut, G. Medioni, "Do We Really Need to Collect Million of Faces for Effective Face Recognition? "_, in Proc. of ECCV 2016 on the publicly available CASIA WebFace set.
 
 _(your informations are required to proceed to the download page in the link below)_
 
