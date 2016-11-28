@@ -157,12 +157,11 @@ becomes
 
 The MNist data is of size 32x32 and in RGB. For simplicity we will keep the batch size at 1. This new data entry point in our network looks like this:
 
-    input: "data"
-    input_shape {
-      dim: 1 # batchsize
-      dim: 3 # number of colour channels - rgb
-      dim: 32 # height
-      dim: 32 # width
+    layer {
+        name: "data"
+        type: "Input"
+        top: "data"
+        input_param { shape: { dim: 1 dim: 3 dim: 32 dim: 32 } }
     }
     ...
 
