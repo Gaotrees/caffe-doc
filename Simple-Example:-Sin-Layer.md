@@ -152,7 +152,7 @@ We take in an immutable reference of the bottom (what our layer will be getting 
       CUDA_POST_KERNEL_CHECK;
     }
 
-When it is our layer's turn to calculate the gradient (the effect we've had on the loss function), caffe will call the `Backward_cpu` method. The backward step takes data in from the `top` (a previous layer generally) via an array of Blobs. In this layer we will be, in part, calculating the loss with respect to this layer via the derivative of the `sin` function - the `cos` function. 
+When it is our layer's turn to calculate the gradient (the effect we've had on the loss function), caffe will call the `Backward_gpu` method. The backward step takes data in from the `top` (a previous layer generally) via an array of Blobs. In this layer we will be, in part, calculating the loss with respect to this layer via the derivative of the `sin` function - the `cos` function. 
 
 We take in an immutable reference of the bottom (what our layer had previously received input from), an immutable copy of the derivative from the layer above us, and a mutable reference to the gradient that we will output. We calculate the gradient, applying the chain rule (a multiplication with the previous calculation), and set the output gradient (`bottom_diff`).
 
