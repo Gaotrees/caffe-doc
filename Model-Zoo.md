@@ -551,7 +551,7 @@ CNN models pre-trained on 1000 ImageNet categories. Currently contains:
 * AlexNet and VGG16 with batch normalization added
 * Residual Networks with 50 (ResNet-50) and 10 layers (ResNet-10)
 
-Improves over previous pre-trained models and in particular reproduces the ImageNet results of ResNet50 using Caffe.
+Improves over previous pre-trained models and in particular reproduces the ImageNet results of ResNet50 using Caffe. Includes ResNet generation script, training code and log files.
 
 ```
 @article{simon2016cnnmodels,
