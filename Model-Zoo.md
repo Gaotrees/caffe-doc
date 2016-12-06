@@ -545,3 +545,21 @@ Please, remember to cite our paper below, if you use our model, thanks.
 [[Paper](http://biorxiv.org/content/early/2016/04/28/050757)] 
 [[Model](http://www.cs.ut.ee/~leopoldp/2016_DeepYeast/code/caffe_model)]
 
+### ImageNet pre-trained models with batch normalization
+CNN models pre-trained on 1000 ImageNet categories. Currently contains:
+
+* AlexNet and VGG16 with batch normalization added
+* Residual Networks with 50 (ResNet-50) and 10 layers (ResNet-10)
+
+Improves over previous pre-trained models and in particular reproduces the ImageNet results of ResNet50 using Caffe.
+
+```
+@article{simon2016cnnmodels,
+  Author = {Simon, Marcel and Rodner, Erik and Denzler, Joachim},
+  Journal = {arXiv preprint arXiv:1612.01452},
+  Title = {ImageNet pre-trained models with batch normalization},
+  Year = {2016}
+}
+```
+
+[[Models](https://github.com/cvjena/cnn-models)] [[Paper](https://arxiv.org/abs/1612.01452)] [[Website](http://www.inf-cv.uni-jena.de/Research/CNN+Models.html)]
