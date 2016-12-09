@@ -157,7 +157,7 @@ NVCCFLAGS += -ccbin=$(CXX) -Xcompiler -fPIC $(COMMON_FLAGS)
 ```
 with the following line
 ```
-NVCCFLAGS += -D_FORCE_INLINES -ccbin=$(CXX) -Xcompiler -fPIC $(COMMON_FLAGS).
+NVCCFLAGS += -D_FORCE_INLINES -ccbin=$(CXX) -Xcompiler -fPIC $(COMMON_FLAGS)
 ```
 
 (See the discussion at: https://github.com/BVLC/caffe/issues/4046)
@@ -170,6 +170,17 @@ open your Makefile with some text editor, add opencv_imgcodecs behind.
   opencv_core opencv_highgui opencv_imgproc opencv_imgcodecs opencv_videoio
 ```
 (See the discussion at: https://github.com/BVLC/caffe/issues/1276)
+
+If your CUDA is 8.0, replace this..
+```
+CUDA_DIR := /usr/local/cuda
+```
+with this ..
+```
+CUDA_DIR := /usr/local/cuda-8.0
+```
+
+Then
 ```
 make all
 make test
