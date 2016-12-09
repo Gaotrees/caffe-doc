@@ -82,6 +82,15 @@ The Makefile.config should contain the following lines, so find them and fill th
 
 (For ways to create an isolated Python environment, explore the topic of virtual environments here: http://docs.python-guide.org/en/latest/dev/virtualenvs/)
 
+If your CUDA is 8.0, find this in Makefile.config..
+
+> CUDA_DIR := /usr/local/cuda
+
+And replace it with this..
+
+> CUDA_DIR := /usr/local/cuda-8.0
+
+
 Now lets continue with the instructions for the Ubuntu 15.10 first, followed by the instructions for Ubuntu 16.04 users. 
 
 Execute the additional commands:
@@ -170,15 +179,6 @@ open your Makefile with some text editor, add opencv_imgcodecs behind.
   opencv_core opencv_highgui opencv_imgproc opencv_imgcodecs opencv_videoio
 ```
 (See the discussion at: https://github.com/BVLC/caffe/issues/1276)
-
-If your CUDA is 8.0, replace this..
-```
-CUDA_DIR := /usr/local/cuda
-```
-with this ..
-```
-CUDA_DIR := /usr/local/cuda-8.0
-```
 
 Then
 ```
