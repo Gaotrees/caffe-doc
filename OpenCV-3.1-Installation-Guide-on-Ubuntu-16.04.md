@@ -13,7 +13,7 @@ sudo apt-get install --assume-yes libvorbis-dev libxvidcore-dev v4l-utils
 
 In order to install the NVIDIA Cuda Toolkit with CUDNN library, see https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-or-15.10-Installation-Guide#the-gpu-support-prerequisites 
 
-Download the latest source archive for OpenCV 3.1 from http://opencv.org/downloads.html and unpack it.
+Download the latest source archive for OpenCV 3.1 from https://github.com/opencv/opencv. (Do not download it from http://opencv.org/downloads.html, because the official OpenCV 3.1 does not support CUDA 8.0.)
 
 Enter the unpacked directory. Execute:
 
