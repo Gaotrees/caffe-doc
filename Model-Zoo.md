@@ -563,3 +563,27 @@ Improves over previous pre-trained models and in particular reproduces the Image
 ```
 
 [[Models](https://github.com/cvjena/cnn-models)] [[Paper](https://arxiv.org/abs/1612.01452)] [[Website](http://www.inf-cv.uni-jena.de/Research/CNN+Models.html)]
+
+### ResNet-101 for regressing 3D morphable face models (3DMM) from single images
+
+This [project page](http://www.openu.ac.il/home/hassner/projects/CNN3DMM/)  contains a ResNet-101 deep network model for 3DMM regression (3D shape and texture)
+
+The download includes both the network itself and the parameters required to map the 3DMM parameters regressed by the network back to 3D shapes
+(e.g., the basis vectors for the face shape and the average face shape). 
+
+If you find this useful, please remember to cite of paper below:
+
+``` latex
+@article{tran16_3dmm_cnn,
+  title={Regressing Robust and Discriminative {3D} Morphable Models with a very Deep Neural Network},
+  author={Anh Tran 
+      and Tal Hassner 
+      and Iacopo Masi
+      and G\'{e}rard Medioni}
+  journal={arXiv preprint},
+  year={2016}
+}
+```
+    
+[[PDF](https://arxiv.org/abs/1612.04904)] 
+[[Webpage](http://www.openu.ac.il/home/hassner/projects/CNN3DMM/)] 
