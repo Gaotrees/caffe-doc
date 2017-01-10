@@ -587,3 +587,26 @@ If you find this useful, please remember to cite of paper below:
     
 [[PDF](https://arxiv.org/abs/1612.04904)] 
 [[Webpage](http://www.openu.ac.il/home/hassner/projects/CNN3DMM/)] 
+
+### Cascaded Fully Convolutional Networks for Biomedical Image Segmentation
+These models segment liver and liver tumor in CT volumes using the UNET architecture proposed by Ronnerberger et al. (2015). The [project](https://github.com/IBBM/Cascaded-FCN) contains all the source code, models and a notebook for easy liver and liver tumor inference. We encourage researcher to use our models for finetuning.
+
+If you find this work useful for your research, please cite:
+``` latex
+@Inbook{Christ2016,
+title="Automatic Liver and Lesion Segmentation in CT Using Cascaded Fully Convolutional Neural Networks and 3D Conditional Random Fields",
+author="Christ, Patrick Ferdinand and Elshaer, Mohamed Ezzeldin A. and Ettlinger, Florian and Tatavarty, Sunil and Bickel, Marc and Bilic, Patrick and Rempfler, Markus and Armbruster, Marco and Hofmann, Felix and D'Anastasi, Melvin and Sommer, Wieland H. and Ahmadi, Seyed-Ahmad and Menze, Bjoern H.",
+editor="Ourselin, Sebastien and Joskowicz, Leo and Sabuncu, Mert R. and Unal, Gozde and Wells, William",
+bookTitle="Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2016: 19th International Conference, Athens, Greece, October 17-21, 2016, Proceedings, Part II",
+year="2016",
+publisher="Springer International Publishing",
+address="Cham",
+pages="415--423",
+isbn="978-3-319-46723-8",
+doi="10.1007/978-3-319-46723-8_48",
+url="http://dx.doi.org/10.1007/978-3-319-46723-8_48"
+}
+```
+[[PDF](https://arxiv.org/abs/1610.02177)] 
+[[Webpage](https://github.com/IBBM/Cascaded-FCN)]
+[[Models](https://github.com/IBBM/Cascaded-FCN)]  
