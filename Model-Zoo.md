@@ -610,3 +610,22 @@ url="http://dx.doi.org/10.1007/978-3-319-46723-8_48"
 [[PDF](https://arxiv.org/abs/1610.02177)] 
 [[Webpage](https://github.com/IBBM/Cascaded-FCN)]
 [[Models](https://github.com/IBBM/Cascaded-FCN)]  
+
+### Deep Networks for Earth Observation
+These models have been trained to perform semantic segmentation on aerial images, as proposed by Audebert et al. (2016). The available models are based on the SegNet architecture (Kendall et al., 2015). The [project repository](https://github.com/nshaud/DeepNetsForEO) contains the model definitions and pre-trained weights on the city of Vaihingen.
+
+```latex
+@inproceedings{audebert_semantic_2016,
+    address = {Taipei, Taiwan},
+    title = {Semantic {Segmentation} of {Earth} {Observation} {Data} {Using} {Multimodal} and {Multi}-scale {Deep} {Networks}},
+    url = {https://hal.archives-ouvertes.fr/hal-01360166},
+    urldate = {2016-10-13},
+    booktitle = {Asian {Conference} on {Computer} {Vision} ({ACCV}16)},
+    author = {Audebert, Nicolas and Le Saux, Bertrand and Lefèvre, Sébastien},
+    month = nov,
+    year = {2016},
+    keywords = {computer vision, data fusion, Earth observation, Neural networks, remote sensing},
+}
+```
+[[PDF](https://arxiv.org/abs/1609.06846)] 
+[[Project](https://github.com/nshaud/DeepNetsForEO)] 
