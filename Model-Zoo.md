@@ -61,6 +61,8 @@ In the paper, the models are denoted as configurations `D` and `E`, trained with
 The combination of the two models achieves 7.1% top-5 error on ILSVRC-2012-val, and 7.0% top-5 error on ILSVRC-2012-test.
 
 ### Places-CNN model from MIT.
+[![Try model on Haystack](https://img.shields.io/badge/try-on%20haystack-blue.svg)](https://www.haystack.ai/demos/Places205-AlexNet-Demo)
+
 Places CNN is described in the following [NIPS 2014 paper](http://places.csail.mit.edu/places_NIPS14.pdf):
 
     B. Zhou, A. Lapedriza, J. Xiao, A. Torralba, and A. Oliva
@@ -93,6 +95,8 @@ Details, model definitions, pre-trained weights, and code are public on github: 
 These models are compatible with Caffe master, unlike earlier FCNs that required a pre-release branch (note: this reference edition of the models is still in progress and not all of the models have yet been ported to master). The models are available under the same license as the Caffe-bundled models (i.e., for unrestricted use; see http://caffe.berkeleyvision.org/model_zoo.html#bvlc-model-license).
 
 ### CaffeNet fine-tuned for Oxford flowers dataset
+[![Try model on Haystack](https://img.shields.io/badge/try-on%20haystack-blue.svg)](https://www.haystack.ai/demos/Oxford-Flower-Demo)
+
 https://gist.github.com/jimgoo/0179e52305ca768a601f
 
 The is the reference CaffeNet (modified [AlexNet](http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks)) fine-tuned for the [Oxford 102 category flower dataset](http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html). The number of outputs in the inner product layer has been set to 102 to reflect the number of flower categories. Hyperparameter choices reflect those in [Fine-tuning CaffeNet for Style Recognition on “Flickr Style” Data](http://caffe.berkeleyvision.org/gathered/examples/finetune_flickr_style.html). The global learning rate is reduced while the learning rate for the final fully connected is increased relative to the other layers.
@@ -161,6 +165,7 @@ The models are described in the following paper:
 If you find our models useful, please add suitable reference to our paper in your work.
 
 ### GoogLeNet_cars on car model classification
+
 [GoogLeNet_cars](https://gist.github.com/bogger/b90eb88e31cd745525ae) is the GoogLeNet model pre-trained on ImageNet classification task and fine-tuned on 431 car models in [CompCars dataset](http://mmlab.ie.cuhk.edu.hk/datasets/comp_cars/index.html). It is described in the [technical report](http://arxiv.org/abs/1506.08959). Please cite the following work if the model is useful for you.
 
     A Large-Scale Car Dataset for Fine-Grained Categorization and Verification
@@ -263,6 +268,8 @@ original model trained using MatConvNet library.
 If you find our models useful, please add suitable reference to our paper in your work.
 
 ###Yearbook Photo Dating
+[![Try model on Haystack](https://img.shields.io/badge/try-on%20haystack-blue.svg)](https://www.haystack.ai/demos/Yearbook-Demo)
+
 Model from the [ICCV 2015 Extreme Imaging Workshop paper](http://arxiv.org/abs/1511.02575):
 
     A Century of Portraits: Exploring the Visual Historical Record of American High School Yearbooks 
@@ -492,6 +499,7 @@ No bounding box or part annotations were used for fine-tuning. Part-based object
 [[Models](https://drive.google.com/file/d/0B6VgjAr4t_oTQXN2Y3VYaEMwVDA/view?usp=sharing)] [[Paper](http://arxiv.org/abs/1504.08289)] [[Github repo](https://github.com/cvjena/part_constellation_models)] [[Slides](https://cms.rz.uni-jena.de/dbvmedia/de/Simon/ICCV15_SimonRodner_slides.pdf)]
 
 ### Inception-BN full ImageNet model
+[![Try model on Haystack](https://img.shields.io/badge/try-on%20haystack-blue.svg)](https://www.haystack.ai/demos/Inception-Demo)
 
 Inception-v2 model trained on full ImageNet dataset with 14,197,087 images in 21,841 classes. 
 
