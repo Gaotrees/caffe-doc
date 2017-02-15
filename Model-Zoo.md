@@ -639,7 +639,7 @@ These models have been trained to perform semantic segmentation on aerial images
 [[Project](https://github.com/nshaud/DeepNetsForEO)] 
 
 ### Supervised Learning of Semantics-Preserving Hash via Deep Convolutional Neural Networks
-We present a simple yet effective supervised deep hash approach that constructs binary hash codes from labeled data for large-scale image search. The supervised semantics-preserving deep hashing (SSDH) constructs hash functions as a latent layer in a deep network and the binary codes are learned by minimizing an objective function defined over classification error and other desirable hash codes properties. This is the extended version of our "[CVPRW'15 paper](http://www.iis.sinica.edu.tw/~kevinlin311.tw/cvprw15.pdf)". The details can be found in the following "[TPAMI'17 paper](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxrZXZpbmxpbjMxMXR3fGd4OjUxMmUwZjAzMjA0YmYyMTg)":
+We present a simple yet effective supervised deep hash approach that constructs binary hash codes from labeled data for large-scale image search. The supervised semantics-preserving deep hashing (SSDH) constructs hash functions as a latent layer in a deep network and the binary codes are learned by minimizing an objective function defined over classification error and other desirable hash codes properties. This is the extended version of our "[CVPRW'15 paper.](http://www.iis.sinica.edu.tw/~kevinlin311.tw/cvprw15.pdf)" The details can be found in the following "[TPAMI'17 paper](https://arxiv.org/pdf/1507.00101v2.pdf)":
 
     Supervised Learning of Semantics-Preserving Hash via Deep Convolutional Neural Networks
     Huei-Fang Yang, Kevin Lin, Chu-Song Chen
