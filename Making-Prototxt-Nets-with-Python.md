@@ -19,7 +19,7 @@ def example_network(batch_size):
     n = caffe.NetSpec()
 
     n.loss, n.label = L.DummyData(shape=[dict(dim=[1]),
-                                         dict(dim=[1]),
+                                         dict(dim=[1])],
                                   transform_param=dict(scale=1.0/255.0),
                                   ntop=2)
 
