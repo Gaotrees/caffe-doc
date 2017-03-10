@@ -7,6 +7,51 @@ To acquire a model:
 
 or visit the [model zoo documentation](http://caffe.berkeleyvision.org/model_zoo.html) for complete instructions.
 
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+**Table of Contents**
+
+- [Berkeley-trained models](#berkeley-trained-models)
+- [Network in Network model](#network-in-network-model)
+- [Models from the BMVC-2014 paper "Return of the Devil in the Details: Delving Deep into Convolutional Nets"](#models-from-the-bmvc-2014-paper-return-of-the-devil-in-the-details-delving-deep-into-convolutional-nets)
+- [Models used by the VGG team in ILSVRC-2014](#models-used-by-the-vgg-team-in-ilsvrc-2014)
+- [Places-CNN model from MIT.](#places-cnn-model-from-mit)
+- [GoogLeNet GPU implementation from Princeton.](#googlenet-gpu-implementation-from-princeton)
+- [Fully Convolutional Networks for Semantic Segmentation (FCNs)](#fully-convolutional-networks-for-semantic-segmentation-fcns)
+- [CaffeNet fine-tuned for Oxford flowers dataset](#caffenet-fine-tuned-for-oxford-flowers-dataset)
+- [CNN Models for Salient Object Subitizing.](#cnn-models-for-salient-object-subitizing)
+- [Deep Learning of Binary Hash Codes for Fast Image Retrieval](#deep-learning-of-binary-hash-codes-for-fast-image-retrieval)
+- [Places_CNDS_models on Scene Recognition](#placescndsmodels-on-scene-recognition)
+- [Models for Age and Gender Classification.](#models-for-age-and-gender-classification)
+- [GoogLeNet_cars on car model classification](#googlenetcars-on-car-model-classification)
+- [ParseNet: Looking wider to see better](#parsenet-looking-wider-to-see-better)
+- [SegNet and Bayesian SegNet](#segnet-and-bayesian-segnet)
+- [Conditional Random Fields as Recurrent Neural Networks](#conditional-random-fields-as-recurrent-neural-networks)
+- [Holistically-Nested Edge Detection](#holistically-nested-edge-detection)
+- [CCNN: Constrained Convolutional Neural Networks for Weakly Supervised Segmentation](#ccnn-constrained-convolutional-neural-networks-for-weakly-supervised-segmentation)
+- [Emotion Recognition in the Wild via Convolutional Neural Networks and Mapped Binary Patterns](#emotion-recognition-in-the-wild-via-convolutional-neural-networks-and-mapped-binary-patterns)
+- [Facial Landmark Detection with Tweaked Convolutional Neural Networks](#facial-landmark-detection-with-tweaked-convolutional-neural-networks)
+- [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks](#faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks)
+- [ResNets: Deep Residual Networks from MSRA at ImageNet and COCO 2015](#resnets-deep-residual-networks-from-msra-at-imagenet-and-coco-2015)
+- [Pascal VOC 2012 Multilabel Classification Model](#pascal-voc-2012-multilabel-classification-model)
+- [SqueezeNet: AlexNet-level accuracy with 50x fewer parameters](#squeezenet-alexnet-level-accuracy-with-50x-fewer-parameters)
+- [Mixture DCNN](#mixture-dcnn)
+- [CNN Object Proposal Models for Salient Object Detection](#cnn-object-proposal-models-for-salient-object-detection)
+- [Deep Hand: How to Train a CNN on 1 Million Hand Images When Your Data Is Continuous and Weakly Labelled](#deep-hand-how-to-train-a-cnn-on-1-million-hand-images-when-your-data-is-continuous-and-weakly-labelled)
+- [Mulimodal Compact Bilinear Pooling for VQA](#mulimodal-compact-bilinear-pooling-for-vqa)
+- [Pose-Aware CNN Models (PAMs) for Face Recognition](#pose-aware-cnn-models-pams-for-face-recognition)
+- [Learning Structured Sparsity in Deep Neural Networks](#learning-structured-sparsity-in-deep-neural-networks)
+- [Neural Activation Constellations: Unsupervised Part Model Discovery with Convolutional Networks](#neural-activation-constellations-unsupervised-part-model-discovery-with-convolutional-networks)
+- [Inception-BN full ImageNet model](#inception-bn-full-imagenet-model)
+- [ResNet-101 for Face Recognition](#resnet-101-for-face-recognition)
+- [DeepYeast](#deepyeast)
+- [ImageNet pre-trained models with batch normalization](#imagenet-pre-trained-models-with-batch-normalization)
+- [ResNet-101 for regressing 3D morphable face models (3DMM) from single images](#resnet-101-for-regressing-3d-morphable-face-models-3dmm-from-single-images)
+- [Cascaded Fully Convolutional Networks for Biomedical Image Segmentation](#cascaded-fully-convolutional-networks-for-biomedical-image-segmentation)
+- [Deep Networks for Earth Observation](#deep-networks-for-earth-observation)
+- [Supervised Learning of Semantics-Preserving Hash via Deep Convolutional Neural Networks](#supervised-learning-of-semantics-preserving-hash-via-deep-convolutional-neural-networks)
+
+<!-- markdown-toc end -->
+
 ### Berkeley-trained models
 
  - [Finetuning on Flickr Style](https://gist.github.com/sergeyk/034c6ac3865563b69e60): same as provided in `models/`, but listed here as a Gist for an example.
