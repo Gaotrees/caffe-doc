@@ -49,6 +49,7 @@ or visit the [model zoo documentation](http://caffe.berkeleyvision.org/model_zoo
 - [Cascaded Fully Convolutional Networks for Biomedical Image Segmentation](#cascaded-fully-convolutional-networks-for-biomedical-image-segmentation)
 - [Deep Networks for Earth Observation](#deep-networks-for-earth-observation)
 - [Supervised Learning of Semantics-Preserving Hash via Deep Convolutional Neural Networks](#supervised-learning-of-semantics-preserving-hash-via-deep-convolutional-neural-networks)
+- [Striving for Simplicity: The All Convolutional Net](#striving-for-simplicity-the-all-convolutional-net)
 
 <!-- markdown-toc end -->
 
@@ -693,3 +694,15 @@ We present a simple yet effective supervised deep hash approach that constructs 
 please cite the paper if you use the model:
  * [Caffe-DeepBinaryCode](https://github.com/kevinlin311tw/Caffe-DeepBinaryCode): See our code release on Github, which allows you to train your own deep hashing model and create binary hash codes.
 
+### Striving for Simplicity: The All Convolutional Net
+
+Implementation of All-CNN-C model for CIFAR-10 from the paper _Striving for Simplicity: The All Convolutional Net_ by Jost Tobias Springenberg, Alexey Dosovitskiy, Thomas Brox, Martin Riedmiller, accepted as a workshop contribution at ICLR 2015.
+
+``` latex
+@article{Springenberg14,
+  author    = {Jost Tobias Springenberg and Alexey Dosovitskiy and Thomas Brox and Martin A. Riedmiller},
+  title     = {Striving for Simplicity: The All Convolutional Net},
+  year      = {2014},
+}
+```
+[[arXiv](https://arxiv.org/abs/1412.6806)] [[GitHub repo](https://github.com/mateuszbuda/ALL-CNN)]
