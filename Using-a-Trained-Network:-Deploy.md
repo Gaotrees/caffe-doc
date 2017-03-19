@@ -155,13 +155,13 @@ becomes
 
 #### Set the Network Up To Accept Data.
 
-The MNist data is of size 32x32 and in RGB. For simplicity we will keep the batch size at 1. This new data entry point in our network looks like this:
+The MNist data is of size 28x28 and in gray. For simplicity we will keep the batch size at 1. This new data entry point in our network looks like this:
 
     layer {
         name: "data"
         type: "Input"
         top: "data"
-        input_param { shape: { dim: 1 dim: 3 dim: 32 dim: 32 } }
+        input_param { shape: { dim: 1 dim: 1 dim: 28 dim: 28 } }
     }
     ...
 
