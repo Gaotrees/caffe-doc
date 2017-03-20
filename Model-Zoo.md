@@ -42,7 +42,7 @@ or visit the [model zoo documentation](http://caffe.berkeleyvision.org/model_zoo
 - [Learning Structured Sparsity in Deep Neural Networks](#learning-structured-sparsity-in-deep-neural-networks)
 - [Neural Activation Constellations: Unsupervised Part Model Discovery with Convolutional Networks](#neural-activation-constellations-unsupervised-part-model-discovery-with-convolutional-networks)
 - [Inception-BN full ImageNet model](#inception-bn-full-imagenet-model)
-- [ResFace101: ResNet-101 for Face Recognition](#resnet-101-for-face-recognition)
+- [ResFace101: ResNet-101 for Face Recognition](#resface101:-resnet-101-for-face-recognition)
 - [DeepYeast](#deepyeast)
 - [ImageNet pre-trained models with batch normalization](#imagenet-pre-trained-models-with-batch-normalization)
 - [ResNet-101 for regressing 3D morphable face models (3DMM) from single images](#resnet-101-for-regressing-3d-morphable-face-models-3dmm-from-single-images)
