@@ -570,8 +570,6 @@ This page contains ResFace101: a ResNet-101 deep network model, tuned for face r
 
 We fine-tuned this model using the procedure described in _I. Masi\*, A. Tran\*, T. Hassner\*, J. Leksut, G. Medioni, "Do We Really Need to Collect Million of Faces for Effective Face Recognition? "_, in Proc. of ECCV 2016 on the publicly available CASIA WebFace set.
 
-_(your informations are required to proceed to the download page in the link below)_
-
 Please, remember to cite our paper below, if you use our model, thanks.
 
 ``` latex
