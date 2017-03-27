@@ -122,7 +122,7 @@ sudo ln -s libhdf5_serial_hl.so.10.0.2 libhdf5_hl.so
 
 Now for both platforms lets return to the unpacked Caffe directory caffe-master and enter these commands:
 
-`````
+```
 cd python
 
 for req in $(cat requirements.txt); do pip install $req; done
