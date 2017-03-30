@@ -1,4 +1,4 @@
-#Install cuda 8.0.
+### Install cuda 8.0.
 
 As the default gcc in Ubuntu 16.04 is very new, if you have compiling error similar to `#error -- unsupported GNU version! gcc versions later than 5.3 are not supported!`
 
@@ -10,7 +10,7 @@ Try to comment the `#error` line in file `/usr/local/cuda/include/host_config.h`
 
 `#endif /* __GNUC__ > 5 || (__GNUC__ == 5 && __GNUC_MINOR__ > 1) */`
 
-#Update nvidia driver
+### Update nvidia driver
 
 You may need to remove the old driver version installed with cuda-8.0 and install a newer version of driver, if you have error similar to `modprobe: ERROR: could not insert 'nvidia_361_uvm': Invalid argument`
 
@@ -36,7 +36,7 @@ compile the sample code and check if it works
 
 `./cuda8-0-samples/bin/x86_64/linux/release/deviceQuery `
 
-#Install prerequisities of Caffe
+### Install prerequisities of Caffe
 
 Because the gcc version is Ubuntu 16.04 is very new, If any prerequisity installed from `apt-get` does not work, uninstall it, compile and install it by the default gcc (5.4) from the source code. The prerequisities that may have problems include: [protobuf](https://github.com/BVLC/caffe/issues/3046) and `opencv`. E.g. if you have protobuf error similar to
 
@@ -55,4 +55,4 @@ then compile the [protobuf-2.5.0](https://github.com/google/protobuf/tree/v2.5.0
 
 `make install`
 
-#Compile and test Caffe here.
+### Compile and test Caffe here.
