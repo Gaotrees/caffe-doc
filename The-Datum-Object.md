@@ -13,9 +13,9 @@ datum.set_height(1); // our data is one-dimensional
 datum.set_channels(1);
 
 google::protobuf::RepeatedField<float>* datumFloatData = datum.mutable_float_data();
-datumFloatData.Add(0.0f);
-datumFloatData.Add(1.0f);
-datumFloatData.Add(0.0f);
+datumFloatData->Add(0.0f);
+datumFloatData->Add(1.0f);
+datumFloatData->Add(0.0f);
 
 datum.set_label(2);
 ``` 
