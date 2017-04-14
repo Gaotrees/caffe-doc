@@ -17,6 +17,12 @@ The [Facebook Caffe Extensions](https://github.com/facebook/fb-caffe-exts) inclu
 The [NVIDIA GPU Rest Engine](https://github.com/NVIDIA/gpu-rest-engine) demonstrates a server for low-latency image classification inference. It is a technical demo that shows how you can add a REST API on top of Caffe using the Go language, and how to package all your dependencies inside a Docker container. Thanks to @flx42.
 
 ***
+
+[Ristretto](http://lepsucd.com/?page_id=621) is a framework for deep network approximation that can help experiment with quantization, reduced precision, and other optimizations.
+
+***
+
+***
 ![Expresso screenshot](http://val.serc.iisc.ernet.in/expresso/main-screen.png)
 **[Expresso](https://github.com/val-iisc/expresso)** is a Python-based GUI for designing, training and using CNNs. Expresso uses Caffe as its backend CNN framework. Some of its salient features : 
  - A convenient wizard-like interface to contextually guide the user during common scenarios
