@@ -74,7 +74,7 @@ The Makefile.config should contain the following lines, so find them and fill th
 
 > PYTHON_INCLUDE := /usr/include/python2.7 /usr/lib/python2.7/dist-packages/numpy/core/include
 
-(for some users, the path may be different)
+(for some Ubuntu 16.04 users, the path may be different)
 > PYTHON_INCLUDE := /usr/include/python2.7 /usr/local/lib/python2.7/dist-packages/numpy/core/include
 
 > WITH_PYTHON_LAYER := 1
