@@ -72,7 +72,9 @@ The default option value is to use GPU and CPU computation. Change the line if n
 
 The Makefile.config should contain the following lines, so find them and fill them in.
 
-> PYTHON_INCLUDE := /usr/include/python2.7 /usr/lib/python2.7/dist-packages/numpy/core/include  
+> PYTHON_INCLUDE := /usr/include/python2.7 /usr/lib/python2.7/dist-packages/numpy/core/include
+(for some users, the path may be different)
+> PYTHON_INCLUDE := /usr/include/python2.7 /usr/local/lib/python2.7/dist-packages/numpy/core/include
 
 > WITH_PYTHON_LAYER := 1
 
