@@ -273,7 +273,7 @@ Model trained on BSDS-500 Dataset (finetuned from the VGGNet):
 
  * [HED BSDS-500](https://gist.github.com/s9xie/c6bd432f7347548b0187)
 
-###Translating Videos to Natural Language 
+### Translating Videos to Natural Language 
 
 These models are described in [this NAACL-HLT 2015 paper](http://www.cs.utexas.edu/users/ml/papers/venugopalan.naacl15.pdf).  
 
@@ -293,7 +293,7 @@ Compatibility:
 These are pre-release models. They do not run in any current version of BVLC/caffe, as they require unmerged PRs. The models are currently supported  by the `recurrent` branch of the Caffe fork provided at https://github.com/jeffdonahue/caffe/tree/recurrent and https://github.com/vsubhashini/caffe/tree/recurrent.
 
 
-###VGG Face CNN descriptor
+### VGG Face CNN descriptor
 
 These models are described in this [BMVC 2015 paper] (http://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/parkhi15.pdf).  
 
@@ -313,7 +313,7 @@ original model trained using MatConvNet library.
 
 If you find our models useful, please add suitable reference to our paper in your work.
 
-###Yearbook Photo Dating
+### Yearbook Photo Dating
 [![Try model on Haystack](https://img.shields.io/badge/try-on%20haystack-blue.svg)](https://www.haystack.ai/demos/Yearbook-Demo)
 
 Model from the [ICCV 2015 Extreme Imaging Workshop paper](http://arxiv.org/abs/1511.02575):
@@ -367,7 +367,7 @@ This will populate the $FRCN_ROOT/data folder with faster_rcnn_models. See data/
 
 ref  https://github.com/rbgirshick/py-faster-rcnn/blob/master/data/scripts/fetch_faster_rcnn_models.sh
 
-###Sequence to Sequence - Video to Text                                                                                                                                                         
+### Sequence to Sequence - Video to Text                                                                                                                                                         
                                                                                                                                                                                                 
 These models are described in [this ICCV 2015 paper](http://www.cs.utexas.edu/users/ml/papers/venugopalan.iccv15.pdf).                                                                          
                                                                                                                                                                                                 
