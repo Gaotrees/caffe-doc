@@ -32,15 +32,15 @@ sudo apt-get install -y python3-numpy python3-scipy
 # (OpenCV 2.4)
 sudo apt-get install -y libopencv-dev
 
-(or, OpenCV 3.1 - see the instructions below)
+(or, OpenCV 3.2 - see the instructions below)
 
 ```
 
 If you own an NVIDIA graphics card, see the instructions for the installation of NVIDIA Graphics Driver, Cuda Toolkit and CUDNN library at the end of this document, or by clicking https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-or-15.10-Installation-Guide#the-gpu-support-prerequisites.
 
-For the instructions on how to use the OpenCV version 3.1, please see https://github.com/BVLC/caffe/wiki/OpenCV-3.1-Installation-Guide-on-Ubuntu-16.04
+For the instructions on how to use the OpenCV version 3.2, please see https://github.com/BVLC/caffe/wiki/OpenCV-3.2-Installation-Guide-on-Ubuntu-16.04
 
-The configuration settings will differ for OpenCV 3.1 as you can see above, but here we continue with the basic settings that imply the version 2.x.
+The configuration settings will differ for OpenCV 3.2 as you can see above, but here we continue with the basic settings that imply the version 2.x.
 
 Go to the https://github.com/BVLC/caffe and download the zip archive. Unpack it to ~/bin/ or any other location. Enter the caffe-master directory in the terminal window.
 
