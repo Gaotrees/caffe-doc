@@ -10,6 +10,7 @@ sudo apt-get install --assume-yes libavcodec-dev libavformat-dev libswscale-dev 
 sudo apt-get install --assume-yes libv4l-dev libtbb-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev
 sudo apt-get install --assume-yes libvorbis-dev libxvidcore-dev v4l-utils python-vtk
 sudo apt-get install --assume-yes liblapacke-dev libopenblas-dev checkinstall
+sudo apt-get install --assume-yes libgdal-dev
 ```
 
 In order to install the NVIDIA Cuda Toolkit with CUDNN library, see https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-or-15.10-Installation-Guide#the-gpu-support-prerequisites 
