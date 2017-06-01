@@ -171,7 +171,11 @@ with the following line
 ```
 NVCCFLAGS += -D_FORCE_INLINES -ccbin=$(CXX) -Xcompiler -fPIC $(COMMON_FLAGS)
 ```
-
+Also, open the file CMakeLists.txt and add the following line:
+```
+# ---[ Includes
+set(${CMAKE_CXX_FLAGS} "-D_FORCE_INLINES ${CMAKE_CXX_FLAGS}")
+```
 (See the discussion at: https://github.com/BVLC/caffe/issues/4046)
 
 When compiling with OpenCV 3.0 or errors show `imread`,`imencode`,`imdecode` or `VideoCapture`
