@@ -211,8 +211,10 @@ In order to make the Python work with Caffe, open the file ~/.bashrc for editing
 
 > export PYTHONPATH=/path/to/caffe-master/python:$PYTHONPATH
 
-You can also execute that same line immediately as a command for immediate effects.
-
+You can also execute that same line immediately in the terminal as a command for immediate effects, or in general execute:
+```
+source ~/.bashrc 
+```
 In order to use the Caffe binaries, libraries, or include files, they need to be reachable through the search path, so one solution is to copy them into their respective directories: from the distribute directory to the /usr/bin or /usr/lib or /usr/include.
 
 The binary models can be download with the following script. In caffe-master directory, 
