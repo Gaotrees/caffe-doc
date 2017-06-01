@@ -258,12 +258,14 @@ The LATEST version of Cuda Toolkit 8.0 is available from the NVIDIA website. Dow
 https://developer.nvidia.com/cuda-downloads
 
 Install the Cuda Toolkit 8.0 package manually in the terminal as instructed
-at the website. For example...
+at the website. For example:
 
 ```
- sudo dpkg -i cuda-repo-ubuntu1604_8.0.44-1_amd64.deb
- sudo apt-get update
- sudo apt-get install cuda
+sudo apt-get update && sudo apt-get install wget -y --no-install-recommends
+wget "http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_8.0.61-1_amd64.deb"
+sudo dpkg -i cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
+sudo apt-get update
+sudo apt-get install cuda
 ```
 
 Download and install the archive that contains the CUDNN library from https://developer.nvidia.com/cudnn.
@@ -271,6 +273,13 @@ Download and install the archive that contains the CUDNN library from https://de
 Put all the downloaded and unpacked CUDNN files manually starting with the search path directory where the CUDA toolkit is, each file in its own respective directory. That directory could be /usr/local/cuda or /usr if you installed Cuda 7.5 from the Ubuntu repository. 
 
 Example: the unpacked directory content should be copied from /lib64 directory in the downloaded archive to /usr/lib/x86_64-linux-gnu/ and from /include directory to /usr/include/.
+
+```
+CUDNN_URL="http://developer.download.nvidia.com/compute/redist/cudnn/v5.1/cudnn-8.0-linux-x64-v5.1.tgz"
+wget ${CUDNN_URL}
+sudo tar -xzf cudnn-8.0-linux-x64-v5.1.tgz -C /usr/local
+rm cudnn-8.0-linux-x64-v5.1.tgz && sudo ldconfig
+```
 
 In Kubuntu 16.04, you also need to enable the use of proprietary drivers (in System Settings -> Driver Manager). The previous best option was to use the Muon package manager for all software installations. There, you can find the NVIDIA driver and the Cuda Toolkit 7.5 package. (Thus far, Cuda Toolkit 8.0 has not appeared in this package manager.) The packages are given through the standard Canonical and Canonical Partners software sources (repositories). You need to install the Muon manager itself with the following command:
 
