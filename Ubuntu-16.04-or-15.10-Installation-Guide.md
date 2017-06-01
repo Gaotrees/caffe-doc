@@ -42,7 +42,10 @@ For the instructions on how to use the OpenCV version 3.2, please see https://gi
 
 The configuration settings will differ for OpenCV 3.2 as you can see above, but here we continue with the basic settings that imply the version 2.x.
 
-Go to the https://github.com/BVLC/caffe and download the zip archive. Unpack it to ~/bin/ or any other location. Enter the caffe-master directory in the terminal window. (Note that only the version 1.0RC5 compiles well at this moment, so download from here: https://github.com/BVLC/caffe/archive/rc5.zip)
+Go to the https://github.com/BVLC/caffe and download the zip archive. Unpack it to ~/bin/ or any other location. Enter the caffe-master directory in the terminal window. Note that only the version 1.0RC5 compiles well at this moment, so download from here: https://github.com/BVLC/caffe/archive/rc5.zip. If you download 1.0 version, you need to edit the file /src/caffe/util/blocking_queue.cpp. After the line 89, add the new line that contains the following: 
+```
+template class BlockingQueue<Datum*>;
+```
 
 Copy the Makefile.config.example to Makefile.config like this:
 
