@@ -124,7 +124,7 @@ Models:
 
 ### GoogLeNet GPU implementation from Princeton.
 We implemented GoogLeNet using a single GPU. Our main contribution is an effective way to initialize the network and a trick to overcome the GPU memory constraint by accumulating gradients over two training iterations. 
-* Please check [http://vision.princeton.edu/pvt/GoogLeNet/](http://vision.princeton.edu/pvt/GoogLeNet/) for more information. Pre-trained models on ImageNet and Places, and the training code are available for download.
+* Please check [http://3dvision.princeton.edu/pvt/GoogLeNet/](http://3dvision.princeton.edu/pvt/GoogLeNet/) for more information. Pre-trained models on [ImageNet](http://3dvision.princeton.edu/pvt/GoogLeNet/ImageNet/) and [Places](http://3dvision.princeton.edu/pvt/GoogLeNet/Places/), and the training code are available for download.
 * Make sure cls2_fc2 and cls3_fc have num_output = 1000 in the prototxt. Otherwise, the trained model would crash on test.
 
 ### <a name="fcn"></a>Fully Convolutional Networks for Semantic Segmentation (FCNs)
