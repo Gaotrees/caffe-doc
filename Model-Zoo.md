@@ -22,7 +22,7 @@ or visit the [model zoo documentation](http://caffe.berkeleyvision.org/model_zoo
 - [Deep Learning of Binary Hash Codes for Fast Image Retrieval](#deep-learning-of-binary-hash-codes-for-fast-image-retrieval)
 - [Places_CNDS_models on Scene Recognition](#placescndsmodels-on-scene-recognition)
 - [Models for Age and Gender Classification.](#models-for-age-and-gender-classification)
-- [GoogLeNet_cars on car model classification](#googlenetcars-on-car-model-classification)
+- [GoogLeNet_cars on car model classification](#googlenet_cars-on-car-model-classification)
 - [ParseNet: Looking wider to see better](#parsenet-looking-wider-to-see-better)
 - [SegNet and Bayesian SegNet](#segnet-and-bayesian-segnet)
 - [Conditional Random Fields as Recurrent Neural Networks](#conditional-random-fields-as-recurrent-neural-networks)
