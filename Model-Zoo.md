@@ -50,6 +50,7 @@ or visit the [model zoo documentation](http://caffe.berkeleyvision.org/model_zoo
 - [Deep Networks for Earth Observation](#deep-networks-for-earth-observation)
 - [Supervised Learning of Semantics-Preserving Hash via Deep Convolutional Neural Networks](#supervised-learning-of-semantics-preserving-hash-via-deep-convolutional-neural-networks)
 - [Striving for Simplicity: The All Convolutional Net](#striving-for-simplicity-the-all-convolutional-net)
+- [VGG 4x without degradation: Channel Pruning for Accelerating Very Deep Neural Networks](#vgg-4x-without-degradation-channel-pruning-for-accelerating-very-deep-neural-networks)
 
 <!-- markdown-toc end -->
 
@@ -701,3 +702,20 @@ Implementation of All-CNN-C model for CIFAR-10 from the paper _Striving for Simp
 }
 ```
 [[arXiv](https://arxiv.org/abs/1412.6806)] [[GitHub repo](https://github.com/mateuszbuda/ALL-CNN)]
+
+### VGG 4x without degradation: Channel Pruning for Accelerating Very Deep Neural Networks
+
+An algorithm that effectively prune channels each layer, which could accelerate VGG-16 4x without degradation. Accepted as a poster at _ICCV 2017_.
+
+``` latex
+@article{he2017channel,
+  title={Channel Pruning for Accelerating Very Deep Neural Networks},
+  author={He, Yihui and Zhang, Xiangyu and Sun, Jian},
+  journal={arXiv preprint arXiv:1707.06168},
+  year={2017}
+}
+```
+Models:
+- [VGG-16 4x](https://github.com/yihui-he/channel-pruning/releases/tag/VGG-16_3C4x) 10.1% top-5 error and 29.4% top-1 error on ILSVRC-2012.
+
+[[PDF](https://arxiv.org/abs/1707.06168)] [[Github repo](https://github.com/yihui-he/channel-pruning)] 
