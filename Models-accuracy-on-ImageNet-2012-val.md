@@ -8,6 +8,7 @@ Single center crop from 256x256 warped image, mean value = [104 117 123].
 |[NiN](https://drive.google.com/folderview?id=0B0IedYUunOQINEFtUi1QNWVhVVU&usp=drive_web)*   | 0.567  | 0.795 | 
 |VGG-DevilS| 0.612 | 0.834 |
 |VGG-19 | 0.685 | 0.885 |
+|[VGG-16 4x](https://github.com/BVLC/caffe/wiki/Model-Zoo#vgg-4x-without-degradation-channel-pruning-for-accelerating-very-deep-neural-networks) | 0.706 | 0.899 |
 |BVLC GoogLeNet | 0.687| 0.890 |
 |Princeton GoogLeNet | 0.672 | 0.881 |
 
