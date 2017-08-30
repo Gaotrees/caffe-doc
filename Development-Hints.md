@@ -4,9 +4,9 @@
 
 *hello*
 
-** hello
+**hello
 
-__ hello
+__hello
 
 * hello world
 
