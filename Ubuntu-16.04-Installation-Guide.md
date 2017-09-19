@@ -1,21 +1,15 @@
-The following guide includes the how-to instructions for the installation of BVLC/Caffe on Ubuntu 16.04 with Cuda Toolkit 8.0, CUDNN library (currently libcudnn7-dev_7.0.2.38-1+cuda8.0_amd64.deb) and OpenCV version 2 or 3. (A small record remains from the previous tutorial for Ubuntu 15.10 with the Cuda Toolkit 7.5, but that part will not be updated any further.) This guide also covers the KUbuntu distribution and the related distributions.
+The following guide includes the how-to instructions for the installation of BVLC/Caffe on Ubuntu 16.04 with Cuda Toolkit 8.0.61-1, CUDNN library 7.0.2.38-1 and OpenCV version 2.x or 3.3. This guide also covers the KUbuntu distribution and the related distributions.
 
 Execute these commands first:
 
 ```shell
 
 sudo apt-get update
-
 sudo apt-get upgrade
-
 sudo apt-get install -y build-essential cmake git pkg-config
-
 sudo apt-get install -y libprotobuf-dev libleveldb-dev libsnappy-dev libhdf5-serial-dev protobuf-compiler
-
 sudo apt-get install -y libatlas-base-dev 
-
 sudo apt-get install -y --no-install-recommends libboost-all-dev
-
 sudo apt-get install -y libgflags-dev libgoogle-glog-dev liblmdb-dev
 
 # (Python general)
@@ -36,13 +30,14 @@ sudo apt-get install -y libopencv-dev
 
 ```
 
-If you own an NVIDIA graphics card, see the instructions for the installation of NVIDIA Graphics Driver, Cuda Toolkit and CUDNN library at the end of this document, or by clicking https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-or-15.10-Installation-Guide#the-gpu-support-prerequisites.
+If you own an NVIDIA graphics card, see the instructions for the installation of NVIDIA Graphics Driver, Cuda Toolkit and CUDNN library at the end of this document, or by clicking https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-Installation-Guide#the-gpu-support-prerequisites.
 
 For the instructions on how to use the OpenCV version 3.3, please see https://github.com/BVLC/caffe/wiki/OpenCV-3.3-Installation-Guide-on-Ubuntu-16.04
 
 The configuration settings will differ for OpenCV 3.3 as you can see above, but here we continue with the basic settings that imply the version 2.x.
 
-Go to the https://github.com/BVLC/caffe and download the zip archive. Unpack it to ~/bin/ or any other location. Enter the caffe-master directory in the terminal window. Note that only the version 1.0RC5 compiles well at this moment, so download the 1.0RC5 version from https://github.com/BVLC/caffe/archive/rc5.zip. If you download the 1.0 version from https://github.com/BVLC/caffe/archive/1.0.zip, you need to edit the file /src/caffe/util/blocking_queue.cpp. After the line 89, add the new line that contains the following: 
+Go to the https://github.com/BVLC/caffe and download the zip archive. Unpack it to ~/bin/ or any other location. Enter the caffe-master directory in the terminal window. Note that only the version 1.0RC5 compiles well at this moment, so download the 1.0RC5 version from https://github.com/BVLC/caffe/archive/rc5.zip. If you download the 1.0 version from https://github.com/BVLC/caffe/archive/1.0.zip, you need to edit the file /src/caffe/util/blocking_queue.cpp. After the line 89, and the new line that contains the following:
+
 ```
 template class BlockingQueue<Datum*>;
 ```
@@ -71,7 +66,7 @@ The following line in the configuration file tells the program to use CPU only f
 
 CPU_ONLY option is enabled for a computer without any NVIDIA graphics card and it is typical for the installation of Caffe inside the typical virtual machine. (Notice that there is a special type of virtual machine inside the Ubuntu host machine that can access the physical NVIDIA graphics card directly. See https://github.com/NVIDIA/nvidia-docker)
 
-The default option value is to use GPU and CPU computation. Change the line if needed, by commenting it out (# CPU_ONLY := 1) if you have an NVIDIA graphics card with the proprietary driver, CUDA toolkit and CUDNN installed. Jump to the end of this guide to read about how to install the GPU support prerequisites.
+The default option value is to use GPU and CPU computation. Change the line if needed, by commenting it out (# CPU_ONLY := 1) if you have the NVIDIA graphics card with the proprietary driver, CUDA toolkit and CUDNN installed. Jump to the end of this guide to read about how to install the GPU support prerequisites.
 
 The Makefile.config should contain the following lines, so find them and fill them in.
 
@@ -88,45 +83,15 @@ The Makefile.config should contain the following lines, so find them and fill th
 
 (For ways to create an isolated Python environment, explore the topic of virtual environments here: http://docs.python-guide.org/en/latest/dev/virtualenvs/)
 
-If your CUDA is 8.0, find this in Makefile.config..
+If you encounter a missing CUDA error with CUDA version 8.0, find this line in the Makefile.config:
 
 > CUDA_DIR := /usr/local/cuda
 
-And replace it with this..
+And replace it with this line:
 
 > CUDA_DIR := /usr/local/cuda-8.0
 
-
-Now lets continue with the instructions for the Ubuntu 15.10 first, followed by the instructions for Ubuntu 16.04 users. 
-
-Execute the additional commands:
-
-```
-find . -type f -exec sed -i -e 's^"hdf5.h"^"hdf5/serial/hdf5.h"^g' -e 's^"hdf5_hl.h"^"hdf5/serial/hdf5_hl.h"^g' '{}' \;
-
-cd /usr/lib/x86_64-linux-gnu
-
-sudo ln -s libhdf5_serial.so.8.0.2 libhdf5.so
-
-sudo ln -s libhdf5_serial_hl.so.8.0.2 libhdf5_hl.so
-```
-
-The above commands are no longer needed on Ubuntu 16.04 after a certain system update. If your Ubuntu 16.04 still needs this step to be performed, take the following considerations. 
-
-The file versions for libhdf5_serial.so and libhdf5_serial_hl.so are different and so the last two lines will need to be altered. Visit /usr/lib/x86_64-linux-gnu/ and list the relevant contents of that directory by using the command such as `ls -l | grep hdf5`. The versions of libhdf5 that need to be linked to are 10.1.0 and 10.0.2 respectively:
-
-```
-find . -type f -exec sed -i -e 's^"hdf5.h"^"hdf5/serial/hdf5.h"^g' -e 's^"hdf5_hl.h"^"hdf5/serial/hdf5_hl.h"^g' '{}' \;
-
-cd /usr/lib/x86_64-linux-gnu
-
-sudo ln -s libhdf5_serial.so.10.1.0 libhdf5.so
-
-sudo ln -s libhdf5_serial_hl.so.10.0.2 libhdf5_hl.so 
-
-```
-
-Now for both platforms lets return to the unpacked Caffe directory caffe-master and enter these commands:
+Let's return to the unpacked Caffe directory caffe-master and execute these commands:
 
 ```
 cd python
@@ -138,7 +103,7 @@ for req in $(cat requirements.txt); do pip install $req; done
 --------------------------------------------------------------------------------------------------------------
 
 
-NOTE: If the Ubuntu operating system was updated, perhaps the Python layer needs to be updated and recompiled, because the Python module no longer works. Perform this step again in that case.
+NOTE: If the Ubuntu operating system was updated, perhaps the Python layer needs to be updated and recompiled because the Python module no longer works. Perform this step again in that case.
 
 ```
 for req in $(cat requirements.txt); do pip install $req; done
@@ -181,16 +146,9 @@ set(${CMAKE_CXX_FLAGS} "-D_FORCE_INLINES ${CMAKE_CXX_FLAGS}")
 ```
 (See the discussion at: https://github.com/BVLC/caffe/issues/4046)
 
-When compiling with OpenCV 3.0 or errors include the `imread`,`imencode`,`imdecode` or `VideoCapture`.
-Open your Makefile with a text editor, and add opencv_imgcodecs below.
-```
- LIBRARIES += glog gflags protobuf leveldb snappy \
-  lmdb boost_system boost_filesystem hdf5_hl hdf5 m \
-  opencv_core opencv_highgui opencv_imgproc opencv_imgcodecs opencv_videoio
-```
-(See the discussion at: https://github.com/BVLC/caffe/issues/1276)
 
-Then
+Next, build the Caffe with the following command.
+
 ```
 make all
 make test
