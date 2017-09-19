@@ -1,4 +1,4 @@
-The following guide includes the how-to instructions for the installation of BVLC/Caffe on Ubuntu 16.04 with Cuda Toolkit 8.0, CUDNN 5.1 library and OpenCV version 2 or 3. (A small record remains from the previous tutorial for Ubuntu 15.10 with the Cuda Toolkit 7.5, but that part will not be updated any further.) This guide also covers the KUbuntu distribution and the related distributions.
+The following guide includes the how-to instructions for the installation of BVLC/Caffe on Ubuntu 16.04 with Cuda Toolkit 8.0, CUDNN library (currently libcudnn7-dev_7.0.2.38-1+cuda8.0_amd64.deb) and OpenCV version 2 or 3. (A small record remains from the previous tutorial for Ubuntu 15.10 with the Cuda Toolkit 7.5, but that part will not be updated any further.) This guide also covers the KUbuntu distribution and the related distributions.
 
 Execute these commands first:
 
@@ -32,15 +32,15 @@ sudo apt-get install -y python3-numpy python3-scipy
 # (OpenCV 2.4)
 sudo apt-get install -y libopencv-dev
 
-(or, OpenCV 3.2 - see the instructions below)
+(or, OpenCV 3.3 - see the instructions below)
 
 ```
 
 If you own an NVIDIA graphics card, see the instructions for the installation of NVIDIA Graphics Driver, Cuda Toolkit and CUDNN library at the end of this document, or by clicking https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-or-15.10-Installation-Guide#the-gpu-support-prerequisites.
 
-For the instructions on how to use the OpenCV version 3.2, please see https://github.com/BVLC/caffe/wiki/OpenCV-3.2-Installation-Guide-on-Ubuntu-16.04
+For the instructions on how to use the OpenCV version 3.3, please see https://github.com/BVLC/caffe/wiki/OpenCV-3.3-Installation-Guide-on-Ubuntu-16.04
 
-The configuration settings will differ for OpenCV 3.2 as you can see above, but here we continue with the basic settings that imply the version 2.x.
+The configuration settings will differ for OpenCV 3.3 as you can see above, but here we continue with the basic settings that imply the version 2.x.
 
 Go to the https://github.com/BVLC/caffe and download the zip archive. Unpack it to ~/bin/ or any other location. Enter the caffe-master directory in the terminal window. Note that only the version 1.0RC5 compiles well at this moment, so download the 1.0RC5 version from https://github.com/BVLC/caffe/archive/rc5.zip. If you download the 1.0 version from https://github.com/BVLC/caffe/archive/1.0.zip, you need to edit the file /src/caffe/util/blocking_queue.cpp. After the line 89, add the new line that contains the following: 
 ```
@@ -256,7 +256,7 @@ Discover which driver number you need with:
 
     sudo ubuntu-drivers devices
 
-The LATEST version of Cuda Toolkit 8.0 is available from the NVIDIA website. Download the Cuda Toolkit 8.0 network installer and the CUDNN 5.1 package from the NVIDIA site, after registering and filling out the forms.
+The LATEST version of Cuda Toolkit 8.0 is available from the NVIDIA website. Download the Cuda Toolkit 8.0 network installer and the CUDNN 7 package from the NVIDIA site, after registering and filling out the forms.
 https://developer.nvidia.com/cuda-downloads
 
 Install the Cuda Toolkit 8.0 package manually in the terminal as instructed
@@ -270,18 +270,20 @@ sudo apt-get update
 sudo apt-get install cuda
 ```
 
-Download and install the archive that contains the CUDNN library from https://developer.nvidia.com/cudnn.
-
-Put all the downloaded and unpacked CUDNN files manually starting with the search path directory where the CUDA toolkit is, each file in its own respective directory. That directory could be /usr/local/cuda or /usr if you installed Cuda 7.5 from the Ubuntu repository. 
+Download and install the Debian (.deb) package that contains the CUDNN library from https://developer.nvidia.com/cudnn.
 
 Example: the unpacked directory content should be copied from /lib64 directory in the downloaded archive to /usr/lib/x86_64-linux-gnu/ and from /include directory to /usr/include/.
 
 ```
-CUDNN_URL="http://developer.download.nvidia.com/compute/redist/cudnn/v5.1/cudnn-8.0-linux-x64-v5.1.tgz"
-wget ${CUDNN_URL}
-sudo tar -xzf cudnn-8.0-linux-x64-v5.1.tgz -C /usr/local
-rm cudnn-8.0-linux-x64-v5.1.tgz && sudo ldconfig
+CUDNN_URL1="https://developer.nvidia.com/compute/machine-learning/cudnn/secure/v7/prod/8.0_20170906/Ubuntu16_04_x64/libcudnn7_7.0.2.38-1+cuda8.0_amd64-deb"
+CUDNN_URL2="https://developer.nvidia.com/compute/machine-learning/cudnn/secure/v7/prod/8.0_20170906/Ubuntu16_04_x64/libcudnn7-dev_7.0.2.38-1+cuda8.0_amd64-deb"
+wget ${CUDNN_URL1}
+wget ${CUDNN_URL2}
+sudo dpkg -i libcudnn7_7.0.2.38-1+cuda8.0_amd64.deb 
+sudo dpkg -i libcudnn7-dev_7.0.2.38-1+cuda8.0_amd64.deb
 ```
+
+(For earlier versions, put all the downloaded and unpacked CUDNN files manually, found in the appropriate CUDNN archive starting with the search path directory where the CUDA toolkit is, each file in its own respective directory. That directory could be /usr/local/cuda or /usr if you installed Cuda 7.5 from the Ubuntu repository. Execute: sudo ldconfig.)
 
 In Kubuntu 16.04, you also need to enable the use of proprietary drivers (in System Settings -> Driver Manager). The previous best option was to use the Muon package manager for all software installations. There, you can find the NVIDIA driver and the Cuda Toolkit 7.5 package. (Thus far, Cuda Toolkit 8.0 has not appeared in this package manager.) The packages are given through the standard Canonical and Canonical Partners software sources (repositories). You need to install the Muon manager itself with the following command:
 
