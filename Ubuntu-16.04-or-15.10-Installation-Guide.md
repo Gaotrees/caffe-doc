@@ -181,8 +181,8 @@ set(${CMAKE_CXX_FLAGS} "-D_FORCE_INLINES ${CMAKE_CXX_FLAGS}")
 ```
 (See the discussion at: https://github.com/BVLC/caffe/issues/4046)
 
-When compiling with OpenCV 3.0 or errors show `imread`,`imencode`,`imdecode` or `VideoCapture`
-open your Makefile with some text editor, add opencv_imgcodecs behind.
+When compiling with OpenCV 3.0 or errors include the `imread`,`imencode`,`imdecode` or `VideoCapture`.
+Open your Makefile with a text editor, and add opencv_imgcodecs below.
 ```
  LIBRARIES += glog gflags protobuf leveldb snappy \
   lmdb boost_system boost_filesystem hdf5_hl hdf5 m \
