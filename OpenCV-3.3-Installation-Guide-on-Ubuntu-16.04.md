@@ -9,8 +9,7 @@ sudo apt-get install --assume-yes libopencv-dev libgtk-3-dev libdc1394-22 libdc1
 sudo apt-get install --assume-yes libavcodec-dev libavformat-dev libswscale-dev libxine2-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev
 sudo apt-get install --assume-yes libv4l-dev libtbb-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev
 sudo apt-get install --assume-yes libvorbis-dev libxvidcore-dev v4l-utils vtk6
-sudo apt-get install --assume-yes liblapacke-dev libopenblas-dev checkinstall
-sudo apt-get install --assume-yes libgdal-dev
+sudo apt-get install --assume-yes liblapacke-dev libopenblas-dev libgdal-dev checkinstall
 ```
 
 In order to install the NVIDIA Cuda Toolkit with CUDNN library, see https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-Installation-Guide#the-gpu-support-prerequisites 
@@ -40,9 +39,8 @@ and reboot the system.
 
 ### Using `checkinstall` (this gives incomplete results without the installation by using ```make```)
 
-While you are in the build directory, execute these commands:
+While you are in the build directory, execute this command:
 
-    sudo apt-get install checkinstall
     sudo checkinstall
 
 Fill in the text as required to give the description and the package name. This will create the OpenCV 3.3 package that has a modern install/uninstall option.
