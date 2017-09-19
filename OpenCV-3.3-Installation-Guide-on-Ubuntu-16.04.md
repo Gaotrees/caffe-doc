@@ -13,7 +13,7 @@ sudo apt-get install --assume-yes liblapacke-dev libopenblas-dev checkinstall
 sudo apt-get install --assume-yes libgdal-dev
 ```
 
-In order to install the NVIDIA Cuda Toolkit with CUDNN library, see https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-or-15.10-Installation-Guide#the-gpu-support-prerequisites 
+In order to install the NVIDIA Cuda Toolkit with CUDNN library, see https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-Installation-Guide#the-gpu-support-prerequisites 
 
 Download the latest source archive for OpenCV 3.3 from https://github.com/opencv/opencv/archive/3.3.0.zip
 
