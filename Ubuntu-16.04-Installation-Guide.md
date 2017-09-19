@@ -207,6 +207,8 @@ and fill out a form with some easy questions, you will have the package made aut
 
 In Ubuntu desktop, enable the use of proprietary drivers in the Software & Updates Center for your desktop and install the NVIDIA graphics driver from the main Ubuntu package repository. See https://help.ubuntu.com/community/BinaryDriverHowto/Nvidia 
 
+In Kubuntu 16.04, you need to enable the use of proprietary drivers (in System Settings -> Driver Manager). 
+
 Discover which driver number you need with:
 
     sudo ubuntu-drivers devices
@@ -219,30 +221,18 @@ at the website. For example:
 
 ```
 sudo apt-get update && sudo apt-get install wget -y --no-install-recommends
-wget "http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_8.0.61-1_amd64.deb"
+wget "https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_8.0.61-1_amd64.deb"
 sudo dpkg -i cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
 sudo apt-get update
 sudo apt-get install cuda
 ```
 
-Download and install the Debian (.deb) package that contains the CUDNN library from https://developer.nvidia.com/cudnn.
-
-Example: the unpacked directory content should be copied from /lib64 directory in the downloaded archive to /usr/lib/x86_64-linux-gnu/ and from /include directory to /usr/include/.
+Register an account in order to download and install the Debian (.deb) package that contains the CUDNN library from https://developer.nvidia.com/cudnn.
 
 ```
-CUDNN_URL1="https://developer.nvidia.com/compute/machine-learning/cudnn/secure/v7/prod/8.0_20170906/Ubuntu16_04_x64/libcudnn7_7.0.2.38-1+cuda8.0_amd64-deb"
-CUDNN_URL2="https://developer.nvidia.com/compute/machine-learning/cudnn/secure/v7/prod/8.0_20170906/Ubuntu16_04_x64/libcudnn7-dev_7.0.2.38-1+cuda8.0_amd64-deb"
-wget ${CUDNN_URL1}
-wget ${CUDNN_URL2}
 sudo dpkg -i libcudnn7_7.0.2.38-1+cuda8.0_amd64.deb 
 sudo dpkg -i libcudnn7-dev_7.0.2.38-1+cuda8.0_amd64.deb
 ```
-
-(For earlier versions, put all the downloaded and unpacked CUDNN files manually, found in the appropriate CUDNN archive starting with the search path directory where the CUDA toolkit is, each file in its own respective directory. That directory could be /usr/local/cuda or /usr if you installed Cuda 7.5 from the Ubuntu repository. Execute: sudo ldconfig.)
-
-In Kubuntu 16.04, you also need to enable the use of proprietary drivers (in System Settings -> Driver Manager). The previous best option was to use the Muon package manager for all software installations. There, you can find the NVIDIA driver and the Cuda Toolkit 7.5 package. (Thus far, Cuda Toolkit 8.0 has not appeared in this package manager.) The packages are given through the standard Canonical and Canonical Partners software sources (repositories). You need to install the Muon manager itself with the following command:
-
-    sudo apt-get install muon
 
 You can check your Ubuntu environment variables after the reboot, by executing the command:
 
@@ -250,13 +240,13 @@ You can check your Ubuntu environment variables after the reboot, by executing t
 export
 ```
 
-Edit the Makefile.config in Caffe directory accordingly (as described in the config file itself) and recompile the Caffe to support the GPU computation. To recompile, first execute ```make clean```.
+Edit the Makefile.config in Caffe directory accordingly (as described in the config file itself) and recompile the Caffe to support the GPU computation. To recompile, first, execute ```make clean```.
 
 ----------------------------------------------------------------------------------------
 
 ### Test the Caffe framework with DeepDream project
 
-A fun way to try the Caffe framework for python is to use it in the DeepDream project. Visit the following site for specific source code: https://github.com/google/deepdream One of the trained neural networks used in this procedure, can be found here: http://places.csail.mit.edu/model/googlenet_places205.tar.gz Before you begin, you need to prepare the Ubuntu 16.04 system for the use of IPython and Jupyter. For these instructions, see: https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jupyter-notebook-to-run-ipython-on-ubuntu-16-04
+A fun way to try the Caffe framework for python is to use it in the DeepDream project. Visit the following site for specific source code: https://github.com/google/deepdream One of the trained neural networks used in this procedure can be found here: http://places.csail.mit.edu/model/googlenet_places205.tar.gz Before you begin, you need to prepare the Ubuntu 16.04 system for the use of IPython and Jupyter. For these instructions, see: https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jupyter-notebook-to-run-ipython-on-ubuntu-16-04
 
 Then, you can add Python 2 and Python 3 kernels for the execution of IPython Notebooks (usually with the command ```ipython notebook filename```).
 
