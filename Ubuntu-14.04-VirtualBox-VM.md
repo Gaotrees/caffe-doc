@@ -65,14 +65,14 @@ This is a guide to setting up Caffe in a 14.04 virtual machine with CUDA 6.5 and
   * `python python/classify.py --print_results examples/images/cat.jpg foo`
   * Expected result: `[('tabby', '0.27933'), ('tiger cat', '0.21915'), ('Egyptian cat', '0.16064'), ('lynx', '0.12844'), ('kit fox', '0.05155')]`
   * If running this command results in `ValueError: Mean shape incompatible with input shape.` in `python/caffe/io.py`, modify `python/caffe/io.py` as follows:
- 
-````
-# Replace this
-if ms != self.inputs[in_][1:]:`
+1. Replace this
+```python
+if ms != self.inputs[in_][1:]:
     raise ValueError('Mean shape incompatible with input shape.')
 ```
-```
-# With this
+2. With this
+    
+```python
 if ms != self.inputs[in_][1:]:
     print(self.inputs[in_])
     in_shape = self.inputs[in_][1:]
