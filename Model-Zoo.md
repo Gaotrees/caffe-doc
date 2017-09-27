@@ -51,6 +51,7 @@ or visit the [model zoo documentation](http://caffe.berkeleyvision.org/model_zoo
 - [Supervised Learning of Semantics-Preserving Hash via Deep Convolutional Neural Networks](#supervised-learning-of-semantics-preserving-hash-via-deep-convolutional-neural-networks)
 - [Striving for Simplicity: The All Convolutional Net](#striving-for-simplicity-the-all-convolutional-net)
 - [VGG 4x without degradation: Channel Pruning for Accelerating Very Deep Neural Networks](#vgg-4x-without-degradation-channel-pruning-for-accelerating-very-deep-neural-networks)
+- [Using Ranking-CNN for Age Estimation](#using-ranking-cnn-for-age-estimation)
 
 <!-- markdown-toc end -->
 
@@ -719,3 +720,18 @@ Models:
 - [VGG-16 4x](https://github.com/yihui-he/channel-pruning/releases/tag/VGG-16_3C4x) 10.1% top-5 error and 29.4% top-1 error on ILSVRC-2012.
 
 [[PDF](https://arxiv.org/abs/1707.06168)] [[Github repo](https://github.com/yihui-he/channel-pruning)] 
+
+### Using Ranking-CNN for Age Estimation
+
+The ranking-CNN Caffe model for the CVPR 2017 paper: 
+
+<pre><code>@InProceedings{Chen_2017_CVPR,
+author = {Chen, Shixing and Zhang, Caojin and Dong, Ming and Le, Jialiang and Rao, Mike},
+title = {Using Ranking-CNN for Age Estimation},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {July},
+year = {2017}
+}</code></pre>
+    
+[[PDF](http://openaccess.thecvf.com/content_cvpr_2017/papers/Chen_Using_Ranking-CNN_for_CVPR_2017_paper.pdf)] 
+[[GitHub repo](https://github.com/RankingCNN/Using-Ranking-CNN-for-Age-Estimation)]
