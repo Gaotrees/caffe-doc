@@ -61,10 +61,10 @@ The Makefile.config should contain the following lines, so find them and fill th
 PYTHON_INCLUDE := /usr/include/python2.7 /usr/lib/python2.7/dist-packages/numpy/core/include
 (for some Ubuntu 16.04 users, the path may be different)
 
-PYTHON_INCLUDE := /usr/include/python2.7 /usr/local/lib/python2.7/dist-packages/numpy/core/include
-WITH_PYTHON_LAYER := 1
-INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial
-LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/hdf5/serial
+PYTHON_INCLUDE := /usr/include/python2.7 /usr/local/lib/python2.7/dist-packages/numpy/core/include  
+WITH_PYTHON_LAYER := 1  
+INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial  
+LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/hdf5/serial  
 (For ways to create an isolated Python environment, explore the topic of virtual environments here: http://docs.python-guide.org/en/latest/dev/virtualenvs/)
 
 If your CUDA is 8.0, find this in Makefile.config..
@@ -103,7 +103,7 @@ cd python
 for req in $(cat requirements.txt); do pip install $req; done
 NOTE: If the Ubuntu operating system was updated, perhaps the Python layer needs to be updated and recompiled, because the Python module no longer works. Perform this step again in that case.
 
-for req in $(cat requirements.txt); do pip install $req; done
+for req in $(cat requirements.txt); do pip install $req; done  
 In case of any problems, try:
 
 for req in $(cat requirements.txt); do sudo -H pip install $req --upgrade; done
