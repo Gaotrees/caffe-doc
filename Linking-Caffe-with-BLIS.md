@@ -2,7 +2,7 @@
 BLIS is a portable software framework for instantiating high-performance BLAS-like dense linear algebra libraries. The framework was designed to isolate essential kernels of computation that, when optimized, immediately enable optimized implementations of most of its commonly used and computationally intensive operations. More about in here: https://github.com/amd/blis
 
 ## BLIS is optimized for caffe
-The Caffe MNIST benchmark calls GEMM routines for really small matrix sizes. For lot of image processing applications such as hand written digit recognition, the region of interest is usually a smaller subsection of the large image, where the small matrix computation is commonly employed. we have fine tuned the small matrix performance of BLIS for the AMD EPYC processors and we are good performance improvement because of them. You can read more about them here: http://developer.amd.com/wordpress/media/2013/12/Accelerating-Machine-Learning-using-BLIS.pdf
+The Caffe MNIST benchmark calls GEMM routines for really small matrix sizes. For lot of image processing applications such as hand written digit recognition, the region of interest is usually a smaller subsection of the large image, where the small matrix computation is commonly employed. we have fine tuned the small matrix performance of BLIS for the AMD EPYC processors and we are seeing good performance improvement because of them. You can read more about them here: http://developer.amd.com/wordpress/media/2013/12/Accelerating-Machine-Learning-using-BLIS.pdf
 
 ## Linking BLIS with Caffe
 Perform the following steps: https://github.com/flame/blis/wiki/BuildSystem, to first build BLIS.
