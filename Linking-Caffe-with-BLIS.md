@@ -5,7 +5,7 @@ BLIS is a portable software framework for instantiating high-performance BLAS-li
 The Caffe MNIST benchmark calls GEMM routines for really small matrix sizes. For lot of image processing applications such as hand written digit recognition, the region of interest is usually a smaller subsection of the large image, where the small matrix computation is commonly employed. we have fine tuned the small matrix performance of BLIS for the AMD EPYC processors and we are seeing good performance improvement because of them. You can read more about them here: http://developer.amd.com/wordpress/media/2013/12/Accelerating-Machine-Learning-using-BLIS.pdf
 
 ## Linking BLIS with Caffe
-Caffe by default does not link with BLIS, hence you need to make modifications in the Makefile to enable it. Just check for the lines in Makefile, where it checks through the list of BLAS libraries (Hint: just search for the line : ifeq ($(BLAS), open)).  
+Caffe by default does not link with BLIS, hence you need to make modifications in the Makefile to enable it. Locate the lines in Makefile, where it checks through the list of BLAS libraries (Hint: just search for the line : ifeq ($(BLAS), open)).  
 
 Append the lines in the conditional check:
 
