@@ -1,12 +1,16 @@
 Below is the script to automatic install caffe, cuda and all it's dependencies. Tested work on AWS g2.2xlarge instance
 
-If you want to use CuDNN, you'll also need a copy of cudnn-8.0-linux-x64-v6.0.tgz. Place it in the /tmp directory.
+If you do not want to use CuDNN, run with USE_CUDNN=0
 
 ```
-# Add Nvidia's cuda repository
-if [ ! -f "/tmp/cudnn-8.0-linux-x64-v6.0.tgz" ] ; then
-  exit 1;
+CUDNN_TAR_FILE="cudnn-8.0-linux-x64-v6.0.tgz"
+if [ "$USE_CUDNN" != "0" ]; then
+  if [ ! -f "/tmp/${CUDNN_TAR_FILE}" ] ; then
+      curl -o /tmp/${CUDNN_TAR_FILE} http://developer.download.nvidia.com/compute/redist/cudnn/v6.0/${CUDNN_TAR_FILE}
+  fi
 fi
+
+# Add Nvidia's cuda repository
 wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
 sudo dpkg -i cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
 
@@ -32,14 +36,14 @@ sudo apt-get clean
 #sudo apt-get install -y linux-headers-virtual linux-source linux-image-extra-virtual
 sudo apt-get install -y linux-image-extra-`uname -r` linux-headers-`uname -r` linux-image-`uname -r`
 
-sudo apt-get install -y cuda
+sudo apt-get install -y cuda-8.0
 sudo apt-get clean
 
 # Optionally, download your own cudnn; requires registration.  
-if [ -f "/tmp/cudnn-8.0-linux-x64-v6.0.tgz" ] ; then
-  tar -xvf /tmp/cudnn-8.0-linux-x64-v6.0.tgz -C /tmp
-  sudo cp -P /tmp/cuda/lib64 /usr/local/cuda/lib64
-  sudo cp /tmp/cuda/include /usr/local/cuda/include
+if [ "$USE_CUDNN" != "0" ]; then
+  tar -xvf /tmp/${CUDNN_TAR_FILE} -C /tmp
+  sudo cp -P /tmp/cuda/lib64/* /usr/local/cuda/lib64
+  sudo cp /tmp/cuda/include/* /usr/local/cuda/include
 fi
 # Need to put cuda on the linker path.  This may not be the best way, but it works.
 sudo sh -c "sudo echo '/usr/local/cuda/lib64' > /etc/ld.so.conf.d/cuda_hack.conf"
@@ -55,7 +59,7 @@ for req in $(cat requirements.txt); do sudo pip install $req; done
 # Prepare Makefile.config so that it can build on aws
 cd ../
 cp Makefile.config.example Makefile.config
-if [ -f "../cudnn-8.0-linux-x64-v6.0.tgz" ] ; then
+if [ "$USE_CUDNN" != "0" ]; then
   sed -i '/^# USE_CUDNN := 1/s/^# //' Makefile.config
 fi
 sed -i '/^# WITH_PYTHON_LAYER := 1/s/^# //' Makefile.config
