@@ -43,6 +43,10 @@ This parameter indicates how much of the previous weight will be retained in the
 
 This parameter indicates the factor of (regularization) penalization of large weights. This value is a often a real fraction.
 
+#### random_seed
+
+A random seed used by the solver and the network (for example, in dropout layer).
+
 ##### solver_mode
 
 This parameter indicates which mode will be used in solving the network.
@@ -56,7 +60,7 @@ Options include:
 
 This parameter indicates how often caffe should output a model and solverstate. This value is a positive integer.
 
-##### snapshot_prefix: 
+##### snapshot_prefix
 
 This parameter indicates how a snapshot output's model and solverstate's name should be prefixed. This value is a double quoted string.
 
