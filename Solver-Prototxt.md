@@ -15,9 +15,13 @@ Options include:
 1. "step" - drop the learning rate in step sizes indicated by the **gamma** parameter.
 1. "multistep" - drop the learning rate in step size indicated by the **gamma** at each specified **stepvalue**.
 1. "fixed" - the learning rate does not change.
-1. "exp" - **gamma**^iteration
-1. "poly" - 
-1. "sigmoid" - 
+1. "exp" - **gamma**^_iter_
+1. "poly" - the effective learning rate follows a polynomial decay, to be zero by the max_iter.  
+**base_lr** * (1 - _iter_/**max_iter**) ^ (**power**)
+1. "sigmoid" -  the effective learning rate follows a sigmod decay.  
+**base_lr** * ( 1/(1 + exp(-**gamma** * (_iter_ - **stepsize**))))
+
+where **base_lr**, **max_iter**, **gamma**, **step**, **stepvalue** and **power** are defined in the solver parameter protocol buffer, and _iter_ is the current iteration.
 
 ##### gamma
 
