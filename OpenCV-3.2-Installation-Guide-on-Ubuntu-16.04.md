@@ -1,3 +1,6 @@
+## Updated! Build OpenCV 3.3
+[OpenCV-3.3-Installation-Guide-on-Ubuntu-16.04](https://github.com/BVLC/caffe/wiki/OpenCV-3.3-Installation-Guide-on-Ubuntu-16.04)
+
 ## How to Build OpenCV 3.2
 
 In Ubuntu 16.04, install the dependencies first and then build the OpenCV 3.2 from source. 
