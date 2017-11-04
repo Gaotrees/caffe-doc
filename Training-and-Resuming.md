@@ -22,7 +22,7 @@ It is possible to manually stop a network from training by pressing the `Ctrl+C`
 
 # Resuming
 
-When a network as stopped training, either due to manual halting or by reaching the maximum iterations, we may continue training our network by telling caffe to train from where we left off. This is as simple as supplying the snapshot flag with the current .solverstate file. For example:
+When a network has stopped training, either due to manual halting or by reaching the maximum iterations, we may continue training our network by telling caffe to train from where we left off. This is as simple as supplying the snapshot flag with the current .solverstate file. For example:
 
 `caffe train -solver solver.prototxt -snapshot train_190000.solverstate`
 
