@@ -14,7 +14,7 @@ To begin training, we simply need to call the caffe binary and supply a solver:
 
 We can have our network stop after a specified number of iterations with a parameter in the solver.prototxt named `max_iter`. 
 
-For example, we can specify that we would like our network to stop after 60,000 iteration, thus we set the parameter accordingly: `max_iter: 600000`.
+For example, we can specify that we would like our network to stop after 60,000 iteration, thus we set the parameter accordingly: `max_iter: 60000`.
 
 ### Manually Stopping
 
