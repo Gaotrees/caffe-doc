@@ -72,6 +72,9 @@ This parameter indicates how a snapshot output's model and solverstate's name sh
 
 This parameter indicates the location of the network to be trained (path to prototxt). This value is a double quoted string.
 
+##### iter_size
+Accumulate gradients across batches through the iter_size solver field. With this setting batch_size: 16 with iter_size: 1 and batch_size: 4 with iter_size: 4 are equivalent.
+
 ##### test_iter
 
 This parameter indicates how many test iterations should occur per **test_interval**. This value is a positive integer.
