@@ -24,6 +24,7 @@ Enter the unpacked directory. Execute:
     make -j $(($(nproc) + 1))
 
 You will need to change the CUDA_NVCC_FLAGS to the following if you have CUDA Toolkit 9.0:
+
     CUDA_NVCC_FLAGS="-D_FORCE_INLINES --expt-relaxed-constexpr"
 
 This completes the build procedure of OpenCV 3.3. (http://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html)
