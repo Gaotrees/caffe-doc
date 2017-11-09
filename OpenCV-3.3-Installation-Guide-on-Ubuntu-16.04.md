@@ -23,6 +23,9 @@ Enter the unpacked directory. Execute:
     cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D FORCE_VTK=ON -D WITH_TBB=ON -D WITH_V4L=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D WITH_CUBLAS=ON -D CUDA_NVCC_FLAGS="-D_FORCE_INLINES" -D WITH_GDAL=ON -D WITH_XINE=ON -D BUILD_EXAMPLES=ON ..
     make -j $(($(nproc) + 1))
 
+You will need to change the CUDA_NVCC_FLAGS to the following if you have CUDA Toolkit 9.0:
+    CUDA_NVCC_FLAGS="-D_FORCE_INLINES --expt-relaxed-constexpr"
+
 This completes the build procedure of OpenCV 3.3. (http://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html)
 
 
