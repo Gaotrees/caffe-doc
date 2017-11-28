@@ -48,7 +48,10 @@ The configuration settings will differ for OpenCV 3.2 as you can see above, but 
 
 Go to the https://github.com/BVLC/caffe and download the zip archive. Unpack it to `~/bin/` or any other location. Enter the caffe-master directory in the terminal window. Note that only the version 1.0RC5 compiles well at this moment, so download the 1.0RC5 version from https://github.com/BVLC/caffe/archive/rc5.zip. If you download the 1.0 version from https://github.com/BVLC/caffe/archive/1.0.zip, you need to edit the file `/src/caffe/util/blocking_queue.cpp`. After the line 89, add the new line that contains the following:
 
+```
 template class BlockingQueue<Datum*>;
+```
+
 Copy the Makefile.config.example to Makefile.config like this:
 
 ```
