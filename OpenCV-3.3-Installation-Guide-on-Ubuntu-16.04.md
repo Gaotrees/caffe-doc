@@ -27,6 +27,8 @@ You will need to change the CUDA_NVCC_FLAGS to the following if you have CUDA To
 
     CUDA_NVCC_FLAGS="-D_FORCE_INLINES --expt-relaxed-constexpr"
 
+(Note: the compilation fails if you are using Java Development Kit 9.)
+
 This completes the build procedure of OpenCV 3.3. (http://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html)
 
 
