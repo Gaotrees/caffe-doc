@@ -1,6 +1,9 @@
  Dear sir,when I train googlenet model,the following message shows.Please help me how to solve.. 
+
 [libprotobuf ERROR google/protobuf/text_format.cc:274] Error parsing text-format caffe.NetParameter: 32:15: Expected string.
+
 F1228 10:23:03.046366  3457 upgrade_proto.cpp:928] Check failed: ReadProtoFromTextFile(param_file, param) Failed to parse NetParameter file: /home/habib/dgd_person_reid/external/caffe/models/bvlc_googlenet/train_val.prototxt
+
 *** Check failure stack trace: ***
     @     0x7f3191e595cd  google::LogMessage::Fail()
     @     0x7f3191e5b433  google::LogMessage::SendToLog()
