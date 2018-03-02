@@ -8,9 +8,9 @@ compilation terminated.
 Makefile:581: recipe for target '.build_release/src/caffe/net.o' failed
 make: *** [.build_release/src/caffe/net.o] Error 1
 ```
-**Solution**: Open Makefile.config, then locate at `INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include`, append `/usr/include/hdf5/serial` to it. Then rerun `make all`.
 
-**Problem**:
+**or**
+
 ```
 AR -o .build_release/lib/libcaffe.a
 LD -o .build_release/lib/libcaffe.so.1.0.0
@@ -20,7 +20,11 @@ collect2: error: ld returned 1 exit status
 Makefile:572: recipe for target '.build_release/lib/libcaffe.so.1.0.0' failed
 make: *** [.build_release/lib/libcaffe.so.1.0.0] Error 1
 ```
-**Solution**: Open Makefile.config, then locate at `LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib`, append `/usr/lib/x86_64-linux-gnu/hdf5/serial` to it. Then rerun `make all`.
+**Solution**:
+ * install `libhdf5-dev`
+ * open Makefile.config, locate line containing `LIBRARY_DIRS` and append `/usr/lib/x86_64-linux-gnu/hdf5/serial`
+ * locate `INCLUDE_DIRS` and append `/usr/include/hdf5/serial/` (per [this SO answer](https://askubuntu.com/a/645089/599356))
+ * rerun `make all`
    
 ### 2) gflags issues:
 **Problem**:
