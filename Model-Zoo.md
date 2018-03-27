@@ -51,7 +51,9 @@ or visit the [model zoo documentation](http://caffe.berkeleyvision.org/model_zoo
 - [Supervised Learning of Semantics-Preserving Hash via Deep Convolutional Neural Networks](#supervised-learning-of-semantics-preserving-hash-via-deep-convolutional-neural-networks)
 - [Striving for Simplicity: The All Convolutional Net](#striving-for-simplicity-the-all-convolutional-net)
 - [VGG 4x without degradation: Channel Pruning for Accelerating Very Deep Neural Networks](#vgg-4x-without-degradation-channel-pruning-for-accelerating-very-deep-neural-networks)
-- [Using Ranking-CNN for Age Estimation](#using-ranking-cnn-for-age-estimation)
+- [Using Ranking-CNN for Age Estimation](#using-ranking-cnn-for-age-estimation)  
+- [Lets Keep it Simple: Using Simple Architectures to Outperform Deeper and More Complex Architectures](#lets-keep-it-simple-using-simple-architectures-to-outperform-deeper-and-more-complex-architectures)
+- [Towards Principled Design of Deep Convolutional Networks: Introducing SimpNet](#towards-principled-design-of-deep-convolutional-networks-introducing-simpnet)
 
 <!-- markdown-toc end -->
 
@@ -735,3 +737,30 @@ year = {2017}
     
 [[PDF](http://openaccess.thecvf.com/content_cvpr_2017/papers/Chen_Using_Ranking-CNN_for_CVPR_2017_paper.pdf)] 
 [[GitHub repo](https://github.com/RankingCNN/Using-Ranking-CNN-for-Age-Estimation)]
+
+### Lets Keep it Simple: Using Simple Architectures to Outperform Deeper and More Complex Architectures
+
+This repository contains the architectures, Models, logs, etc pertaining to the SimpleNet Paper. SimpleNet-V1 outperforms deeper and heavier architectures such as AlexNet, VGGNet, ResNet, GoogleNet, etc in a series of benchmark datasets, such as CIFAR10/100, MNIST, SVHN. 
+
+    @article{hasanpour2016lets,
+      title={Lets keep it simple, Using simple architectures to outperform deeper and more complex architectures},
+      author={Hasanpour, Seyyed Hossein and Rouhani, Mohammad and Fayyaz, Mohsen and Sabokrou, Mohammad},
+      journal={arXiv preprint arXiv:1608.06037},
+      year={2016}
+    }
+
+[[arXiv](https://arxiv.org/abs/1608.06037 )] [[GitHub repo](https://github.com/Coderx7/SimpleNet)]
+
+
+### Towards Principled Design of Deep Convolutional Networks: Introducing SimpNet
+
+This repository contains the architectures, pretrained models, etc pertaining to the SimpNet Paper. In this work, several crucial principles for designing deep convolutional architectures are introduced. Based on these principles, a simple architecture called "SimpNet" is designed. SimpNet outperforms deeper and heavier architectures such as ResNet, Wide Residual Network, etc on several well-known benchmarks, while having 2 to 25 times fewer number of parameters and operations.
+
+    @article{hasanpour2018towards,
+      title={Towards Principled Design of Deep Convolutional Networks: Introducing SimpNet},
+      author={Hasanpour, Seyyed Hossein and Rouhani, Mohammad and Fayyaz, Mohsen and Sabokrou, Mohammad and Adeli, Ehsan},
+      journal={arXiv preprint arXiv:1802.06205},
+      year={2018}
+    }
+
+[[arXiv](https://arxiv.org/abs/1802.06205 )] [[GitHub repo](https://github.com/Coderx7/SimpNet)]
