@@ -1,0 +1,1 @@
+The Faster-RCNN uses 7 FPS while detecting real time object. Here in our system, we detect real time object using up to 30 FPS
