@@ -37,7 +37,7 @@ make: *** [.build_release/src/caffe/net.o] Error 1
 ```
 **Solution**: Run `sudo apt-get install libgflags-dev`. Then rerun `make all`.
 
-### 3) glog is**Solution**:sues:
+### 3) glog issues:
 **Problem**:
 ```
 In file included from src/caffe/net.cpp:10:0:
