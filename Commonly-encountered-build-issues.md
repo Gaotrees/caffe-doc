@@ -37,7 +37,7 @@ make: *** [.build_release/src/caffe/net.o] Error 1
 ```
 **Solution**: Run `sudo apt-get install libgflags-dev`. Then rerun `make all`.
 
-### 3) glog issues:
+### 3) glog is**Solution**:sues:
 **Problem**:
 ```
 In file included from src/caffe/net.cpp:10:0:
@@ -59,7 +59,7 @@ make: *** [.build_release/src/caffe/util/db.o] Error 1
 ```
 **Solution**: Run `sudo apt-get install liblmdb-dev`. Then rerun `make all`.
 
-### 4) LMDB issues:
+### 5) opencv_imgcodecs opencv_videoio issues:
 **Problem**:
 ```
 /usr/bin/ld: cannot find -lopencv_imgcodecs
