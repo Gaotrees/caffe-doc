@@ -58,3 +58,14 @@ Makefile:581: recipe for target '.build_release/src/caffe/util/db.o' failed
 make: *** [.build_release/src/caffe/util/db.o] Error 1
 ```
 **Solution**: Run `sudo apt-get install liblmdb-dev`. Then rerun `make all`.
+
+### 4) LMDB issues:
+**Problem**:
+```
+/usr/bin/ld: cannot find -lopencv_imgcodecs
+/usr/bin/ld: cannot find -lopencv_videoio
+collect2: error: ld returned 1 exit status
+Makefile:579: recipe for target '.build_release/lib/libcaffe.so.1.0.0-rc5' failed
+make: *** [.build_release/lib/libcaffe.so.1.0.0-rc5] Error 1
+```
+**Solution**:
