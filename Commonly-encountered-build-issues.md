@@ -68,7 +68,7 @@ collect2: error: ld returned 1 exit status
 Makefile:579: recipe for target '.build_release/lib/libcaffe.so.1.0.0-rc5' failed
 make: *** [.build_release/lib/libcaffe.so.1.0.0-rc5] Error 1
 ```
-**Solution**: locate line 164 (in my case), add opencv_imgcodecs below it.
+**Solution**: open your Makefile with some text editor, locate line 164 (in my case), add opencv_imgcodecs below it.
 ```
 LIBRARIES += glog gflags protobuf leveldb snappy \
   lmdb boost_system hdf5_hl hdf5 m \
