@@ -18,7 +18,7 @@ For example, we can specify that we would like our network to stop after 60,000 
 
 ### Manually Stopping
 
-It is possible to manually stop a network from training by pressing the `Ctrl+C` key combination. When the stop signal is sent, the network will halt the forward and backwards pass, and output the current state of the network in a .caffemodel and .solverstate titled with the current iteration number.
+It is possible to manually stop a network from training by pressing the `Ctrl+C` key combination. Beware that the current state of the network in a .caffemodel and .solverstate titled with the current iteration number will not be stored unless you send a `SIGHUP` to caffe first.
 
 # Resuming
 
