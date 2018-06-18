@@ -19,7 +19,7 @@ Download the latest source archive for OpenCV 3.3 from https://github.com/opencv
 Enter the unpacked directory. Execute:
 
     mkdir build
-    cd build/    
+    cd build/
     cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D FORCE_VTK=ON -D WITH_TBB=ON -D WITH_V4L=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D WITH_CUBLAS=ON -D CUDA_NVCC_FLAGS="-D_FORCE_INLINES" -D WITH_GDAL=ON -D WITH_XINE=ON -D BUILD_EXAMPLES=ON ..
     make -j $(($(nproc) + 1))
 
