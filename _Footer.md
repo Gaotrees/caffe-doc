@@ -1,1 +1,1 @@
-1312
+how to install segnet after this 
