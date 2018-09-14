@@ -36,7 +36,7 @@ sudo apt-get install -y python3-numpy python3-scipy
  
 # (OpenCV 2.4)
 ```
-sudo apt-get install -y libopencv-dev
+sudo apt-get install -y python-opencv
 ```
 
 (or, OpenCV 3.2 - see the instructions below)
