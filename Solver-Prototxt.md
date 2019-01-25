@@ -92,7 +92,6 @@ This parameter indicates how often caffe should output results to the screen. Th
 This parameter indicates the back propagation algorithm used to train the network. This value is a quoted string.
 
 Options include:
-
 1. Stochastic Gradient Descent "SGD"
 1. AdaDelta "AdaDelta"
 1. Adaptive Gradient "AdaGrad"
