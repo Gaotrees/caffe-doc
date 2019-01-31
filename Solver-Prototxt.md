@@ -99,3 +99,4 @@ Options include:
 1. Nesterov’s Accelerated Gradient "Nesterov"
 1. RMSprop "RMSProp"
 
+#### batch
