@@ -98,5 +98,3 @@ Options include:
 1. Adam "Adam"
 1. Nesterov’s Accelerated Gradient "Nesterov"
 1. RMSprop "RMSProp"
-
-#### batch
