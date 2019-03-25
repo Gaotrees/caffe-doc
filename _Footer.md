@@ -4,3 +4,5 @@ C'mon guys, it's not that bad!
 It sufficient enough
 !
 I agree. It's good.
+
+How to do the other way???
