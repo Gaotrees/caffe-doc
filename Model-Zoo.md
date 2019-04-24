@@ -22,6 +22,7 @@ or visit the [model zoo documentation] (http://caffe.berkeleyvision.org/model_zo
 - [Deep Learning of Binary Hash Codes for Fast Image Retrieval](#deep-learning-of-binary-hash-codes-for-fast-image-retrieval)
 - [Places_CNDS_models on Scene Recognition](#placescndsmodels-on-scene-recognition)
 - [Models for Age and Gender Classification.](#models-for-age-and-gender-classification)
+- [More Models for Age and Gender Classification.](#more-models-for-age-and-gender-classification)
 - [GoogLeNet_cars on car model classification](#googlenet_cars-on-car-model-classification)
 - [ParseNet: Looking wider to see better](#parsenet-looking-wider-to-see-better)
 - [SegNet and Bayesian SegNet](#segnet-and-bayesian-segnet)
@@ -213,6 +214,28 @@ The models are described in the following paper:
     at the IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), Boston, June 2015
 
 If you find our models useful, please add suitable reference to our paper in your work.
+
+
+### More Models for Age and Gender Classification.
+* Additional models for age and gender recognition, trained on the [Adience benchmark dataset](http://www.openu.ac.il/home/hassner/Adience/data.html#agegender) dataset are provided on the [github project page](https://github.com/sebastian-lapuschkin/understanding-age-gender-deep-learning-models) belonging to the ICCV 2017 workshop paper titled ["Understanding and Comparing Deep Neural Networks for Age and Gender Classification"](http://openaccess.thecvf.com/content_ICCV_2017_workshops/papers/w23/Lapuschkin_Understanding_and_Comparing_ICCV_2017_paper.pdf).
+
+The provided models are based on the architectures of the following networks:
++ Age/Gender.net from [the previous post](#models-for-age-and-gender-classification).
++ BVLC Reference Caffenet
++ BVLC Googlenet
++ VGG 16
+
+Results obtained with these models are described in the paper:
+
+    Understanding and Comparing Deep Neural Networks for Age and Gender Classification
+    Sebastian Lapuschkin, Alexander Binder, Klaus-Robert Müller and Wojciech Samek
+    IEEE Workshop on Analysis and Modeling of Faces and Gestures (AMFG),
+    at the IEEE International Conference on Computer Vision Workshops (ICCV), Venice, October 2017
+
+If you find our models useful, please add suitable reference to our paper in your work.
+
+
+
 
 ### GoogLeNet_cars on car model classification
 
