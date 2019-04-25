@@ -227,11 +227,15 @@ The provided models are based on the architectures of the following networks:
 
 Results obtained with these models are described in the paper:
 
-    Understanding and Comparing Deep Neural Networks for Age and Gender Classification
-    Sebastian Lapuschkin, Alexander Binder, Klaus-Robert Müller and Wojciech Samek
-    IEEE Workshop on Analysis and Modeling of Faces and Gestures (AMFG),
-    at the IEEE International Conference on Computer Vision Workshops (ICCV), Venice, October 2017
-
+    @incproceedings{lapuschkin2017understanding,
+        author = {Lapuschkin, Sebastian and Binder, Alexander and M\"uller, Klaus-Robert and Samek, Wojciech},
+        title = {Understanding and Comparing Deep Neural Networks for Age and Gender Classification},
+        booktitle = {Proceedings of the IEEE International Conference on Computer Vision Workshops (ICCVW)},
+        pages = {1629-1638},
+        year = {2017},
+        doi = {10.1109/ICCVW.2017.191},
+        url = {https://doi.org/10.1109/ICCVW.2017.191}
+}
 If you find our models useful, please add suitable reference to our paper in your work.
 
 
