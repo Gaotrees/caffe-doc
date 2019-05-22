@@ -22,7 +22,7 @@ make: *** [.build_release/lib/libcaffe.so.1.0.0] Error 1
 ```
 **Solution**:
  * install `libhdf5-dev`
- * open Makefile.config, locate line containing `LIBRARY_DIRS` and append `/usr/lib/x86_64-linux-gnu/hdf5/serial`
+ * open Makefile.config, locate line containing `LIBRARY_DIRS` and append `/usr/lib/x86_64-linux-gnu/hdf5/serial`. Please note the space rather than a colon for defining path
  * locate `INCLUDE_DIRS` and append `/usr/include/hdf5/serial/` (per [this SO answer](https://askubuntu.com/a/645089/599356))
  * rerun `make all`
    
